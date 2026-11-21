@@ -1,0 +1,58 @@
+{
+  "planned": 800,
+  "started": 600,
+  "valid": 596,
+  "failed": 4,
+  "running_or_interrupted": 0,
+  "not_started": 200,
+  "eax_deferred_not_started": 200,
+  "mechanism_deferred_not_started": 0,
+  "first_dispatch": {
+    "run_id": "REVIEW20_MAIN_genC12k.seed100003_1421_K_new",
+    "time": "2026-11-20T11:33:44+08:00",
+    "location": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0002",
+    "method_or_start": "K_new"
+  },
+  "latest_dispatch": {
+    "run_id": "REVIEW20_MAIN_genC12k.seed100003_2081_K_new",
+    "time": "2026-11-21T03:05:16+08:00",
+    "location": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0799",
+    "method_or_start": "K_new"
+  },
+  "by_status": {
+    "not_started": 200,
+    "valid": 596,
+    "monitor_invalid": 3,
+    "execution_error": 1
+  },
+  "by_method": {
+    "EAX_ref": {
+      "not_started": 200
+    },
+    "K_new": {
+      "valid": 199,
+      "monitor_invalid": 1
+    },
+    "M_new": {
+      "valid": 199,
+      "monitor_invalid": 1
+    },
+    "C_ref": {
+      "valid": 198,
+      "monitor_invalid": 1,
+      "execution_error": 1
+    }
+  },
+  "formal_gate_open": true,
+  "gate_error": null,
+  "external_adjudications": [
+    {
+      "sha256": "05e2d1dac86b1533626a72e01af4eea6fe8843c186c5ceef9f2db8773dc66499",
+      "path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\recovery_slot0012_disk_full.json",
+      "run_id": "REVIEW20_MAIN_gr9882_761_C_ref",
+      "cause": "disk_full",
+      "status": "execution_error"
+    }
+  ],
+  "disk_full": 1
+}

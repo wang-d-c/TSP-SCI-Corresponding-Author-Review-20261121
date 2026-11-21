@@ -1,0 +1,46 @@
+{
+  "source_desktop_files_verified": 149,
+  "unchanged_data_figure_and_evidence_files": 77,
+  "solver_runs": 0,
+  "statistical_reruns": 0,
+  "word_and_pdf": {
+    "01_中英文主稿/Manuscript_EN": {
+      "pages": 9,
+      "editable_formulas": 9,
+      "unchanged": false,
+      "local_pdf_uris_normalized": 0,
+      "command_ascii_in_pdf_word_md": true
+    },
+    "01_中英文主稿/主文_ZH": {
+      "pages": 7,
+      "editable_formulas": 9,
+      "unchanged": false,
+      "local_pdf_uris_normalized": 0,
+      "command_ascii_in_pdf_word_md": true
+    },
+    "02_方法与统计补充/Supplement_EN": {
+      "pages": 3,
+      "editable_formulas": 0,
+      "unchanged": false,
+      "local_pdf_uris_normalized": 0,
+      "command_ascii_in_pdf_word_md": true
+    },
+    "02_方法与统计补充/Historical_Appendix_EN": {
+      "pages": 6,
+      "editable_formulas": 0,
+      "unchanged": true,
+      "local_pdf_uris_normalized": 0,
+      "command_ascii_in_pdf_word_md": false
+    }
+  },
+  "links": {
+    ".md": 155,
+    ".docx": 2,
+    ".pdf": 2
+  },
+  "upload_scope": "private author review",
+  "visual_inspection": "Word opened four files, re-exported three PDFs; Poppler reviewed affected pages and historical appendix.",
+  "reused_receipt_files_unchanged": true,
+  "existing_author_only_route_zip_excluded": true,
+  "included_files_with_manifest": 150
+}

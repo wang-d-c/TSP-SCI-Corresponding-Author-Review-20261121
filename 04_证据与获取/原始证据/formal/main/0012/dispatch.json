@@ -1,0 +1,23 @@
+{
+  "phase": "main",
+  "row": {
+    "slot": "12",
+    "run_id": "REVIEW20_MAIN_gr9882_761_C_ref",
+    "stratum": "04_Waterloo_geographic",
+    "map": "gr9882",
+    "n": "9882",
+    "input_sha256": "f53bedc46af763d380aceaf8c661b600bc569b38c07d72456bc6df4645a3b60e",
+    "pool_seed": "761",
+    "method": "C_ref",
+    "within_group": "4",
+    "budget_s": "90",
+    "request_at_s": "85.0",
+    "stop_proof_before_s": "86",
+    "certify_before_s": "88",
+    "cleanup_before_s": "90",
+    "state": "planned_not_started_unadmitted"
+  },
+  "version": "review20_common_lkh_85_r3",
+  "time": "2026-11-20T11:42:32+08:00",
+  "admission_sha256": "10444a1b7826f0d7f4566b200fa1cbfe3b0355fed7535de5a77410c2341624b7"
+}

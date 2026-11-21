@@ -1,0 +1,5 @@
+﻿map,seed,excluded_reason,unavailable_methods
+gr9882,761,at_least_one_invalid_delivery,C_ref
+ei8246,981,at_least_one_invalid_delivery,K_new
+C10k.0,2301,at_least_one_invalid_delivery,M_new
+C10k.2,1201,at_least_one_invalid_delivery,C_ref

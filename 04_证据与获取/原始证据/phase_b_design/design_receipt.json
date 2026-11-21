@@ -1,0 +1,39 @@
+{
+  "admitted": false,
+  "input_ledger": "preformal_panel_disposition.csv",
+  "input_ledger_sha256": "fccf69521067d77062291095311d539b9546b974b20a30b6c16c23d18d856a9a",
+  "order_seed": 20261120,
+  "method_builds_frozen_for_execution": false,
+  "selected_main_seed_labels": [
+    541,
+    761,
+    981,
+    1201,
+    1421,
+    1641,
+    1861,
+    2081,
+    2301,
+    2521
+  ],
+  "selected_continuation_seed_labels": [
+    104729,
+    104743,
+    104759,
+    104761,
+    104773
+  ],
+  "mechanism_parent_pool_labels": [
+    541,
+    761,
+    981,
+    1201
+  ],
+  "planned_main": 800,
+  "planned_mechanism": 800,
+  "started_main": 0,
+  "started_mechanism": 0,
+  "all_mk_adjacent_and_each_map_five_each": true,
+  "dispatch_enabled": false,
+  "note": "Candidate registration only; run IDs do not imply admission."
+}

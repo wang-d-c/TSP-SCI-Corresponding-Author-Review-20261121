@@ -1,0 +1,70 @@
+{
+  "status": "static_candidate_only",
+  "solver_processes_started": 0,
+  "archive_sha256": "632567cce753a89448920b330e39326f8aca2ca97b9c25342025122face1bd1d",
+  "engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+  "problem_file": "problem.tsp",
+  "problem_sha256": "5e32c48d9b89f5905a2c84e9ff29282a372c65110bc393f044a15768ca036e91",
+  "roles": {
+    "C_ref": {
+      "parameters": "C_ref.par",
+      "parameters_sha256": "7a17b56a0f8881305d95bf82d170258426de9690bcfad9d5aadcf59cc026fe01",
+      "executable_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "seed": 541
+    },
+    "P1": {
+      "parameters": "P1.par",
+      "parameters_sha256": "7a17b56a0f8881305d95bf82d170258426de9690bcfad9d5aadcf59cc026fe01",
+      "executable_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "seed": 541
+    },
+    "P2": {
+      "parameters": "P2.par",
+      "parameters_sha256": "ab5535c635554636b4ad90589d6d80a8556e8f47612e2ebf243145ccfbdbcf6c",
+      "executable_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "seed": 1541
+    },
+    "P3": {
+      "parameters": "P3.par",
+      "parameters_sha256": "df2c7fe608ee87b1c9227c4e4a0bdac1c3d1daa913acadef259df7578dadd3e5",
+      "executable_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "seed": 2541
+    },
+    "M_new_resume": {
+      "parameters": "M_new_resume.par",
+      "parameters_sha256": "d7d5055f911ade3de12d67385a6c2ae74a75ae31d387eedd45695a3947923227",
+      "executable_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "seed": 3541
+    },
+    "K_new_resume": {
+      "parameters": "K_new_resume.par",
+      "parameters_sha256": "d7d5055f911ade3de12d67385a6c2ae74a75ae31d387eedd45695a3947923227",
+      "executable_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "seed": 3541
+    }
+  },
+  "shared_physical_parent_pool": [
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "start_binding": {
+    "M_new_resume": "best certified parent",
+    "K_new_resume": "best certified parent or eligible GPX2 offspring"
+  },
+  "K_new_additional_pair_order": [
+    "P1/P2",
+    "P1/P3",
+    "P2/P3"
+  ],
+  "formal_environment_must_omit": [
+    "TSP_ABLATION_OMIT_INITIAL_EDGES"
+  ],
+  "deadlines_s": {
+    "request_stop": 85,
+    "prove_stop_strictly_before": 86,
+    "certify_delivery_strictly_before": 88,
+    "complete_cleanup_strictly_before": 90
+  },
+  "full_pool_charge_per_arm": true
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "Local regeneration from fixed upstream archive and already frozen DIMACS generator binaries only, in an isolated directory. No TSP solver ran.",
+  "inputs_verified_after_regeneration": 10,
+  "regenerated_sha256": {
+    "C10k.0.tsp": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+    "C10k.1.tsp": "97c7012bad8eeed4e5f5f66062539b016786b71ed48b937874479eb4044dbac9",
+    "C10k.2.tsp": "995a3e9b9ddbabd222bd00b937a1cf932a35f3ab5fe5398161e5f65d9d5184ac",
+    "E10k.0.tsp": "57ed8b6a79233c00011086bc063b896bc91b2e6762cecfbc151d9a06eaa17353",
+    "E10k.1.tsp": "fc9e90375bbda42457e9ae45c417e79cd4ab1dd5a8c46b5aae1ac53b4279ba90",
+    "E10k.2.tsp": "b8edac31f47ce732ba2d66dca0667b6d5f4f8f79b19c6e8d33344c7ebccf7eb5",
+    "genC12k.seed100003.tsp": "e42e3e78055ed1c9d55cd47ca1616e9cdc4b3e0bf0c7c4fa51b13ae626ed0391",
+    "genC15k.seed100004.tsp": "f64a118d9fc822a39dfe80eeac5f363426dd090893ecc60d651b32047f57771e",
+    "genE12k.seed100006.tsp": "16d0941db34c91cd71bcc4d9afa3804f984c13847c60d0471acd1f3c9c1c55af",
+    "genE15k.seed100007.tsp": "4db8a61c7a65e0b0ff33bf5314fea027d9c467bf65566c88f87fe00cbfe148e0"
+  },
+  "generator_archive_sha256": "5f041f0b9d68f2397309880919bbfde3d286e1b10b042cc07285f632cee6080a",
+  "generator_program_sha256": {
+    "portgen": "bea169314fb9c9a7d2badeacddfad04417cc9320a17485cf2a649be5be9fca6e",
+    "portcgen": "ab8bc055366620a87c932ad08d4019a666f5b8a361494adfb4a2d248ebaf43bb"
+  },
+  "line_ending_rule": "replace CRLF in generator stdout with LF before SHA256",
+  "reported_stdout": "C10k.0 ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1\nC10k.1 97c7012bad8eeed4e5f5f66062539b016786b71ed48b937874479eb4044dbac9\nC10k.2 995a3e9b9ddbabd222bd00b937a1cf932a35f3ab5fe5398161e5f65d9d5184ac\ngenC12k.seed100003 e42e3e78055ed1c9d55cd47ca1616e9cdc4b3e0bf0c7c4fa51b13ae626ed0391\ngenC15k.seed100004 f64a118d9fc822a39dfe80eeac5f363426dd090893ecc60d651b32047f57771e\nE10k.0 57ed8b6a79233c00011086bc063b896bc91b2e6762cecfbc151d9a06eaa17353\nE10k.1 fc9e90375bbda42457e9ae45c417e79cd4ab1dd5a8c46b5aae1ac53b4279ba90\nE10k.2 b8edac31f47ce732ba2d66dca0667b6d5f4f8f79b19c6e8d33344c7ebccf7eb5\ngenE12k.seed100006 16d0941db34c91cd71bcc4d9afa3804f984c13847c60d0471acd1f3c9c1c55af\ngenE15k.seed100007 4db8a61c7a65e0b0ff33bf5314fea027d9c467bf65566c88f87fe00cbfe148e0\n10 map hashes verified"
+}

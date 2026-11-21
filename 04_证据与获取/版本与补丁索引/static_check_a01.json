@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "known archive PE map SHA256",
+    "both continuations byte-identical",
+    "seed offsets",
+    "mismatched map hash rejected with no output",
+    "existing output rejected",
+    "all emitted parameter keywords found in stock ReadParameters.c"
+  ],
+  "solver_processes_started": 0,
+  "status": "passed",
+  "parameter_keyword_count": 27,
+  "scope": "hash-locked parameter binding only"
+}

@@ -1,0 +1,13 @@
+﻿comparison,stratum,stratum_name,maps,valid_pairs,short,tied,long,map_equal_mean_ppm
+K_new/M_new,01_VLSI_engineering,VLSI engineering,5,50,14,12,24,-20.467652365421273
+K_new/M_new,02_DIMACS_clustered,DIMACS clustered,5,49,32,3,14,-40.295214733621435
+K_new/M_new,03_DIMACS_uniform,DIMACS uniform,5,50,24,7,19,5.97719323352177
+K_new/M_new,04_Waterloo_geographic,Waterloo geographic,5,49,27,6,16,14.883460530016077
+K_new/C_ref,01_VLSI_engineering,VLSI engineering,5,50,30,5,15,125.80372442508525
+K_new/C_ref,02_DIMACS_clustered,DIMACS clustered,5,49,28,0,21,294.9441456697516
+K_new/C_ref,03_DIMACS_uniform,DIMACS uniform,5,50,21,0,29,1.774312160371371
+K_new/C_ref,04_Waterloo_geographic,Waterloo geographic,5,48,26,1,21,47.83042718748398
+M_new/C_ref,01_VLSI_engineering,VLSI engineering,5,50,33,3,14,146.27478514735967
+M_new/C_ref,02_DIMACS_clustered,DIMACS clustered,5,48,27,0,21,348.2699115476206
+M_new/C_ref,03_DIMACS_uniform,DIMACS uniform,5,50,21,0,29,-4.205571264942532
+M_new/C_ref,04_Waterloo_geographic,Waterloo geographic,5,49,24,0,25,32.207462885564865

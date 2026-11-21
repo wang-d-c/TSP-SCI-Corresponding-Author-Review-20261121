@@ -1,0 +1,81 @@
+{
+  "instance": "usa13509",
+  "rank": "last_technical_reserve",
+  "official_reference_optimum": 19982859,
+  "official_reference_url": "https://www.math.uwaterloo.ca/tsp/usa13509/usa13509.html",
+  "downloads": [
+    {
+      "url": "https://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/usa13509.tsp.gz",
+      "sha256_download": "69f4e56182cafa52fd5d4957c2d6998e063d68294f7299dc48e54d46fa544473",
+      "sha256_compressed_member": "69f4e56182cafa52fd5d4957c2d6998e063d68294f7299dc48e54d46fa544473",
+      "status": "ok"
+    }
+  ],
+  "acquisition": "verified",
+  "all_method_admission": "pending",
+  "sha256_input_bytes": "f2d7c9f97b9b343b868c72388241e803f099af551e563a10e183778b7e38ada1",
+  "sha256_point_table": "76d3e95a3f5f8dfdd6481c0b9566433ea893f30c7e9208edfb720d4ad8a982a4",
+  "metric": "EUC_2D",
+  "cities": 13509,
+  "min_x": "245552.778",
+  "max_x": "490000.000",
+  "min_y": "669905.556",
+  "max_y": "1244961.111",
+  "max_edge_bound": 624855,
+  "total_route_bound": 8441166195,
+  "duplicated_locations": 0,
+  "fractional_locations": 13337,
+  "exposure": {
+    "indices": [
+      "outputs/vsr_lkh_reproduction/source/author_2020/TSPLIB_DATA/usa13509.par",
+      "outputs/vsr_lkh_reproduction/source/author/TSPLIB_DATA/usa13509.par"
+    ],
+    "raw_or_geometry_matches": [
+      {
+        "file": "outputs/ga_eax_classic/source/eax/patched_large/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/ga_eax_classic/source/eax/original_large/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/lkh_v11_incumbent_20261109/gpx3_2019_author_source/tsplib/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/lkh_once_joint_expanded_20261107/gaeax/src/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/lkh_v13_20261109/freeze/snapshots/gaeax_observed/src/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/桌面旧版归档_20261118/LKH_V13_科研管理与可靠复现_20261109/V13材料/freeze/snapshots/gaeax_observed/src/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/桌面旧版归档_20261118/LKH_V12_论文研究交付_20261109/历史资料/六图完整批/gaeax/src/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/桌面旧版归档_20261118/LKH_V11_路线联合研究_20261109/outputs/lkh_v11_incumbent_20261109/gpx3_2019_author_source/tsplib/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/vsr_lkh_reproduction/source/author_2020/TSPLIB_DATA/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/vsr_lkh_reproduction/source/author/TSPLIB_DATA/usa13509.tsp",
+        "identical_bytes": false
+      },
+      {
+        "file": "outputs/桌面旧版归档_20261118/LKH一次联合续搜_六图验证_20261107/lkh_once_joint_expanded_20261107/gaeax/src/usa13509.tsp",
+        "identical_bytes": false
+      }
+    ],
+    "parse_errors": []
+  }
+}

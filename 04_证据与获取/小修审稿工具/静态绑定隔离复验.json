@@ -1,0 +1,18 @@
+{
+  "scope": "Isolated staged project-owned static binder with separately supplied authorized local upstream archive, exact existing binary and original map.",
+  "map": "dga9698",
+  "map_sha256": "993a469b3c9c45ca65f283d4c7e99cb52550fd8eddb6709be92718bc66245eed",
+  "base_seed": 541,
+  "parameter_files_byte_exact": {
+    "C_ref.par": "7a17b56a0f8881305d95bf82d170258426de9690bcfad9d5aadcf59cc026fe01",
+    "K_new_resume.par": "d7d5055f911ade3de12d67385a6c2ae74a75ae31d387eedd45695a3947923227",
+    "M_new_resume.par": "d7d5055f911ade3de12d67385a6c2ae74a75ae31d387eedd45695a3947923227",
+    "P1.par": "7a17b56a0f8881305d95bf82d170258426de9690bcfad9d5aadcf59cc026fe01",
+    "P2.par": "ab5535c635554636b4ad90589d6d80a8556e8f47612e2ebf243145ccfbdbcf6c",
+    "P3.par": "df2c7fe608ee87b1c9227c4e4a0bdac1c3d1daa913acadef259df7578dadd3e5"
+  },
+  "archive_sha256": "632567cce753a89448920b330e39326f8aca2ca97b9c25342025122face1bd1d",
+  "engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+  "solver_processes_started": 0,
+  "third_party_bytes_included_in_release_material": false
+}

@@ -1,0 +1,88 @@
+{
+  "scope": "Official public-source retrieval in memory; no coordinate, archive or solver byte redistributed.",
+  "checks": [
+    {
+      "map": "dga9698",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/vlsi/dga9698.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 130361,
+      "sha256": "993a469b3c9c45ca65f283d4c7e99cb52550fd8eddb6709be92718bc66245eed"
+    },
+    {
+      "map": "xmc10150",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/vlsi/xmc10150.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 137078,
+      "sha256": "741042260c9739d9a24813ed1bdaab5860a6b39e4d48c388de2d27903c132074"
+    },
+    {
+      "map": "xvb13584",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/vlsi/xvb13584.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 187767,
+      "sha256": "d195e3c66e756b367f843d37fda7a0f1d53a7106d303f7e8910cbecd366cf316"
+    },
+    {
+      "map": "xrb14233",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/vlsi/xrb14233.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 196323,
+      "sha256": "16ba6922d7957e154da56378695228057a930e8b346ba95ca656c14c2d314912"
+    },
+    {
+      "map": "xia16928",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/vlsi/xia16928.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 240824,
+      "sha256": "a85d5b59483739e9fc8f3e4920564275f9989a01d1ec11aa70d0090e73513e35"
+    },
+    {
+      "map": "ja9847",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/world/ja9847.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 284653,
+      "sha256": "5845b29c01cece9311a7aa2c37df6bed653b3825ad839adce6f355a894c3304f"
+    },
+    {
+      "map": "gr9882",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/world/gr9882.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 275787,
+      "sha256": "f53bedc46af763d380aceaf8c661b600bc569b38c07d72456bc6df4645a3b60e"
+    },
+    {
+      "map": "fi10639",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/world/fi10639.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 297627,
+      "sha256": "2499b941abfb1d59fa9d7ddf5ff76dfa2e646dcb260580b6ec26da2b10544450"
+    },
+    {
+      "map": "ei8246",
+      "source_url": "https://www.math.uwaterloo.ca/tsp/world/ei8246.tsp",
+      "status": "downloaded_sha256_matched",
+      "bytes": 221937,
+      "sha256": "3bc6e2f70e7631526a539f39ac6f38a178fa14e5997d51d079f9822f8148518e"
+    },
+    {
+      "map": "usa13509",
+      "source_url": "https://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp/usa13509.tsp.gz",
+      "status": "downloaded_sha256_matched",
+      "bytes": 369592,
+      "sha256": "f2d7c9f97b9b343b868c72388241e803f099af551e563a10e183778b7e38ada1"
+    },
+    {
+      "label": "DIMACS official codes.zip",
+      "source_url": "https://archive.dimacs.rutgers.edu/Challenges/TSP/codes.zip",
+      "status": "downloaded_sha256_matched",
+      "bytes": 16215,
+      "sha256": "5f041f0b9d68f2397309880919bbfde3d286e1b10b042cc07285f632cee6080a"
+    },
+    {
+      "label": "LKH 3.0.14 exact archive",
+      "source_url": "https://webhotel4.ruc.dk/~keld/research/LKH-3/LKH-3.0.14.tgz",
+      "status": "fetch_or_binding_failed",
+      "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    }
+  ]
+}

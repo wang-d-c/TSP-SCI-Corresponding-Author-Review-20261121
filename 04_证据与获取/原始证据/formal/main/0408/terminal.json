@@ -1,0 +1,81 @@
+{
+  "phase": "main",
+  "row": {
+    "slot": "408",
+    "run_id": "REVIEW20_MAIN_C10k.0_2301_M_new",
+    "stratum": "02_DIMACS_clustered",
+    "map": "C10k.0",
+    "n": "10000",
+    "input_sha256": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+    "pool_seed": "2301",
+    "method": "M_new",
+    "within_group": "4",
+    "budget_s": "90",
+    "request_at_s": "85.0",
+    "stop_proof_before_s": "86",
+    "certify_before_s": "88",
+    "cleanup_before_s": "90",
+    "state": "planned_not_started_unadmitted"
+  },
+  "version": "review20_common_lkh_85_r3",
+  "status": "monitor_invalid",
+  "time": "2026-11-20T21:01:47+08:00",
+  "dispatch_sha256": "6797692a1d4c9dc771cc829d4b43da4ddefa5cfb940c8959037daf53afe55365",
+  "result": {
+    "method": "M_new",
+    "input_sha256": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+    "seed": 2301,
+    "engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+    "gpx_calls": [],
+    "numeric_bounds": {
+      "status": "static_screen_only",
+      "dimension": 10000,
+      "instance_sha256": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+      "coordinate_min": [
+        "-16401",
+        "-15724"
+      ],
+      "coordinate_max": [
+        "1006445",
+        "1019464"
+      ],
+      "binary64_all_finite": true,
+      "binary64_duplicate_pairs_count": 0,
+      "coordinate_rows_sequential": true,
+      "signed_int32_edge_bound_pass": true,
+      "lkh_precision": 100,
+      "signed_int32_scaled_edge_bound_pass": true,
+      "rounded_bbox_edge_upper": 1455276,
+      "tour_length_upper": 14552760000,
+      "eax_double_counted_tour_int64_bound_pass": true,
+      "eax_neighbor_sentinel_bound_pass": true,
+      "eax_dense_distance_matrix_min_bytes": 400000000,
+      "eax_two_dense_int32_matrices_min_bytes": 800000000,
+      "legacy_p5_gpx_coordinate_gate_pass": false,
+      "binary64_modeled_edge_checks": 6,
+      "binary64_mismatch_count": 0,
+      "binary64_mismatch_examples": []
+    },
+    "pool_path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\p\\C10k.0_2301\\pool.json",
+    "pool_sha256": "a1a2a12babad88ba5f5aa5a60b64d7abde71f355484837ff2e792ae79c1faf75",
+    "pool_seal_sha256": "b73f4b257846a594b762d5cc6a70c3010e8ce6e7639b3a83d38fd55d25b23a7e",
+    "common_paid_s": 51.42418259999977,
+    "parent_sha256": [
+      "da8aacbd17d89327d3ac4f5ca779c3c6f9694a24cfd5852a4dc3f601acd99402",
+      "1e8d6f8d039cacd94078de36f72101341c91fd3e261c7581a9ad1f66fde60102",
+      "a1fe74d3f7a95a2b70721e43059ad0534a4ac7d4366d6c11e5a10da30d1dee1b"
+    ],
+    "status": "monitor_invalid",
+    "error_type": "MonitorError",
+    "error": "available physical memory below 12 GiB",
+    "full_charge_s": 51.50668130000122,
+    "result_sha256": "1f9052e86df47e7a6af462725b4f58b9a34590bd56ec9989c32b12793cad041c",
+    "completion_observed_monotonic": 42058.2021851,
+    "charged_origin_monotonic": 42006.6955038,
+    "cleanup_before_s": 90,
+    "completion_state": "failed",
+    "completion_evidence": {}
+  },
+  "isolated_signature": null,
+  "paused_methods": []
+}

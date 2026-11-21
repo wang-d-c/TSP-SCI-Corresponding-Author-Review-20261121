@@ -1,0 +1,386 @@
+{
+  "phase": "main",
+  "row": {
+    "slot": "56",
+    "run_id": "REVIEW20_MAIN_ei8246_981_K_new",
+    "stratum": "04_Waterloo_geographic",
+    "map": "ei8246",
+    "n": "8246",
+    "input_sha256": "3bc6e2f70e7631526a539f39ac6f38a178fa14e5997d51d079f9822f8148518e",
+    "pool_seed": "981",
+    "method": "K_new",
+    "within_group": "4",
+    "budget_s": "90",
+    "request_at_s": "85.0",
+    "stop_proof_before_s": "86",
+    "certify_before_s": "88",
+    "cleanup_before_s": "90",
+    "state": "planned_not_started_unadmitted"
+  },
+  "version": "review20_common_lkh_85_r3",
+  "status": "monitor_invalid",
+  "time": "2026-11-20T13:23:20+08:00",
+  "dispatch_sha256": "a8e4b10a7c6e3c25bd4ba1b2ddabb9a22213f5415c137e5c1cc32f4c253bff88",
+  "result": {
+    "method": "K_new",
+    "input_sha256": "3bc6e2f70e7631526a539f39ac6f38a178fa14e5997d51d079f9822f8148518e",
+    "seed": 981,
+    "engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+    "gpx_calls": [
+      {
+        "pair": "P1P2",
+        "native": {
+          "status": "passed",
+          "command": [
+            "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
+          ],
+          "native_started": true,
+          "returncode": 0,
+          "terminated_for_budget": false,
+          "stop_request_s": null,
+          "stop_proof_s": 52.624027699999715,
+          "cleanup_s": 52.62519319999956,
+          "charged_origin_monotonic": 14470.168379300001,
+          "request_target_s": 85,
+          "stop_proof_before_s": 86,
+          "cleanup_before_s": 90,
+          "job": {
+            "root_pid": 27736,
+            "root_exit_code": 0,
+            "final_job": {
+              "job_cpu_user_s": 0.015625,
+              "job_cpu_kernel_s": 0.0,
+              "job_cpu_s": 0.015625,
+              "job_total_processes": 1,
+              "job_active_processes": 0,
+              "job_limit_terminated_processes": 0,
+              "job_page_fault_count": 2136,
+              "peak_job_memory_used_bytes": 5251072,
+              "peak_process_memory_used_bytes": 5251072,
+              "job_affinity_mask": 1,
+              "job_limit_flags": 8464,
+              "per_process_commit_limit_bytes": 4294967296,
+              "qualification": "Job memory is committed memory; PageFaultCount includes soft faults, not hard paging I/O"
+            },
+            "actual_process_count": 1,
+            "missing_fields": [],
+            "failures": [],
+            "processes": [
+              {
+                "pid": 27736,
+                "creation_time_100ns": 134396257718093667,
+                "parent_pid": 10384,
+                "parent_pid_status": "observed",
+                "first_seen": 14522.7621981,
+                "last_memory": {
+                  "working_set_bytes": 32768,
+                  "peak_working_set_bytes": 8486912,
+                  "private_bytes": 77824,
+                  "page_fault_count": 2136,
+                  "peak_pagefile_usage_bytes": 5251072
+                },
+                "peak_working_set_bytes": 8486912,
+                "peak_pagefile_usage_bytes": 5251072,
+                "sampled_peak_private_bytes": 417792,
+                "exit_code": 0,
+                "image": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
+                "thread_observation": {
+                  "count": 1,
+                  "affinity": [
+                    0
+                  ],
+                  "qualification": "count/affinity observation only; thread list is non-atomic and not evidence of parallel search"
+                },
+                "memory_errors": [],
+                "root_identity_captured_before_resume": true,
+                "exit_event_at": 14522.7925756
+              }
+            ],
+            "status": "passed",
+            "sample_count": 1,
+            "final_statistics_obtained_before_job_handle_close": true,
+            "job_peak_is_not_working_set": true
+          },
+          "root_pid": 27736,
+          "native_launch_s": 52.591570099999444,
+          "lifetime_proof": {
+            "status": "passed",
+            "processes": [
+              {
+                "pid": 27736,
+                "creation_filetime_100ns": 134396257718093667,
+                "signaled_s": 52.624019199998656,
+                "exit_filetime_100ns": 134396257718399403
+              }
+            ],
+            "kernel_total": 1,
+            "job_zero_observed_s": 52.624027699999715,
+            "deadline_s": 86
+          },
+          "controller_cpu_s": 0.015625
+        },
+        "input_sha256": "0568ff5b56e38a7cde47b9ca19899cae0127de586888455ad8604c2658a753a2",
+        "child_length": 206192,
+        "child_sha256": "5e1bbad58e389ba73bf727b03151a084fa3e46a0c5081f07f7126fe08c68544f",
+        "parent_sha256": [
+          "4112e9339f712d07370294277a35d57efb036f4a8babf86c0009b754df5eeacb",
+          "7aee9321eab5e1d1461a946cc55f1f15fc013680797e97ebd2242a1cd4d859d1"
+        ],
+        "verified_s": 52.651314299999285
+      },
+      {
+        "pair": "P1P3",
+        "native": {
+          "status": "passed",
+          "command": [
+            "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
+          ],
+          "native_started": true,
+          "returncode": 0,
+          "terminated_for_budget": false,
+          "stop_request_s": null,
+          "stop_proof_s": 52.7015023999993,
+          "cleanup_s": 52.70284449999963,
+          "charged_origin_monotonic": 14470.168379300001,
+          "request_target_s": 85,
+          "stop_proof_before_s": 86,
+          "cleanup_before_s": 90,
+          "job": {
+            "root_pid": 11444,
+            "root_exit_code": 0,
+            "final_job": {
+              "job_cpu_user_s": 0.0,
+              "job_cpu_kernel_s": 0.015625,
+              "job_cpu_s": 0.015625,
+              "job_total_processes": 1,
+              "job_active_processes": 0,
+              "job_limit_terminated_processes": 0,
+              "job_page_fault_count": 2164,
+              "peak_job_memory_used_bytes": 5304320,
+              "peak_process_memory_used_bytes": 5304320,
+              "job_affinity_mask": 1,
+              "job_limit_flags": 8464,
+              "per_process_commit_limit_bytes": 4294967296,
+              "qualification": "Job memory is committed memory; PageFaultCount includes soft faults, not hard paging I/O"
+            },
+            "actual_process_count": 1,
+            "missing_fields": [],
+            "failures": [],
+            "processes": [
+              {
+                "pid": 11444,
+                "creation_time_100ns": 134396257718816637,
+                "parent_pid": 10384,
+                "parent_pid_status": "observed",
+                "first_seen": 14522.835106,
+                "last_memory": {
+                  "working_set_bytes": 32768,
+                  "peak_working_set_bytes": 8503296,
+                  "private_bytes": 77824,
+                  "page_fault_count": 2164,
+                  "peak_pagefile_usage_bytes": 5304320
+                },
+                "peak_working_set_bytes": 8503296,
+                "peak_pagefile_usage_bytes": 5304320,
+                "sampled_peak_private_bytes": 401408,
+                "exit_code": 0,
+                "image": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
+                "thread_observation": {
+                  "count": 1,
+                  "affinity": [
+                    0
+                  ],
+                  "qualification": "count/affinity observation only; thread list is non-atomic and not evidence of parallel search"
+                },
+                "memory_errors": [],
+                "root_identity_captured_before_resume": true,
+                "exit_event_at": 14522.8701283
+              }
+            ],
+            "status": "passed",
+            "sample_count": 1,
+            "final_statistics_obtained_before_job_handle_close": true,
+            "job_peak_is_not_working_set": true
+          },
+          "root_pid": 11444,
+          "native_launch_s": 52.663365699998394,
+          "lifetime_proof": {
+            "status": "passed",
+            "processes": [
+              {
+                "pid": 11444,
+                "creation_filetime_100ns": 134396257718816637,
+                "signaled_s": 52.70148329999938,
+                "exit_filetime_100ns": 134396257719149951
+              }
+            ],
+            "kernel_total": 1,
+            "job_zero_observed_s": 52.7015023999993,
+            "deadline_s": 86
+          },
+          "controller_cpu_s": 0.015625
+        },
+        "input_sha256": "5b86c7dfe2fc401ee520c29e5d00ab955b83486ca804f30ec5e18a6722d8c5f9",
+        "child_length": 206193,
+        "child_sha256": "bb09fdb275c5ab5aacc05a5a106de5ec3f4fae26b4e43a7dd470a05c3e880d5b",
+        "parent_sha256": [
+          "4112e9339f712d07370294277a35d57efb036f4a8babf86c0009b754df5eeacb",
+          "8a2bcdaea29d812804ee7510a8ea5a457a67bb2d88a9239fe9357d67ac6b7b56"
+        ],
+        "verified_s": 52.73941809999815
+      },
+      {
+        "pair": "P2P3",
+        "native": {
+          "status": "passed",
+          "command": [
+            "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
+          ],
+          "native_started": true,
+          "returncode": 0,
+          "terminated_for_budget": false,
+          "stop_request_s": null,
+          "stop_proof_s": 52.796694699998625,
+          "cleanup_s": 52.79733689999921,
+          "charged_origin_monotonic": 14470.168379300001,
+          "request_target_s": 85,
+          "stop_proof_before_s": 86,
+          "cleanup_before_s": 90,
+          "job": {
+            "root_pid": 35532,
+            "root_exit_code": 0,
+            "final_job": {
+              "job_cpu_user_s": 0.0,
+              "job_cpu_kernel_s": 0.0,
+              "job_cpu_s": 0.0,
+              "job_total_processes": 1,
+              "job_active_processes": 0,
+              "job_limit_terminated_processes": 0,
+              "job_page_fault_count": 2179,
+              "peak_job_memory_used_bytes": 5361664,
+              "peak_process_memory_used_bytes": 5361664,
+              "job_affinity_mask": 1,
+              "job_limit_flags": 8464,
+              "per_process_commit_limit_bytes": 4294967296,
+              "qualification": "Job memory is committed memory; PageFaultCount includes soft faults, not hard paging I/O"
+            },
+            "actual_process_count": 1,
+            "missing_fields": [],
+            "failures": [],
+            "processes": [
+              {
+                "pid": 35532,
+                "creation_time_100ns": 134396257719696452,
+                "parent_pid": 10384,
+                "parent_pid_status": "observed",
+                "first_seen": 14522.922414,
+                "last_memory": {
+                  "working_set_bytes": 32768,
+                  "peak_working_set_bytes": 8531968,
+                  "private_bytes": 77824,
+                  "page_fault_count": 2179,
+                  "peak_pagefile_usage_bytes": 5361664
+                },
+                "peak_working_set_bytes": 8531968,
+                "peak_pagefile_usage_bytes": 5361664,
+                "sampled_peak_private_bytes": 417792,
+                "exit_code": 0,
+                "image": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
+                "thread_observation": {
+                  "count": 1,
+                  "affinity": [
+                    0
+                  ],
+                  "qualification": "count/affinity observation only; thread list is non-atomic and not evidence of parallel search"
+                },
+                "memory_errors": [],
+                "root_identity_captured_before_resume": true,
+                "exit_event_at": 14522.9642746
+              }
+            ],
+            "status": "passed",
+            "sample_count": 1,
+            "final_statistics_obtained_before_job_handle_close": true,
+            "job_peak_is_not_working_set": true
+          },
+          "root_pid": 35532,
+          "native_launch_s": 52.75186909999866,
+          "lifetime_proof": {
+            "status": "passed",
+            "processes": [
+              {
+                "pid": 35532,
+                "creation_filetime_100ns": 134396257719696452,
+                "signaled_s": 52.79668599999968,
+                "exit_filetime_100ns": 134396257720008425
+              }
+            ],
+            "kernel_total": 1,
+            "job_zero_observed_s": 52.796694699998625,
+            "deadline_s": 86
+          },
+          "controller_cpu_s": 0.03125
+        },
+        "input_sha256": "ae7e301d9fb71e261bc9dc9de79899288116ddf3b9b71ff9cc48bccffab62f6d",
+        "child_length": 206223,
+        "child_sha256": "3b450aa7259902d44bfa7cdb089a8b16d25b608cffce328b297d63c38267f53d",
+        "parent_sha256": [
+          "7aee9321eab5e1d1461a946cc55f1f15fc013680797e97ebd2242a1cd4d859d1",
+          "8a2bcdaea29d812804ee7510a8ea5a457a67bb2d88a9239fe9357d67ac6b7b56"
+        ],
+        "verified_s": 52.82349629999953
+      }
+    ],
+    "numeric_bounds": {
+      "status": "static_screen_only",
+      "dimension": 8246,
+      "instance_sha256": "3bc6e2f70e7631526a539f39ac6f38a178fa14e5997d51d079f9822f8148518e",
+      "coordinate_min": [
+        "51445",
+        "6019.4444"
+      ],
+      "coordinate_max": [
+        "55376.9444",
+        "10461.9444"
+      ],
+      "binary64_all_finite": true,
+      "binary64_duplicate_pairs_count": 0,
+      "coordinate_rows_sequential": true,
+      "signed_int32_edge_bound_pass": true,
+      "lkh_precision": 100,
+      "signed_int32_scaled_edge_bound_pass": true,
+      "rounded_bbox_edge_upper": 5933,
+      "tour_length_upper": 48923518,
+      "eax_double_counted_tour_int64_bound_pass": true,
+      "eax_neighbor_sentinel_bound_pass": true,
+      "eax_dense_distance_matrix_min_bytes": 271986064,
+      "eax_two_dense_int32_matrices_min_bytes": 543972128,
+      "legacy_p5_gpx_coordinate_gate_pass": false,
+      "binary64_modeled_edge_checks": 6,
+      "binary64_mismatch_count": 0,
+      "binary64_mismatch_examples": []
+    },
+    "pool_path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\p\\ei8246_981\\pool.json",
+    "pool_sha256": "7f43c96510eb5f243206037f466dcb272665a4b28a77f431d6ec5aea7b4870fe",
+    "pool_seal_sha256": "f286f1bdecd945fe8434659c8ede232258f7fda13ab40669be49ba5b39c3b51d",
+    "common_paid_s": 51.17942219999895,
+    "parent_sha256": [
+      "4112e9339f712d07370294277a35d57efb036f4a8babf86c0009b754df5eeacb",
+      "7aee9321eab5e1d1461a946cc55f1f15fc013680797e97ebd2242a1cd4d859d1",
+      "8a2bcdaea29d812804ee7510a8ea5a457a67bb2d88a9239fe9357d67ac6b7b56"
+    ],
+    "selected_role": "P1P2",
+    "status": "monitor_invalid",
+    "error_type": "Rejected",
+    "error": "LKH did not pass the owned runtime: MonitorError(\"original resource protection or missing live coverage: {'sample_started_monotonic': 14550.7669131, 'sampler_pid': 33884, 'sampler_cpu': 1, 'system': {'available_physical_bytes': 14452998144, 'total_physical_bytes': 50870607872, 'commit_total_bytes': 91504218112, 'commit_limit_bytes': 102699270144, 'available_page_file_bytes': 11195052032, 'total_page_file_bytes': 102699270144, 'available_page_file_interpretation': 'GlobalMemoryStatusEx available commit; not free disk swap-file bytes'}, 'observed_monotonic': 14550.7672306, 'sample_interval_s': 0.2504010000011476, 'paging_record': {'event': 'sample', 'status': 'pressure', 'guard_wall_s': 0.00010250000013911631, 'guard_process_cpu_s': 0.0, 'pressure_latched': True, 'raw': {'monotonic_start': 14550.7671286, 'values': {'pages_input_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 47021.94357366771}, 'page_reads_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 468.5809012419292}, 'pages_output_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 0.0}, 'page_writes_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 0.0}}, 'collect_status': '0x00000000', 'status': 'collected', 'monitor_process_cpu_s': 0.0, 'monitor_wall_s': 9.099999988393392e-05}, 'values': {'pages_input_per_s': 47021.94357366771, 'page_reads_per_s': 468.5809012419292, 'pages_output_per_s': 0.0, 'page_writes_per_s': 0.0}, 'interval_s': 1.0008997000004456, 'pages_input_plus_output_per_s': 47021.94357366771, 'high_count': 10, 'reason': 'sustained_system_paging_pressure'}, 'paging_state': 'pressure', 'pressure_latched': True, 'failure': {'kind': 'sustained_paging_pressure', 'record': {'event': 'sample', 'status': 'pressure', 'guard_wall_s': 0.00010250000013911631, 'guard_process_cpu_s': 0.0, 'pressure_latched': True, 'raw': {'monotonic_start': 14550.7671286, 'values': {'pages_input_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 47021.94357366771}, 'page_reads_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 468.5809012419292}, 'pages_output_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 0.0}, 'page_writes_per_s': {'format_status': '0x00000000', 'counter_status': '0x00000000', 'counter_type': 272696320, 'value': 0.0}}, 'collect_status': '0x00000000', 'status': 'collected', 'monitor_process_cpu_s': 0.0, 'monitor_wall_s': 9.099999988393392e-05}, 'values': {'pages_input_per_s': 47021.94357366771, 'page_reads_per_s': 468.5809012419292, 'pages_output_per_s': 0.0, 'page_writes_per_s': 0.0}, 'interval_s': 1.0008997000004456, 'pages_input_plus_output_per_s': 47021.94357366771, 'high_count': 10, 'reason': 'sustained_system_paging_pressure'}}, 'sampler_cpu_s': 0.21875}\")",
+    "full_charge_s": 80.87234819999867,
+    "result_sha256": "ea3594ce3fb43cb5deaefe40e103cec87a7a7ac6a2ccf0a5bad510ad91032024",
+    "completion_observed_monotonic": 14551.0407275,
+    "charged_origin_monotonic": 14470.168379300001,
+    "cleanup_before_s": 90,
+    "completion_state": "failed",
+    "completion_evidence": {}
+  },
+  "isolated_signature": null,
+  "paused_methods": []
+}

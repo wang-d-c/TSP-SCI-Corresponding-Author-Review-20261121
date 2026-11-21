@@ -1,0 +1,110 @@
+{
+  "scope_sha256": "6932f05a9dca7035bb43ea675c9b0eacdb0292b1b71121063e20e1b6bcfa1d68",
+  "plan_sha256": "aa04d75c5e70919f5f10ca2ebee2f16cfdbf39a38315c573ab05e81bfd3c57bc",
+  "source_ledger_sha256": "ff45e6e9d177f974ed59e46fa353dfb182d5462abec63fbf72e3e65df16f76a8",
+  "admission_sha256": "10444a1b7826f0d7f4566b200fa1cbfe3b0355fed7535de5a77410c2341624b7",
+  "version": "review20_common_lkh_85_r3",
+  "source_archive_sha256": "632567cce753a89448920b330e39326f8aca2ca97b9c25342025122face1bd1d",
+  "linked_stock_source_sha256": {
+    "LKHmain.c": "2ced4d91b8678348d4cc3faeff11d67d6915289982025ead34fbdbdf17fd8d10",
+    "MergeWithTourGPX2.c": "84e1189a90331da2ac2017ea6c43df302c4e521e98c78bacfaba0f440dd8d7ff",
+    "gpx.c": "3740873e9734c57e0c76e25ddd49327591705d4e3772f5bbce2e7f5bb1f9a0e2",
+    "ReadParameters.c": "152abdc18a99884e13d6a2c6185a359f65da1f584f5601f91362eeb554f834c3"
+  },
+  "linked_FindTour_source_sha256": "97af1de112eb88ef3dfc59ff50db586ca0637dac9de94fbb9e62ebec6a5acb30",
+  "shared_engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+  "external_bridge_sha256": "89764c8ad58e9a190ec37b8277f0c798a58fdb72bdcb0d5599fc337a5d027919",
+  "shared_engine_link_receipt_sha256": "ccfab24576112d01d01c6bab529054eecab5777e9533e98363d11e90c4b7ace4",
+  "external_bridge_build_receipt_sha256": "8c0cd4a3171bad95ef77829631b611b99592bb2e4bdf76bf7dc3a90f598d30ab",
+  "group_count": 200,
+  "matching_paid_pool_identity_groups": 200,
+  "matched_continuation_parameter_files_available_groups": 199,
+  "per_method_parameter_echo_validated": {
+    "K_new": 199,
+    "M_new": 199,
+    "C_ref": 198
+  },
+  "external_gpx_verified_calls": 600,
+  "common_paid_seconds": {
+    "n": 200,
+    "min": 51.16015079999852,
+    "mean": 51.394000559999704,
+    "median": 51.420571550000204,
+    "max": 51.48741239999799
+  },
+  "external_gpx_call_launch_to_observed_job_zero_seconds": {
+    "n": 600,
+    "min": 0.027749800003221026,
+    "mean": 0.043678666166658026,
+    "median": 0.04237220000140951,
+    "max": 0.09325080000417074
+  },
+  "external_gpx_per_k_total_launch_to_observed_job_zero_seconds": {
+    "n": 200,
+    "min": 0.09358990000328049,
+    "mean": 0.13103599849997408,
+    "median": 0.12663999999131192,
+    "max": 0.19131970000307774
+  },
+  "external_gpx_per_k_total_job_cpu_seconds": {
+    "n": 200,
+    "min": 0.0,
+    "mean": 0.04046875,
+    "median": 0.046875,
+    "max": 0.09375
+  },
+  "gpx_last_child_verified_charged_seconds_all_k": {
+    "n": 200,
+    "min": 52.75140370000008,
+    "mean": 53.04172420899935,
+    "median": 53.06555814999956,
+    "max": 53.24092959999689
+  },
+  "m_lkh_launch_charged_seconds_matched_valid": {
+    "n": 198,
+    "min": 52.54592330000014,
+    "mean": 52.80346691111055,
+    "median": 52.82931080000344,
+    "max": 52.930368200002704
+  },
+  "k_lkh_launch_charged_seconds_matched_valid": {
+    "n": 198,
+    "min": 52.7701689999958,
+    "mean": 53.065886899999676,
+    "median": 53.08886264999819,
+    "max": 53.26604849999421
+  },
+  "paired_k_minus_m_lkh_launch_seconds_matched_valid": {
+    "n": 198,
+    "min": 0.15534399999887682,
+    "mean": 0.26241998888912293,
+    "median": 0.2586434000004374,
+    "max": 0.40556890000152634
+  },
+  "terminal_failures": [
+    {
+      "slot": 12,
+      "run_id": "REVIEW20_MAIN_gr9882_761_C_ref",
+      "status": "execution_error",
+      "reason": "disk_full"
+    },
+    {
+      "slot": 56,
+      "run_id": "REVIEW20_MAIN_ei8246_981_K_new",
+      "status": "monitor_invalid",
+      "reason": "sustained_system_paging_pressure"
+    },
+    {
+      "slot": 408,
+      "run_id": "REVIEW20_MAIN_C10k.0_2301_M_new",
+      "status": "monitor_invalid",
+      "reason": "physical_memory_preflight_rejection"
+    },
+    {
+      "slot": 433,
+      "run_id": "REVIEW20_MAIN_C10k.2_1201_C_ref",
+      "status": "monitor_invalid",
+      "reason": "sustained_system_paging_pressure"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "archive": "R3_596条原始交付路线_仅作者受控.zip",
+  "sha256": "03d302bdcf6db83785299f186dc8f0389314e81358623311f919af29f74a2cf3",
+  "archive_bytes": 16727097,
+  "zip_members": 616,
+  "original_tour_members": 596,
+  "original_map_byte_members": 0,
+  "validation": "CRC and every uncompressed SHA256 checked from the complete new ZIP; 596 eligible run identities bound to unchanged source ledger.",
+  "outside_review_status": "local author-controlled; no external access or upload made"
+}

@@ -1,0 +1,14 @@
+{
+  "source_analysis_hashes_sha256": "aeded39967c106f1767be8f05c3620515655f37db9329a8b84fcc9edaf488ded",
+  "terminal_slots": 600,
+  "verified_routes": 596,
+  "figures_generated": true,
+  "files": {
+    "作者终态摘要.md": "7b2ae0c90f04f5fa5ee7a1176c96744b9240d2a3c2a158d58c62ae91bb663b18",
+    "图1_逐图有效配对改善_ppm.pdf": "f7a6357f55e86e5ee2e08b4d3f7b2fb384d162c580cc93a07d14a7ed062af91c",
+    "图1_逐图有效配对改善_ppm.png": "1bf5c0855f8fbcbfea2ce274d81b32b1b976724e15a9cf42d17548359a8ebf1e",
+    "图2_有效逐种子配对改善分布_ppm.pdf": "1b65ee85e0d5e46ec27b8f98cc3d3de6e56829bfb850b198bf7ce61ba4f5318c",
+    "图2_有效逐种子配对改善分布_ppm.png": "b57ff89a799bbe9c9301040cca5a6666a33e930ab83b9d91def525756207a923",
+    "失败与交付_逐图.csv": "6b12f63331ddcff09fe46da0b32fb34e20d39603398fccb0f8cd5acc60c52c38"
+  }
+}

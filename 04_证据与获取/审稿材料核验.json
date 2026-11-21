@@ -1,0 +1,273 @@
+{
+  "scope": "evidence-and-access package; historical artifacts copied, portable tests executed, no new solves",
+  "review_date_beijing": "2026-11-21",
+  "files_checked": 67,
+  "relative_links_checked": 62,
+  "relative_links": [
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "当前实验范围.md"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "原始证据/formal/analysis/统计结果.json"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "地图获取/map_manifest.csv"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "路线核验/route_manifest.csv"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "路线核验/596条冻结路线_隔离复验.json"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "地图获取/DIMACS_隔离再生成复验.json"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "地图获取/源站直取复验.json"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "版本与补丁索引/rebuild_common_a01/relink_receipt.json"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "版本与补丁索引/gpx_bridge_candidate/build_receipt.json"
+    },
+    {
+      "markdown": "Reviewer_Access_EN.md",
+      "target": "原始证据/formal/main_admission.json"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md",
+      "target": "地图历史证据/phase_b_instances/usa13509_acquisition_exposure.json"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md",
+      "target": "地图历史证据/phase_b_instances/check_usa13509.py"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md",
+      "target": "地图历史证据/phase_b_instances/preformal_panel_disposition.csv"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md",
+      "target": "地图历史证据/phase_b_instances/preformal_panel_disposition.json"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/preformal_panel_disposition.csv"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/candidate_manifest_verified.csv"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/instance_acquisition_receipt.json"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/exposure_audit.json"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/build_candidates.py"
+    },
+    {
+      "markdown": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md",
+      "target": "地图历史证据/phase_b_instances/check_exposure.py"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "当前实验范围.md"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/preformal_panel_disposition.csv"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/B3_地理末位技术备选登记.md"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/candidate_manifest_verified.csv"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/instance_acquisition_receipt.json"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/exposure_audit.json"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/build_candidates.py"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "地图历史证据/phase_b_instances/check_exposure.py"
+    },
+    {
+      "markdown": "地图历史证据/七个地图链接复核.md",
+      "target": "证据与审稿访问.md"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/formal/recovery_progress_0600.json"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/完成日志.txt"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/formal/analysis/统计结果.json"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/phase_b_design/主实验800_候选账本.csv"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/phase_b_design/机制诊断800_候选账本.csv"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/原预登记候选.md"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/formal/execution_scope.json"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/formal/recovery_slot0012_disk_full.json"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/paging_resume_r1/resume_0056.json"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/memory_resume_r1/resume_0408.json"
+    },
+    {
+      "markdown": "当前实验范围.md",
+      "target": "原始证据/memory_resume_r2/resume_0433.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "当前实验范围.md"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "Reviewer_Access_EN.md"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "原始证据/formal/analysis/analysis_hashes.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "路线核验/596条冻结路线_隔离复验.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图获取/map_manifest.csv"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图获取/源站直取复验.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图获取/DIMACS_既有生成回执.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图获取/DIMACS_隔离再生成复验.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图历史证据/phase_b_instances/B3_实例来源_规模与暴露核查.md"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图历史证据/七个地图链接复核.md"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图历史证据/phase_b_numeric/final_panel_distance_model_binding.csv"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "路线核验/route_manifest.csv"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "路线核验/596条冻结路线_隔离复验.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "地图获取/源站直取复验.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "版本与补丁索引/rebuild_stock_a01/build_status.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "版本与补丁索引/rebuild_common_a01/relink_receipt.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "版本与补丁索引/gpx_bridge_candidate/build_receipt.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "版本与补丁索引/binding_a01/binding.json"
+    },
+    {
+      "markdown": "证据与审稿访问.md",
+      "target": "原始证据/formal/main_admission.json"
+    }
+  ],
+  "seven_original_distinct_map_targets_matching_original_bytes": [
+    "B3_地理末位技术备选登记.md",
+    "build_candidates.py",
+    "candidate_manifest_verified.csv",
+    "check_exposure.py",
+    "exposure_audit.json",
+    "instance_acquisition_receipt.json",
+    "preformal_panel_disposition.csv"
+  ],
+  "official_non_generated_maps_with_exact_live_bytes": 10,
+  "DIMACS_original_archive_live_hash_matched": true,
+  "exact_generated_maps_from_bound_local_generators": 10,
+  "saved_routes_independently_verified_in_isolated_directory": 596,
+  "frozen_lkh_source_archive_local_sha256": "632567cce753a89448920b330e39326f8aca2ca97b9c25342025122face1bd1d",
+  "lkh_exact_upstream_network_status": "timeout; this does not establish public access to exact archive, patches or frozen binaries",
+  "external_full_tour_endpoint": "awaiting author rights and journal-approved access",
+  "restricted_coordinate_tour_solver_binaries_and_upstream_source_present": false
+}

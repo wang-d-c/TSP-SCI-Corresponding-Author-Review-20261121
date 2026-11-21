@@ -1,0 +1,25 @@
+{
+  "phase": "main",
+  "row": {
+    "slot": "408",
+    "run_id": "REVIEW20_MAIN_C10k.0_2301_M_new",
+    "stratum": "02_DIMACS_clustered",
+    "map": "C10k.0",
+    "n": "10000",
+    "input_sha256": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+    "pool_seed": "2301",
+    "method": "M_new",
+    "within_group": "4",
+    "budget_s": "90",
+    "request_at_s": "85.0",
+    "stop_proof_before_s": "86",
+    "certify_before_s": "88",
+    "cleanup_before_s": "90",
+    "state": "planned_not_started_unadmitted"
+  },
+  "version": "review20_common_lkh_85_r3",
+  "time": "2026-11-20T21:01:47+08:00",
+  "admission_sha256": "10444a1b7826f0d7f4566b200fa1cbfe3b0355fed7535de5a77410c2341624b7",
+  "continuation_policy_sha256": "64e3936ec8b241cc3600ba94e6ebb5f7b60d933e3234dfbde544687dfe7aaf08",
+  "available_storage_before_bytes": 21719703552
+}

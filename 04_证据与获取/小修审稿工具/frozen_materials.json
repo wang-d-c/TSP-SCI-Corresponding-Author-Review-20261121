@@ -1,0 +1,304 @@
+{
+  "scope": "Project-owned verifier and parameter tooling staged. Full solver execution remains conditional on separately authorized files.",
+  "experiment_version": "review20_common_lkh_85_r3",
+  "native_upstream_sha256": "632567cce753a89448920b330e39326f8aca2ca97b9c25342025122face1bd1d",
+  "common_engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+  "gpx_bridge_sha256": "89764c8ad58e9a190ec37b8277f0c798a58fdb72bdcb0d5599fc337a5d027919",
+  "parameters": {
+    "C_ref.par": "7a17b56a0f8881305d95bf82d170258426de9690bcfad9d5aadcf59cc026fe01",
+    "P1.par": "7a17b56a0f8881305d95bf82d170258426de9690bcfad9d5aadcf59cc026fe01",
+    "P2.par": "ab5535c635554636b4ad90589d6d80a8556e8f47612e2ebf243145ccfbdbcf6c",
+    "P3.par": "df2c7fe608ee87b1c9227c4e4a0bdac1c3d1daa913acadef259df7578dadd3e5",
+    "M_new_resume.par": "d7d5055f911ade3de12d67385a6c2ae74a75ae31d387eedd45695a3947923227",
+    "K_new_resume.par": "d7d5055f911ade3de12d67385a6c2ae74a75ae31d387eedd45695a3947923227"
+  },
+  "base_seed_parameter_sample": 541,
+  "seed_offsets_from_base": {
+    "C_ref": 0,
+    "P1": 0,
+    "P2": 1000,
+    "P3": 2000,
+    "M_new_resume": 3000,
+    "K_new_resume": 3000
+  },
+  "substituted_upstream_object_inputs": {
+    "Ascent": "cda62c286fcc6cd43dc74ed37f233d3809822034ffdfba5764fb31cc58c7a7dd",
+    "AddTourCandidates": "0f093e9b690b706007d6eb60f044f224e1f82a8a8051c7850804d8eae6f4083a",
+    "FindTour": "97af1de112eb88ef3dfc59ff50db586ca0637dac9de94fbb9e62ebec6a5acb30"
+  },
+  "gpx_bridge_adapter_sha256": "0888b1670ba6a50f7ff9ad273da91bbafd41ed38bd449afe8c80a7d97583e331",
+  "build_materials_current_status": "Hash-indexed. Exact upstream redistribution, derivatives, PE binaries and complete runtime authorization are pending.",
+  "exact_bound_items": [
+    {
+      "artifact": "outputs/lkh_v24_20261114/inputs/pcb3038.tsp",
+      "sha256": "25081ac540357ec34935a4b366f32e58b0d605565b888f876211769ec972b87a",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_2_evidence_20261116/confirmation/candidate_maps/V242-RUE-1500.tsp",
+      "sha256": "5e32c48d9b89f5905a2c84e9ff29282a372c65110bc393f044a15768ca036e91",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_3_confirmation_20261116/formal_216/r4/stop_proof/owned_job_stop.py",
+      "sha256": "b690c6528cf8d7c22754b34cc231f64ff0332883fd46b5ab5ab5633f7d979528",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_local_20261116/external_wrapper/diagnose_pdh.py",
+      "sha256": "7b8c530e85fd44ea8be4f0c26f867d370626c6c156ecd4f202f0a5ac4e38a0f7",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_local_20261116/external_wrapper/pdh_guard_candidate.py",
+      "sha256": "3d6f186fe3a18e114af08600fb8cf2c18c9649a6be256afc8a490d1940c58e56",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_local_20261116/external_wrapper/resource_policy.py",
+      "sha256": "0a73db27933d21262e7122f7a740eca3ad59aa3b76e480bacce1f315f33b0feb",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_local_20261116/recovery_r1/job_supervisor.py",
+      "sha256": "8682b7eec798b3daf99704e8457d6036a7e6c3d8577dc1b70e099c35e0154f98",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_local_20261116/recovery_r1/shared_paging.py",
+      "sha256": "874134bfadfb0b303a3f0dd3f7c4f8dc896e0e5f2c639521316506e09b5afdbb",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_v24_local_20261116/recovery_r1/system_sampler.py",
+      "sha256": "e4d4b2b397d4dfb0c4ee091c4073053d2c27e3885a9b0dc5def905feb054d869",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/lkh_windows_native_20261113/runtime_io_immutable/windows_platform.py",
+      "sha256": "df3d0d26728ede5e015e9317a77bf0baf76a1f3e275207e6d41f195b8f0e2954",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/fnc19402.tsp",
+      "sha256": "16ebd7bfd6df17b5cc308a8fe1746d1f2142106b6d6a9e0c9cd0d24210d32609",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_gpt_diagnosis_v2_20261119/eax_formal_binding/frozen/frozen_guard.py",
+      "sha256": "e2665e407d9147e879bba501e9a08a9078da15735599a255122dc54357c9700a",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r2/owned_launch_check_a01/check_receipt.json",
+      "sha256": "4a051facf92c0406e393a31b09e1368c3428dd04df6706a2c5020652c25abeb8",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/analyze_core.py",
+      "sha256": "08c2164abda1fa8f80bbe9da9173f277243473e12abd59a24666bcee1116ee7b",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/formal/execution_scope.json",
+      "sha256": "6932f05a9dca7035bb43ea675c9b0eacdb0292b1b71121063e20e1b6bcfa1d68",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/methods.py",
+      "sha256": "207a562542c4ee1ba2d887f503fa4b70d399dbb4d7ed61151433f765ee82a0a4",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/owned_launch.py",
+      "sha256": "f20051697090933434781c5d2c46c93bc017dbe934d87d117a1493d797d39809",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/owned_runtime.py",
+      "sha256": "4b4baae3fa35aaca2b45f42156fdb9810112ae1c8a7b177ea9e7099e6db2bb8f",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/qualification_plan.md",
+      "sha256": "7ff91419e14004ead22becd0d9e71b3c1f79737e74e97c13518363dfb47a0b29",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/run_study.py",
+      "sha256": "090297bf8dd1dd744b1062825f153651584f93e1fc6a186fa49ef6ee669deb29",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_common_r3/study_state.py",
+      "sha256": "843457b40cfe878b67d0fbd90e2c0696980978c68a6631f8ae804116dc524032",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_design/主实验800_候选账本.csv",
+      "sha256": "aa04d75c5e70919f5f10ca2ebee2f16cfdbf39a38315c573ab05e81bfd3c57bc",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_design/机制诊断800_候选账本.csv",
+      "sha256": "6abe31e02d6fba0ff0d90c1d094a607843d61a1311dcab204a623a3b98add026",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/C10k.0.tsp",
+      "sha256": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/C10k.1.tsp",
+      "sha256": "97c7012bad8eeed4e5f5f66062539b016786b71ed48b937874479eb4044dbac9",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/C10k.2.tsp",
+      "sha256": "995a3e9b9ddbabd222bd00b937a1cf932a35f3ab5fe5398161e5f65d9d5184ac",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/dga9698.tsp",
+      "sha256": "993a469b3c9c45ca65f283d4c7e99cb52550fd8eddb6709be92718bc66245eed",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/E10k.0.tsp",
+      "sha256": "57ed8b6a79233c00011086bc063b896bc91b2e6762cecfbc151d9a06eaa17353",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/E10k.1.tsp",
+      "sha256": "fc9e90375bbda42457e9ae45c417e79cd4ab1dd5a8c46b5aae1ac53b4279ba90",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/E10k.2.tsp",
+      "sha256": "b8edac31f47ce732ba2d66dca0667b6d5f4f8f79b19c6e8d33344c7ebccf7eb5",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/ei8246.tsp",
+      "sha256": "3bc6e2f70e7631526a539f39ac6f38a178fa14e5997d51d079f9822f8148518e",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/fi10639.tsp",
+      "sha256": "2499b941abfb1d59fa9d7ddf5ff76dfa2e646dcb260580b6ec26da2b10544450",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/genC12k.seed100003.tsp",
+      "sha256": "e42e3e78055ed1c9d55cd47ca1616e9cdc4b3e0bf0c7c4fa51b13ae626ed0391",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/genC15k.seed100004.tsp",
+      "sha256": "f64a118d9fc822a39dfe80eeac5f363426dd090893ecc60d651b32047f57771e",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/genE12k.seed100006.tsp",
+      "sha256": "16d0941db34c91cd71bcc4d9afa3804f984c13847c60d0471acd1f3c9c1c55af",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/genE15k.seed100007.tsp",
+      "sha256": "4db8a61c7a65e0b0ff33bf5314fea027d9c467bf65566c88f87fe00cbfe148e0",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/gr9882.tsp",
+      "sha256": "f53bedc46af763d380aceaf8c661b600bc569b38c07d72456bc6df4645a3b60e",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/ja9847.tsp",
+      "sha256": "5845b29c01cece9311a7aa2c37df6bed653b3825ad839adce6f355a894c3304f",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/usa13509.tsp",
+      "sha256": "f2d7c9f97b9b343b868c72388241e803f099af551e563a10e183778b7e38ada1",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/xia16928.tsp",
+      "sha256": "a85d5b59483739e9fc8f3e4920564275f9989a01d1ec11aa70d0090e73513e35",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/xmc10150.tsp",
+      "sha256": "741042260c9739d9a24813ed1bdaab5860a6b39e4d48c388de2d27903c132074",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/xrb14233.tsp",
+      "sha256": "16ba6922d7957e154da56378695228057a930e8b346ba95ca656c14c2d314912",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/xvb13584.tsp",
+      "sha256": "d195e3c66e756b367f843d37fda7a0f1d53a7106d303f7e8910cbecd366cf316",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_instances/preformal_panel_disposition.csv",
+      "sha256": "fccf69521067d77062291095311d539b9546b974b20a30b6c16c23d18d856a9a",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_numeric/euc2d_verify.py",
+      "sha256": "97bb29723bfdeedc14ab5692e6c34f26f3c4b6a4ec9e0aac768e4e2a8961093c",
+      "status": "staged_project_owned_author_tool"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_numeric/final_panel_distance_model_binding.csv",
+      "sha256": "4bc309c70e2acf8cb40aa5f39d5e04af8f4b6ad8c64fa9d409cb96965610851c",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_source/bind_author_lkh.py",
+      "sha256": "5bd0218284dcb7af1b9c6a810110d2fa37973e7847bc1a35efe4f08cfb58beec",
+      "status": "staged_project_owned_author_tool"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_source/gpx_bridge_candidate/build_receipt.json",
+      "sha256": "8c0cd4a3171bad95ef77829631b611b99592bb2e4bdf76bf7dc3a90f598d30ab",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_source/gpx_bridge_candidate/gpx_review.exe",
+      "sha256": "89764c8ad58e9a190ec37b8277f0c798a58fdb72bdcb0d5599fc337a5d027919",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_source/rebuild_common_a01/LKH-review-common.exe",
+      "sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/phase_b_source/rebuild_common_a01/relink_receipt.json",
+      "sha256": "ccfab24576112d01d01c6bab529054eecab5777e9533e98363d11e90c4b7ace4",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "outputs/tsp_review_execution_20261120/新实验预登记候选.md",
+      "sha256": "0c9729aeb59b845572bfa5271ccbdf46222e80543cb7572a2721a5d9f591d3f2",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "external_toolchain/__init__.py",
+      "sha256": "b4f4a4154a17f441adbca883cd17123188546c79487456c2c39edae32b0dccb1",
+      "status": "not_staged_provider_or_author_access_required"
+    },
+    {
+      "artifact": "external_toolchain/python.exe",
+      "sha256": "7679e53fa969789309e81fdad0d52b8cda5f83c9abf7cb31a3c58bf24b31e264",
+      "status": "not_staged_provider_or_author_access_required"
+    }
+  ],
+  "recognised_original_analysis_receipt_sha256": "aeded39967c106f1767be8f05c3620515655f37db9329a8b84fcc9edaf488ded"
+}

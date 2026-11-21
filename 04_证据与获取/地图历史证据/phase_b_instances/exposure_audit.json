@@ -1,0 +1,358 @@
+{
+  "scope": "Loose project outputs only. The two enumerated old unrun-design data caches are prequalification staging. Candidate-phase files, archived ZIP contents, and remote disks excluded. Normalized points allow translation and city permutation, not rotation/reflection or scale. No performance values used.",
+  "staging_prefixes_verified_against_prior_zero_formal_record": [
+    "outputs/tsp_gpt_diagnosis_v2_20261119/design/",
+    "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/"
+  ],
+  "scanned_instance_files": 6755,
+  "matching_dimension_files": 2892,
+  "unique_successfully_parsed_instance_byte_hashes": 115,
+  "header_missing_count": 6,
+  "header_missing_paths": [
+    "outputs/lkh_v24_3_confirmation_20261116/formal_216/eax_segment_repair/parser_followup/synthetic_tests_a01/missing_dimension.tsp",
+    "outputs/lkh_v24_3_confirmation_20261116/formal_216/eax_segment_repair/parser_followup/synthetic_tests_a01/missing_colon.tsp",
+    "outputs/lkh_v24_3_confirmation_20261116/formal_216/r4/eax_parser/synthetic_test_a02/missing_dimension.tsp",
+    "outputs/lkh_v24_3_confirmation_20261116/formal_216/r4/eax_parser/synthetic_test_a02/missing_colon.tsp",
+    "outputs/lkh_v24_3_confirmation_20261116/formal_216/r4/eax_parser/synthetic_test_a01/missing_dimension.tsp",
+    "outputs/lkh_v24_3_confirmation_20261116/formal_216/r4/eax_parser/synthetic_test_a01/missing_colon.tsp"
+  ],
+  "unreadable": [],
+  "matching_dimension_parse_errors": [],
+  "candidate_file_matches": {
+    "dga9698": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/dga9698.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/dga9698.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/dga9698.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "xmc10150": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/xmc10150.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/xmc10150.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/xmc10150.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "xvb13584": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/xvb13584.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/xvb13584.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/xvb13584.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "xrb14233": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/xrb14233.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/xrb14233.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/xrb14233.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "xia16928": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/xia16928.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/xia16928.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/xia16928.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "pjh17845": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/pjh17845.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/pjh17845.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/pjh17845.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "frh19289": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/frh19289.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/frh19289.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/frh19289.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "ida8197": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/ida8197.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/ida8197.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/ida8197.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "C10k.0": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/C10k.0.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_translated_candidates/C10k.0.tsp",
+        "match": "same_geometric_points_after_translation_and_relabeling",
+        "candidate_staging": true
+      }
+    ],
+    "C10k.1": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/C10k.1.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_translated_candidates/C10k.1.tsp",
+        "match": "same_geometric_points_after_translation_and_relabeling",
+        "candidate_staging": true
+      }
+    ],
+    "C10k.2": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/C10k.2.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_translated_candidates/C10k.2.tsp",
+        "match": "same_geometric_points_after_translation_and_relabeling",
+        "candidate_staging": true
+      }
+    ],
+    "genC12k.seed100003": [],
+    "genC15k.seed100004": [],
+    "genC10k.seed100005": [],
+    "genC17k.seed100006": [],
+    "E10k.0": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/E10k.0.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/E10k.0.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/E10k.0.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "E10k.1": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/E10k.1.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/E10k.1.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/E10k.1.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "E10k.2": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/E10k.2.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/E10k.2.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/E10k.2.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "genE12k.seed100006": [],
+    "genE15k.seed100007": [],
+    "genE10k.seed100003": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/genE10k.seed100003.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/genE10k.seed100003.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/genE10k.seed100003.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "genE10k.seed100004": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/genE10k.seed100004.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/genE10k.seed100004.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/genE10k.seed100004.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "genE10k.seed100005": [
+      {
+        "file": "outputs/tsp_corresponding_author_review_20261119/previous_desktop_archive/TSP_SCI_论文与完整实验资料_20261118_新版/09_GPT诊断v2交付/本地新批次输入/genE10k.seed100005.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/dimacs_generated/private_inputs/genE10k.seed100005.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      },
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/genE10k.seed100005.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "ja9847": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/ja9847.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "gr9882": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/gr9882.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "fi10639": [],
+    "mo14185": [],
+    "it16862": [],
+    "kz9976": [],
+    "ei8246": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/ei8246.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "ym7663": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/ym7663.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "eg7146": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/eg7146.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ],
+    "tz6117": [
+      {
+        "file": "outputs/tsp_gpt_diagnosis_v2_20261119/design/private_inputs/tz6117.tsp",
+        "match": "byte_identical",
+        "candidate_staging": true
+      }
+    ]
+  },
+  "execution_index_name_matches": {
+    "outputs/tsp_gpt_diagnosis_v2_20261119/eax_formal_binding/runs/Q19402/qualification.json": [
+      "fnc19402"
+    ],
+    "outputs/tsp_gpt_diagnosis_v2_20261119/eax_formal_binding/runs/Q19402/result.json": [
+      "fnc19402"
+    ]
+  },
+  "explicit_engineering_exclusion": "fnc19402, engineering run Q19402"
+}

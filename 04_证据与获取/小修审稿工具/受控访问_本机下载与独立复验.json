@@ -1,0 +1,20 @@
+{
+  "test_scope": "Authorized local author staging, loopback HTTP transfer and independent clean-directory verification. The temporary localhost server was stopped. No public or institutional reviewer URL was created.",
+  "transport": "HTTP 200 on ephemeral 127.0.0.1 port only, one archive GET; SHA256 preserved after download.",
+  "archive_sha256": "03d302bdcf6db83785299f186dc8f0389314e81358623311f919af29f74a2cf3",
+  "zip_members_verified": 616,
+  "frozen_map_inputs_independently_supplied": 20,
+  "valid_saved_tours_verified": 596,
+  "invalid_tours": 0,
+  "map_distribution": {
+    "direct": 9,
+    "generate": 10,
+    "gzip": 1
+  },
+  "map_verified_output": "20 map hashes verified",
+  "route_verified_output": "596/596 verified",
+  "sample_configuration_hashes_matched": 6,
+  "frozen_binding_and_relink_tools": "started only with --help; no binaries compiled and no solver launched",
+  "external_approval_status": "awaiting author permission and actual journal or institution access mechanism",
+  "solver_executions": 0
+}

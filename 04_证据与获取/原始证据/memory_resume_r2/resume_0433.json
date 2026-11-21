@@ -1,0 +1,125 @@
+{
+  "time": "2026-11-20T21:53:13+08:00",
+  "run_id": "REVIEW20_MAIN_C10k.2_1201_C_ref",
+  "slot": "433",
+  "original_status": "monitor_invalid",
+  "classification": "sustained_system_paging_pressure",
+  "next_run_id": "REVIEW20_MAIN_C10k.2_1201_K_new",
+  "scored": false,
+  "retry": false,
+  "evidence": {
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\dispatch.json": "638209b0773ea501efcc7ee25a665067a929ddf562778b925ebc08851b404532",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\terminal.json": "40c380e53bef2aa7e40eda71ad44ab4a12447c68e31bebcec63d56f63cddfcc7",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\result.json": "62fe4800bb46e0a57e04a7162a7527c8eacbc9092209fa5014e04fa06b80f3fd",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\completion.json": "b695002c0a27aa8a931fb37faee524c179ba12008fc2ebce3de0975ec1c9ad17",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\search\\owned\\stage_receipt.json": "22ac48dd73fdf3fcb1cac9c8f358fb8ab6d7571382fde785b49fed764a4305c3",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\search\\owned\\job_events.jsonl": "4dbc98ac09fbac5bdb4fce88b3de108e8e7ee9da190638603be27505720400f1",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\method_system\\summary.json": "772813677d80d49b6af0bf3b15f092de8d06ac699d7566c36d7cdd4eacb361bb",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\method_system\\monitor_receipt.json": "d749c7c57b9d3e31a82f0ab163c50285236ea847c51cd7c4c28d981b24de8280",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433\\result\\method_system\\system_samples.jsonl": "59df2fbcfb8580404a96f1a4b1b588bed6c779133ec811a6c588d8d0eba0b0aa",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r2\\observe_433_20261120_215205_117623\\summary.json": "419612705d666cb84b68f29140eaf463080e6aa7ac41e92efca49bf17385b097",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r2\\observe_433_20261120_215205_117623\\system_samples.jsonl": "58700f998cfbf6bbc3241252e650d9a090cceb11413ef5f6cc4a5661bfbb1f60",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r1\\observe_433_20261120_214706_159039\\summary.json": "ffbe2dcc721b498eec1c2eb71c31f713e7e60b541b63e02f7ba1ad00ae032aa6",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r1\\observe_433_20261120_214706_159039\\system_samples.jsonl": "b2d6c640f03a55aa0a3c6f2c5576469636bc402b1a770cc8cf0c4113e1f0f1ce"
+  },
+  "observation": {
+    "path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r2\\observe_433_20261120_215205_117623",
+    "trace": {
+      "system_samples": 272,
+      "paging_samples": 67,
+      "max_interval_s": 0.25386750000325264,
+      "first_observed_monotonic": 45076.3349831,
+      "last_observed_monotonic": 45144.1806913,
+      "covered_native_windows_monotonic": [],
+      "minimum_available_bytes": 29898600448,
+      "peak_system_commit_bytes": 27207086080,
+      "sampler_cpu_s": 0.359375,
+      "sampling_trace_sha256": "58700f998cfbf6bbc3241252e650d9a090cceb11413ef5f6cc4a5661bfbb1f60"
+    },
+    "summary_sha256": "419612705d666cb84b68f29140eaf463080e6aa7ac41e92efca49bf17385b097",
+    "current": {
+      "available_physical_bytes": 30321852416,
+      "total_physical_bytes": 50870607872,
+      "ac_power": true,
+      "solver_cpu": 0,
+      "sampler_cpu": 1,
+      "per_process_commit_limit_bytes": 4294967296,
+      "physical_memory_floor_bytes": 8589934592
+    }
+  },
+  "prior_full_ledger": {
+    "planned": 800,
+    "started": 325,
+    "valid": 321,
+    "failed": 4,
+    "running_or_interrupted": 0,
+    "not_started": 475,
+    "eax_deferred_not_started": 200,
+    "mechanism_deferred_not_started": 0,
+    "first_dispatch": {
+      "run_id": "REVIEW20_MAIN_genC12k.seed100003_1421_K_new",
+      "time": "2026-11-20T11:33:44+08:00",
+      "location": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0002",
+      "method_or_start": "K_new"
+    },
+    "latest_dispatch": {
+      "run_id": "REVIEW20_MAIN_C10k.2_1201_C_ref",
+      "time": "2026-11-20T21:45:52+08:00",
+      "location": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0433",
+      "method_or_start": "C_ref"
+    },
+    "by_status": {
+      "not_started": 475,
+      "valid": 321,
+      "monitor_invalid": 3,
+      "execution_error": 1
+    },
+    "by_method": {
+      "EAX_ref": {
+        "not_started": 200
+      },
+      "K_new": {
+        "valid": 107,
+        "monitor_invalid": 1,
+        "not_started": 92
+      },
+      "M_new": {
+        "valid": 107,
+        "monitor_invalid": 1,
+        "not_started": 92
+      },
+      "C_ref": {
+        "valid": 107,
+        "monitor_invalid": 1,
+        "not_started": 91,
+        "execution_error": 1
+      }
+    },
+    "formal_gate_open": true,
+    "gate_error": null,
+    "external_adjudications": [
+      {
+        "sha256": "05e2d1dac86b1533626a72e01af4eea6fe8843c186c5ceef9f2db8773dc66499",
+        "path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\recovery_slot0012_disk_full.json",
+        "run_id": "REVIEW20_MAIN_gr9882_761_C_ref",
+        "cause": "disk_full",
+        "status": "execution_error"
+      }
+    ],
+    "disk_full": 1
+  },
+  "protected": {
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\paging_resume_r1\\resume_paging.py": "891cdcdd2a9fd9ad6ab0f1656fb6d76bc62ef4c18ab6ca7c9f9bf7e1374d6d7d",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\disk_full_resume_a01\\recover_core.py": "cb5678266ea8862c683b4b57be3b42de11febce0efac1de6af87b2fe83fed4a6",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\recovery_slot0012_disk_full.json": "05e2d1dac86b1533626a72e01af4eea6fe8843c186c5ceef9f2db8773dc66499",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\storage_resume_policy.json": "64e3936ec8b241cc3600ba94e6ebb5f7b60d933e3234dfbde544687dfe7aaf08",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main_admission.json": "10444a1b7826f0d7f4566b200fa1cbfe3b0355fed7535de5a77410c2341624b7",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r1\\resume_resources.py": "b2a47bc91b346641779159563835c75136d75c48270bf503db13db21f9e8a2b6",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r1\\dispatch_with_wait.py": "20b6d61fd103fc06ca5c1b0dccac5e42995c5720d177f253b3b453087c0e5821",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\paging_resume_r1\\resume_0056.json": "2e9b50b2efb3c61ce65829650c1ac02ecf2fde002a3034cb7d8db9a480ccf711",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\completion_delivery_r1\\finalize_delivery.py": "d89d212a620aceb60dd3f13ec265be6784dc2c80274175fcc48218d7f1a9a3f7",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r1\\resume_0408.json": "6e5c9e28f32674b1a6b0a54f1663c152b1d670dea1d086be9cfef34799e01d42",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\memory_resume_r2\\reenter_resources.py": "22a4237f1eb32dd85e74b11aae4450c793139879d0e6b8fb8bb9b17a0128f5ec"
+  },
+  "available_storage_before_bytes": 21029945344
+}

@@ -1,0 +1,31 @@
+{
+  "compiler": "gcc.exe (GCC) 16.2.0",
+  "code_sha256": "5f041f0b9d68f2397309880919bbfde3d286e1b10b042cc07285f632cee6080a",
+  "generator_source_sha256": {
+    "portgen": "7d03533e588a7f25e40dbca0fa68d605a7a277779dd1294fb87c857dd960d26b",
+    "portcgen": "30922a8e36f8afa7955532ba52be096b1e63f17faa6b3205a076e2ff6f6861dd"
+  },
+  "windows_compatibility": "Removed unused POSIX sys/times.h include from build copy; normalized generated stdout CRLF to LF.",
+  "observed_sample_container_sha256": "8e491c4be8145f0252b28fd33b0fdb9d3497486a3e5fec8f2338a62f4a074a39",
+  "sample_container_status": "received_prefix_with_complete_crc_verified_members",
+  "sample_check": {
+    "E": {
+      "sample_member": "E1k.1",
+      "byte_exact_after_LF": true,
+      "sample_sha256": "54941de898f8467b77a730dbcdf0f06dc304d98a8194a83d8308797285a8662a",
+      "coordinate_match": true
+    },
+    "C": {
+      "sample_member": "C1k.1",
+      "byte_exact_after_LF": true,
+      "sample_sha256": "a9a79d4f90c262bfad790354da8ed2e412d6bf43f1e644510860d5932d14ab73",
+      "coordinate_match": true
+    }
+  },
+  "official_output_byte_lengths_verified": 6,
+  "local_generator_derived_reserves": [
+    "genE10k.seed100003",
+    "genE10k.seed100004",
+    "genE10k.seed100005"
+  ]
+}

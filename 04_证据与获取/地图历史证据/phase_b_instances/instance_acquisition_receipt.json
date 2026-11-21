@@ -1,0 +1,16 @@
+{
+  "planned_methods_started": 0,
+  "primary_targets": 20,
+  "available_primary_bytes": 20,
+  "available_reserve_bytes": 13,
+  "unavailable": {},
+  "explicit_exclusions": {
+    "fnc19402": "Maximum-size EAX engineering attempt Q19402; reserved only as exposed engineering case."
+  },
+  "numeric_checks_not_admission": "Raw files, hashes, parser, ranges and structure only; all-method admission remains separate.",
+  "DIMACS_generator_archive_sha256": "5f041f0b9d68f2397309880919bbfde3d286e1b10b042cc07285f632cee6080a",
+  "generator_exe_sha256": {
+    "portgen": "bea169314fb9c9a7d2badeacddfad04417cc9320a17485cf2a649be5be9fca6e",
+    "portcgen": "ab8bc055366620a87c932ad08d4019a666f5b8a361494adfb4a2d248ebaf43bb"
+  }
+}

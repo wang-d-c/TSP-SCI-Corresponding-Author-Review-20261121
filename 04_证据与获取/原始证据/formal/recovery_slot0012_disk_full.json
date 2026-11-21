@@ -1,0 +1,65 @@
+{
+  "phase": "main",
+  "row": {
+    "slot": "12",
+    "run_id": "REVIEW20_MAIN_gr9882_761_C_ref",
+    "stratum": "04_Waterloo_geographic",
+    "map": "gr9882",
+    "n": "9882",
+    "input_sha256": "f53bedc46af763d380aceaf8c661b600bc569b38c07d72456bc6df4645a3b60e",
+    "pool_seed": "761",
+    "method": "C_ref",
+    "within_group": "4",
+    "budget_s": "90",
+    "request_at_s": "85.0",
+    "stop_proof_before_s": "86",
+    "certify_before_s": "88",
+    "cleanup_before_s": "90",
+    "state": "planned_not_started_unadmitted"
+  },
+  "version": "review20_common_lkh_85_r3",
+  "status": "execution_error",
+  "dispatch_sha256": "9bcc6a2f36812c1899bd38d09927692be9108a013779bcb94180dc8ac13b061d",
+  "isolated_signature": null,
+  "classification": "disk_full_invalid_no_scientific_result",
+  "original_attempt": {
+    "controller_launch": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\launch_a01.json",
+    "first_dispatch": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\dispatch.json"
+  },
+  "result": {
+    "reason": "disk_full",
+    "scored": false
+  },
+  "preserved_evidence": {
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\terminal.json.pending": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\result\\result.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\result\\search\\owned\\stage_receipt.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\result\\search\\owned\\job_events.jsonl": "47083539f198f78cae60d0eff76c3404c28c95433ce12c1d461a3c0ae86d1444",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\result\\method_system\\system_samples.jsonl": "8027e8eac57a7df632652bfc1db400cbc4f3c1a8e4bdd103e9a39aed780d36c3",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\controller_a01.stderr.log": "f935d8eb8761e5d8a3625e57ad4e49bd3e448032c6c33e043cf51228e0ce56c7",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\launch_a01.json": "3b5fa72b05660631700eaec7afdd8d26261cb58d50dc7e80bb90bc4254972c7d",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0012\\dispatch.json": "9bcc6a2f36812c1899bd38d09927692be9108a013779bcb94180dc8ac13b061d",
+    "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main_admission.json": "10444a1b7826f0d7f4566b200fa1cbfe3b0355fed7535de5a77410c2341624b7"
+  },
+  "policy": "only one disposition for this exact historical dispatch. No rerun or retroactive score.",
+  "registered_at_beijing": "2026-11-20T12:45:52+08:00",
+  "adjudication_id": "r3_main_0012_disk_full",
+  "old_owned_process_observations": [
+    {
+      "pid": 31532,
+      "state": "not_present"
+    },
+    {
+      "pid": 33104,
+      "state": "not_present"
+    },
+    {
+      "pid": 28660,
+      "state": "not_present"
+    },
+    {
+      "pid": 17568,
+      "state": "not_present"
+    }
+  ]
+}
