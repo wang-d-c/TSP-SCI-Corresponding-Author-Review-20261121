@@ -1,0 +1,13 @@
+{
+  "time_local": "2026-11-21T13:42:32.5424776+08:00",
+  "process_id": 42856,
+  "process_created_utc": "2026-11-21T05:42:32.5326331Z",
+  "protocol": "review_EAX_decimal_85_R13a01",
+  "executable": "D:\\anaconda3\\python.exe",
+  "command": "-B -X utf8 [LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\supervise_review_eax.py --start",
+  "stdout": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\controller_launches\\20261121_134232_512737_out.log",
+  "stderr": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\controller_launches\\20261121_134232_512737_err.log",
+  "supervisor_sha256": "3a7a793b458761278516f2e0612c2e98046562e0cf7ffa45734589419bec631f",
+  "contract_sha256": "f86a13532bce63b083728cc196e2746477f70d8fcf7eac4debbc0dbf5eff1e1f",
+  "receipt": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\controller_launches\\20261121_134232_512737_launch.json"
+}

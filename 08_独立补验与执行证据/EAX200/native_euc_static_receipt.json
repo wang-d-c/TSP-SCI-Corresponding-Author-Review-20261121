@@ -1,0 +1,18 @@
+{
+  "scope": "actual native read-only validation, zero EAX genetic search iterations or new scores",
+  "executable_sha256": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9",
+  "build_manifest_sha256": "16ea8d3b7037d4ab1101081a7e9bd749ba5dc4f776c2bfee6ab934a390d49e1b",
+  "checked_source_sha256": {
+    "main.cpp": "8d61f109b9e162046ccd50b78461917ec2c3873cfa2b35184b7f469b2b79837b",
+    "evaluator.cpp": "7efa9b439d17aa386cb43f46b4bb240515dc7bfbff8b4fcb7c15cb6079d45f44",
+    "indi.h": "b2d20bb4a8449c407b2d1908cf38978f94d08f32e36fa62f88efa10e34c7493d",
+    "cross.cpp": "24cd50699592868c970431b18a7c3870889eec70b29d2371e52e48ba7bee245f"
+  },
+  "signed_fractional_coordinates_matched": 60,
+  "exact_edge_distances_matched": 1770,
+  "closed_ordered_cost_int64": 5880000060,
+  "synthetic_fixture_sha256": "13bf76a2b9436f7e8fd4d20d6afcd85d08bae52d417839b1e330593370a34c87",
+  "native_validator_output_sha256": "92c599c839ae6a38c26e5ea07cf3c537bf9d182b67e144100f4fd3b523708b6a",
+  "native_exit_code": 0,
+  "formal_slots_started": 0
+}

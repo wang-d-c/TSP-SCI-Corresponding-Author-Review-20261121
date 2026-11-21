@@ -32,7 +32,7 @@
         "native": {
           "status": "passed",
           "command": [
-            "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
+            "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
           ],
           "native_started": true,
           "returncode": 0,
@@ -83,7 +83,7 @@
                 "peak_pagefile_usage_bytes": 5251072,
                 "sampled_peak_private_bytes": 417792,
                 "exit_code": 0,
-                "image": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
+                "image": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
                 "thread_observation": {
                   "count": 1,
                   "affinity": [
@@ -133,7 +133,7 @@
         "native": {
           "status": "passed",
           "command": [
-            "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
+            "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
           ],
           "native_started": true,
           "returncode": 0,
@@ -184,7 +184,7 @@
                 "peak_pagefile_usage_bytes": 5304320,
                 "sampled_peak_private_bytes": 401408,
                 "exit_code": 0,
-                "image": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
+                "image": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
                 "thread_observation": {
                   "count": 1,
                   "affinity": [
@@ -234,7 +234,7 @@
         "native": {
           "status": "passed",
           "command": [
-            "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
+            "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe"
           ],
           "native_started": true,
           "returncode": 0,
@@ -285,7 +285,7 @@
                 "peak_pagefile_usage_bytes": 5361664,
                 "sampled_peak_private_bytes": 417792,
                 "exit_code": 0,
-                "image": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
+                "image": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate\\gpx_review.exe",
                 "thread_observation": {
                   "count": 1,
                   "affinity": [
@@ -360,7 +360,7 @@
       "binary64_mismatch_count": 0,
       "binary64_mismatch_examples": []
     },
-    "pool_path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\p\\ei8246_981\\pool.json",
+    "pool_path": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\p\\ei8246_981\\pool.json",
     "pool_sha256": "7f43c96510eb5f243206037f466dcb272665a4b28a77f431d6ec5aea7b4870fe",
     "pool_seal_sha256": "f286f1bdecd945fe8434659c8ede232258f7fda13ab40669be49ba5b39c3b51d",
     "common_paid_s": 51.17942219999895,

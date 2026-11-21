@@ -1,0 +1,12 @@
+{
+  "checked_local_time": "2026-11-21T19:22:52+08:00",
+  "planned": 120,
+  "started": 120,
+  "terminal": 120,
+  "valid": 120,
+  "counts": {
+    "valid": 120
+  },
+  "en": "The separate diagnostic gave the following pool-specific results. C10k.0/981: 14/0/6 shorter/tied/longer in 20 valid seed pairs, mean +716.29 ppm and conditional seed bootstrap interval [+251.78, +1200.80] ppm. genC15k.seed100004/2521: 12/0/8 shorter/tied/longer in 20 valid seed pairs, mean -109.03 ppm and conditional seed bootstrap interval [-371.59, +139.14] ppm. genC15k.seed100004/1861: 8/0/12 shorter/tied/longer in 20 valid seed pairs, mean -219.79 ppm and conditional seed bootstrap interval [-664.72, +273.42] ppm.",
+  "zh": "C10k.0/981 的 20 个有效种子对为 14/0/6 短/平/长，均值 +716.29 ppm，条件种子重抽样区间 [+251.78, +1200.80] ppm。genC15k.seed100004/2521 的 20 个有效种子对为 12/0/8 短/平/长，均值 -109.03 ppm，条件种子重抽样区间 [-371.59, +139.14] ppm。genC15k.seed100004/1861 的 20 个有效种子对为 8/0/12 短/平/长，均值 -219.79 ppm，条件种子重抽样区间 [-664.72, +273.42] ppm。"
+}

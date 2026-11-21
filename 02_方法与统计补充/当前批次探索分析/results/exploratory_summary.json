@@ -1,0 +1,519 @@
+{
+  "scope": "Exploratory secondary analyses. The registered all-valid-pair K/M comparison remains the primary estimate.",
+  "scope_metrics": {
+    "executed": 600,
+    "valid": 596,
+    "total_groups": 200,
+    "valid_MK_pairs": 198,
+    "maps": 20
+  },
+  "inputs": {
+    "pairs": {
+      "path": "03_数据与复算/复算产物/paired_effects.csv",
+      "sha256": "508d84c0d6e336f158a74a6c4406277faa50d2745e7cff796fac315e95810a7c"
+    },
+    "runs": {
+      "path": "03_数据与复算/data/core_600_runs.csv",
+      "sha256": "f589f6382e02165ea575100b880b511b389a9691ce739feb638369d1d57bbbc7"
+    },
+    "pools": {
+      "path": "02_方法与统计补充/父池与费用版本核对_200组.csv",
+      "sha256": "009b69fa91e1a9a26b8656ba0dee566626424cfe017506d5744290fa442967ae"
+    },
+    "times": {
+      "path": "02_方法与统计补充/主臂计费事件_600项.csv",
+      "sha256": "8538d83789134fe74b16524e59f4a9c7135914f0d4e714eb09ab90012d7ddebd"
+    },
+    "design": {
+      "path": "04_证据与获取/原始证据/phase_b_design/主实验800_候选账本.csv",
+      "sha256": "aa04d75c5e70919f5f10ca2ebee2f16cfdbf39a38315c573ab05e81bfd3c57bc"
+    }
+  },
+  "all_valid_quality": {
+    "pairs": 198,
+    "maps": 20,
+    "shorter": 97,
+    "tied": 28,
+    "longer": 73,
+    "pair_mean_start_advantage_ppm": 95.90933933425596,
+    "map_equal_mean_start_advantage_ppm": 96.23723573627521,
+    "pair_mean_final_advantage_ppm": -8.769467280585875,
+    "map_equal_mean_final_advantage_ppm": -9.975553333876219,
+    "pair_mean_M_own_start_gain_ppm": 272.62705190996235,
+    "map_equal_mean_M_own_start_gain_ppm": 273.71922327745534,
+    "pair_mean_K_own_start_gain_ppm": 168.02515236552787,
+    "map_equal_mean_K_own_start_gain_ppm": 167.5862478775993,
+    "pair_mean_start_advantage_on_M_final_ppm": 95.95554885238862,
+    "map_equal_mean_start_advantage_on_M_final_ppm": 96.2841854331724,
+    "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -104.7250161329745,
+    "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -106.25973876704862,
+    "pair_mean_K_minus_M_launch_s": 0.26241998888912293,
+    "map_equal_mean_K_minus_M_launch_s": 0.2622905346113258,
+    "pair_mean_M_launch_to_job_zero_s": 32.21928065909072,
+    "map_equal_mean_M_launch_to_job_zero_s": 32.219340593777595,
+    "pair_mean_K_launch_to_job_zero_s": 31.956847540908967,
+    "map_equal_mean_K_launch_to_job_zero_s": 31.957037351055437,
+    "pair_median_start_advantage_ppm": 47.68113272736227,
+    "pair_median_final_advantage_ppm": 0.0
+  },
+  "start_relation_subsets": {
+    "shorter": {
+      "pairs": 181,
+      "maps": 20,
+      "shorter": 97,
+      "tied": 13,
+      "longer": 71,
+      "pair_mean_start_advantage_ppm": 104.91739882973856,
+      "map_equal_mean_start_advantage_ppm": 102.75536320894152,
+      "pair_mean_final_advantage_ppm": -9.295378970267246,
+      "map_equal_mean_final_advantage_ppm": -9.938827654790687,
+      "pair_mean_M_own_start_gain_ppm": 281.6309556995708,
+      "map_equal_mean_M_own_start_gain_ppm": 277.4163254369492,
+      "pair_mean_K_own_start_gain_ppm": 167.5021639293756,
+      "map_equal_mean_K_own_start_gain_ppm": 164.80346912767507,
+      "pair_mean_start_advantage_on_M_final_ppm": 104.96794846835883,
+      "map_equal_mean_start_advantage_on_M_final_ppm": 102.80467375133381,
+      "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -114.26332743862606,
+      "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -112.74350140612448,
+      "pair_mean_K_minus_M_launch_s": 0.26163042265212544,
+      "map_equal_mean_K_minus_M_launch_s": 0.2611002564624792,
+      "pair_mean_M_launch_to_job_zero_s": 32.21956575027601,
+      "map_equal_mean_M_launch_to_job_zero_s": 32.22116222017634,
+      "pair_mean_K_launch_to_job_zero_s": 31.957780901104815,
+      "map_equal_mean_K_launch_to_job_zero_s": 31.959955438595085,
+      "pair_median_start_advantage_ppm": 55.439417654223924,
+      "pair_median_final_advantage_ppm": 9.064377148877863
+    },
+    "same_sha256": {
+      "pairs": 17,
+      "maps": 11,
+      "shorter": 0,
+      "tied": 15,
+      "longer": 2,
+      "pair_mean_start_advantage_ppm": 0.0,
+      "map_equal_mean_start_advantage_ppm": 0.0,
+      "pair_mean_final_advantage_ppm": -3.17005458456658,
+      "map_equal_mean_final_advantage_ppm": -2.4495876335287208,
+      "pair_mean_M_own_start_gain_ppm": 176.76195862060166,
+      "map_equal_mean_M_own_start_gain_ppm": 180.99882999764856,
+      "pair_mean_K_own_start_gain_ppm": 173.59344100926674,
+      "map_equal_mean_K_own_start_gain_ppm": 178.5504300252534,
+      "pair_mean_start_advantage_on_M_final_ppm": 0.0,
+      "map_equal_mean_start_advantage_on_M_final_ppm": 0.0,
+      "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -3.17005458456658,
+      "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -2.4495876335287208,
+      "pair_mean_K_minus_M_launch_s": 0.27082654705950787,
+      "map_equal_mean_K_minus_M_launch_s": 0.2669287818189332,
+      "pair_mean_M_launch_to_job_zero_s": 32.216245276470815,
+      "map_equal_mean_M_launch_to_job_zero_s": 32.221529737878996,
+      "pair_mean_K_launch_to_job_zero_s": 31.94691000000025,
+      "map_equal_mean_K_launch_to_job_zero_s": 31.956569845454865,
+      "pair_median_start_advantage_ppm": 0.0,
+      "pair_median_final_advantage_ppm": 0.0
+    }
+  },
+  "order_all": {
+    "K_first": {
+      "pairs": 99,
+      "maps": 20,
+      "shorter": 56,
+      "tied": 13,
+      "longer": 30,
+      "pair_mean_start_advantage_ppm": 98.00014361468041,
+      "map_equal_mean_start_advantage_ppm": 101.58745337747655,
+      "pair_mean_final_advantage_ppm": 15.156198816819083,
+      "map_equal_mean_final_advantage_ppm": 15.470255536686745,
+      "pair_mean_M_own_start_gain_ppm": 255.9376346467177,
+      "map_equal_mean_M_own_start_gain_ppm": 260.01032056750773,
+      "pair_mean_K_own_start_gain_ppm": 173.1347610958615,
+      "map_equal_mean_K_own_start_gain_ppm": 173.93434677929176,
+      "pair_mean_start_advantage_on_M_final_ppm": 98.04996480688753,
+      "map_equal_mean_start_advantage_on_M_final_ppm": 101.64147139214141,
+      "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -82.89376599006845,
+      "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -86.17121585545466,
+      "pair_mean_K_minus_M_launch_s": 0.26169775757615654,
+      "map_equal_mean_K_minus_M_launch_s": 0.26148349850038355,
+      "pair_mean_M_launch_to_job_zero_s": 32.22274839696958,
+      "map_equal_mean_M_launch_to_job_zero_s": 32.222391494499874,
+      "pair_mean_K_launch_to_job_zero_s": 31.961240896969464,
+      "map_equal_mean_K_launch_to_job_zero_s": 31.96110569824977,
+      "pair_median_start_advantage_ppm": 51.581489367901085,
+      "pair_median_final_advantage_ppm": 9.699603286225594,
+      "C_before_MK_n": 50
+    },
+    "M_first": {
+      "pairs": 99,
+      "maps": 20,
+      "shorter": 41,
+      "tied": 15,
+      "longer": 43,
+      "pair_mean_start_advantage_ppm": 93.81853505383151,
+      "map_equal_mean_start_advantage_ppm": 93.12281573822933,
+      "pair_mean_final_advantage_ppm": -32.695133377990835,
+      "map_equal_mean_final_advantage_ppm": -32.14996072562651,
+      "pair_mean_M_own_start_gain_ppm": 289.316469173207,
+      "map_equal_mean_M_own_start_gain_ppm": 286.72638909729255,
+      "pair_mean_K_own_start_gain_ppm": 162.91554363519424,
+      "map_equal_mean_K_own_start_gain_ppm": 161.56522974465787,
+      "pair_mean_start_advantage_on_M_final_ppm": 93.86113289788972,
+      "map_equal_mean_start_advantage_on_M_final_ppm": 93.16499024941021,
+      "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -126.55626627588055,
+      "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -125.31495097503671,
+      "pair_mean_K_minus_M_launch_s": 0.2631422202020894,
+      "map_equal_mean_K_minus_M_launch_s": 0.2630321155000274,
+      "pair_mean_M_launch_to_job_zero_s": 32.215812921211864,
+      "map_equal_mean_M_launch_to_job_zero_s": 32.21642702274975,
+      "pair_mean_K_launch_to_job_zero_s": 31.952454184848474,
+      "map_equal_mean_K_launch_to_job_zero_s": 31.953169348249993,
+      "pair_median_start_advantage_ppm": 47.051037810465296,
+      "pair_median_final_advantage_ppm": 0.0,
+      "C_before_MK_n": 53
+    },
+    "mean_difference_ppm": 47.62021626231325,
+    "median_difference_ppm": 16.99252308194192,
+    "maps_positive": 14,
+    "maps_negative": 6,
+    "map_sign_flip": {
+      "p_two_sided": 0.03557014465332031,
+      "enumerated": 1048576,
+      "extreme": 37298
+    }
+  },
+  "conditional_permutation_sensitivity": {
+    "p_two_sided_with_plus_one": 0.1999980000199998,
+    "extreme": 19999,
+    "draws": 100000,
+    "seed": 20261121,
+    "condition": "Fix observed valid outcomes and observed per-map counts; label exchangeability assumes no schedule interference or selection by valid status."
+  },
+  "all_tails_abs_ge_1000_ppm": [
+    {
+      "map": "C10k.0",
+      "seed": 981,
+      "order": "M_first",
+      "start_ppm": 81.05520345565753,
+      "final_ppm": -2223.460035122916
+    },
+    {
+      "map": "genC15k.seed100004",
+      "seed": 2521,
+      "order": "K_first",
+      "start_ppm": 43.12989579465194,
+      "final_ppm": -1628.587552865876
+    },
+    {
+      "map": "genC15k.seed100004",
+      "seed": 1861,
+      "order": "M_first",
+      "start_ppm": 39.71415059740776,
+      "final_ppm": -1183.6648741943166
+    }
+  ],
+  "post_hoc_abs_lt_1000_ppm_only": {
+    "K_first": {
+      "pairs": 98,
+      "maps": 20,
+      "shorter": 56,
+      "tied": 13,
+      "longer": 29,
+      "pair_mean_start_advantage_ppm": 98.56004410263988,
+      "map_equal_mean_start_advantage_ppm": 103.25293939777056,
+      "pair_mean_final_advantage_ppm": 31.929094242152708,
+      "map_equal_mean_final_advantage_ppm": 34.50574760506293,
+      "pair_mean_M_own_start_gain_ppm": 239.85614479738197,
+      "map_equal_mean_M_own_start_gain_ppm": 248.11199426693668,
+      "pair_mean_K_own_start_gain_ppm": 173.23617010791605,
+      "map_equal_mean_K_own_start_gain_ppm": 179.37579470532833,
+      "pair_mean_start_advantage_on_M_final_ppm": 98.60956596330975,
+      "map_equal_mean_start_advantage_on_M_final_ppm": 103.30777452559512,
+      "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -66.68047172115703,
+      "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -68.8020269205322,
+      "pair_mean_K_minus_M_launch_s": 0.2618951704084608,
+      "map_equal_mean_K_minus_M_launch_s": 0.2619326400003047,
+      "pair_mean_M_launch_to_job_zero_s": 32.22370049999988,
+      "map_equal_mean_M_launch_to_job_zero_s": 32.222792903499865,
+      "pair_mean_K_launch_to_job_zero_s": 31.961994377550806,
+      "map_equal_mean_K_launch_to_job_zero_s": 31.96107358849979,
+      "pair_median_start_advantage_ppm": 52.26080628454729,
+      "pair_median_final_advantage_ppm": 10.047599705192887,
+      "C_before_MK_n": 50
+    },
+    "M_first": {
+      "pairs": 97,
+      "maps": 20,
+      "shorter": 41,
+      "tied": 15,
+      "longer": 41,
+      "pair_mean_start_advantage_ppm": 94.5078929513016,
+      "map_equal_mean_start_advantage_ppm": 96.78065961576911,
+      "pair_mean_final_advantage_ppm": 1.7557392257334028,
+      "map_equal_mean_final_advantage_ppm": 3.1341519350104843,
+      "pair_mean_M_own_start_gain_ppm": 239.6347832267769,
+      "map_equal_mean_M_own_start_gain_ppm": 241.73637366973196,
+      "pair_mean_K_own_start_gain_ppm": 146.90086163855807,
+      "map_equal_mean_K_own_start_gain_ppm": 148.1079802636481,
+      "pair_mean_start_advantage_on_M_final_ppm": 94.5479575924891,
+      "map_equal_mean_start_advantage_on_M_final_ppm": 96.82281453084765,
+      "pair_mean_K_minus_M_phase_gain_on_M_final_ppm": -92.7922183667557,
+      "map_equal_mean_K_minus_M_phase_gain_on_M_final_ppm": -93.68866259583717,
+      "pair_mean_K_minus_M_launch_s": 0.26299006082484355,
+      "map_equal_mean_K_minus_M_launch_s": 0.262266907750045,
+      "pair_mean_M_launch_to_job_zero_s": 32.21695212164925,
+      "map_equal_mean_M_launch_to_job_zero_s": 32.2167018957498,
+      "pair_mean_K_launch_to_job_zero_s": 31.953766674226724,
+      "map_equal_mean_K_launch_to_job_zero_s": 31.95428571349994,
+      "pair_median_start_advantage_ppm": 47.051037810465296,
+      "pair_median_final_advantage_ppm": 0.0,
+      "C_before_MK_n": 52
+    },
+    "mean_difference_ppm": 31.371595670052443,
+    "median_difference_ppm": 20.810673925164444,
+    "maps_positive": 15,
+    "maps_negative": 5,
+    "map_sign_flip": {
+      "p_two_sided": 0.012094497680664062,
+      "enumerated": 1048576,
+      "extreme": 12682
+    }
+  },
+  "leave_one_map_order": [
+    {
+      "omitted_map": "C10k.0",
+      "order_contrast_ppm": 20.793388044169763
+    },
+    {
+      "omitted_map": "C10k.1",
+      "order_contrast_ppm": 50.001980796180824
+    },
+    {
+      "omitted_map": "C10k.2",
+      "order_contrast_ppm": 49.09332517571034
+    },
+    {
+      "omitted_map": "E10k.0",
+      "order_contrast_ppm": 52.3263250743425
+    },
+    {
+      "omitted_map": "E10k.1",
+      "order_contrast_ppm": 49.37107505211314
+    },
+    {
+      "omitted_map": "E10k.2",
+      "order_contrast_ppm": 50.314723067645104
+    },
+    {
+      "omitted_map": "dga9698",
+      "order_contrast_ppm": 47.089837004452136
+    },
+    {
+      "omitted_map": "ei8246",
+      "order_contrast_ppm": 51.7856125802898
+    },
+    {
+      "omitted_map": "fi10639",
+      "order_contrast_ppm": 52.16812191938254
+    },
+    {
+      "omitted_map": "genC12k.seed100003",
+      "order_contrast_ppm": 43.188413317381
+    },
+    {
+      "omitted_map": "genC15k.seed100004",
+      "order_contrast_ppm": 51.817089356801446
+    },
+    {
+      "omitted_map": "genE12k.seed100006",
+      "order_contrast_ppm": 49.40732515481006
+    },
+    {
+      "omitted_map": "genE15k.seed100007",
+      "order_contrast_ppm": 50.105648449798636
+    },
+    {
+      "omitted_map": "gr9882",
+      "order_contrast_ppm": 51.14097218167626
+    },
+    {
+      "omitted_map": "ja9847",
+      "order_contrast_ppm": 44.863645468709976
+    },
+    {
+      "omitted_map": "usa13509",
+      "order_contrast_ppm": 48.6865595576303
+    },
+    {
+      "omitted_map": "xia16928",
+      "order_contrast_ppm": 46.940725902808765
+    },
+    {
+      "omitted_map": "xmc10150",
+      "order_contrast_ppm": 47.9018645268871
+    },
+    {
+      "omitted_map": "xrb14233",
+      "order_contrast_ppm": 48.96916443703709
+    },
+    {
+      "omitted_map": "xvb13584",
+      "order_contrast_ppm": 46.43852817843825
+    }
+  ],
+  "exploratory_position_against_C": {
+    "M_new": {
+      "position_in_MK": {
+        "second": {
+          "pairs": 97,
+          "maps": 20,
+          "map_equal_mean_ppm": 115.34088478608824
+        },
+        "first": {
+          "pairs": 100,
+          "maps": 20,
+          "map_equal_mean_ppm": 147.91054839361763
+        }
+      },
+      "position_relative_C": {
+        "before_C": {
+          "pairs": 94,
+          "maps": 20,
+          "map_equal_mean_ppm": 190.9715667627905
+        },
+        "after_C": {
+          "pairs": 103,
+          "maps": 20,
+          "map_equal_mean_ppm": 91.60965856982465
+        }
+      }
+    },
+    "K_new": {
+      "position_in_MK": {
+        "first": {
+          "pairs": 98,
+          "maps": 20,
+          "map_equal_mean_ppm": 126.53356855435112
+        },
+        "second": {
+          "pairs": 99,
+          "maps": 20,
+          "map_equal_mean_ppm": 116.03485301535845
+        }
+      },
+      "position_relative_C": {
+        "before_C": {
+          "pairs": 94,
+          "maps": 20,
+          "map_equal_mean_ppm": 147.02181179611776
+        },
+        "after_C": {
+          "pairs": 103,
+          "maps": 20,
+          "map_equal_mean_ppm": 87.0227794141147
+        }
+      }
+    }
+  },
+  "missing_MK_pairs": [
+    {
+      "map": "C10k.0",
+      "stratum": "02_DIMACS_clustered",
+      "seed": 2301,
+      "order": "K_first",
+      "C_before_MK": true,
+      "M_slot": 408,
+      "K_slot": 407,
+      "C_slot": 405,
+      "M_status": "monitor_invalid",
+      "K_status": "valid",
+      "C_status": "valid"
+    },
+    {
+      "map": "ei8246",
+      "stratum": "04_Waterloo_geographic",
+      "seed": 981,
+      "order": "M_first",
+      "C_before_MK": true,
+      "M_slot": 55,
+      "K_slot": 56,
+      "C_slot": 53,
+      "M_status": "valid",
+      "K_status": "monitor_invalid",
+      "C_status": "valid"
+    }
+  ],
+  "same_start_non_ties": [
+    {
+      "map": "xvb13584",
+      "stratum": "01_VLSI_engineering",
+      "seed": 1861,
+      "order": "M_first",
+      "C_before_MK": false,
+      "M_slot": 302,
+      "K_slot": 303,
+      "C_slot": 304,
+      "M_status": "valid",
+      "K_status": "valid",
+      "C_status": "valid",
+      "M_start": 37131,
+      "K_start": 37131,
+      "M_final": 37103,
+      "K_final": 37104,
+      "start_relation": "same_sha256",
+      "start_advantage_ppm": 0.0,
+      "final_advantage_ppm": -26.951998490688084,
+      "final_relation": "longer",
+      "M_own_start_gain_ppm": 754.086881581428,
+      "K_own_start_gain_ppm": 727.1552072392341,
+      "start_advantage_on_M_final_ppm": 0.0,
+      "K_minus_M_phase_gain_on_M_final_ppm": -26.951998490688084,
+      "M_native_launch_charged_s": 52.89246610000555,
+      "K_native_launch_charged_s": 53.16030170000158,
+      "K_minus_M_launch_s": 0.2678355999960331,
+      "M_launch_to_job_zero_s": 32.13699990000168,
+      "K_launch_to_job_zero_s": 31.864972899995337,
+      "M_start_sha256": "514cddf32538d408f8398ad017c94b8bd209789e07eff46e63c2d23a8b932cd1",
+      "K_start_sha256": "514cddf32538d408f8398ad017c94b8bd209789e07eff46e63c2d23a8b932cd1",
+      "continuation_seed": 4861
+    },
+    {
+      "map": "xvb13584",
+      "stratum": "01_VLSI_engineering",
+      "seed": 2521,
+      "order": "K_first",
+      "C_before_MK": false,
+      "M_slot": 590,
+      "K_slot": 589,
+      "C_slot": 592,
+      "M_status": "valid",
+      "K_status": "valid",
+      "C_status": "valid",
+      "M_start": 37129,
+      "K_start": 37129,
+      "M_final": 37121,
+      "K_final": 37122,
+      "start_relation": "same_sha256",
+      "start_advantage_ppm": 0.0,
+      "final_advantage_ppm": -26.938929446943778,
+      "final_relation": "longer",
+      "M_own_start_gain_ppm": 215.46500040399687,
+      "K_own_start_gain_ppm": 188.53187535349727,
+      "start_advantage_on_M_final_ppm": 0.0,
+      "K_minus_M_phase_gain_on_M_final_ppm": -26.938929446943778,
+      "M_native_launch_charged_s": 52.64299039999605,
+      "K_native_launch_charged_s": 52.886145799995575,
+      "K_minus_M_launch_s": 0.24315539999952307,
+      "M_launch_to_job_zero_s": 32.37350549999974,
+      "K_launch_to_job_zero_s": 32.13842529999965,
+      "M_start_sha256": "7976b4617e863bfb28ccecd5100cc9a5eda6cb437a695d5692466fd58c4ed35b",
+      "K_start_sha256": "7976b4617e863bfb28ccecd5100cc9a5eda6cb437a695d5692466fd58c4ed35b",
+      "continuation_seed": 5521
+    }
+  ],
+  "notes": [
+    "Group by original slot order. Plan checks verify five K-first and five M-first assignments on every map. Select only pairs with two valid results.",
+    "Order means aggregate seeds within each map and weight the 20 fixed maps equally. The sign-flip test assumes independent exchangeable map-level contrast signs under the exploratory null. P-values are unadjusted and hypothesis-generating.",
+    "Pair-weighted and map-equal means are both reported with explicit field prefixes. Subsets with fewer represented maps have different denominators.",
+    "Start advantage uses M initial length. Final advantage uses M final length. Phase gain uses each arm own initial length. On the common M-final denominator, initial difference plus incremental phase gain difference equals the final effect arithmetically.",
+    "Identical start hashes and seeds control two inputs. Wall time, background load, numerical scheduling and environmental state are not controlled in this comparison. Hardware telemetry needed to isolate thermal throttling was not logged.",
+    "The absolute 1000-ppm sensitivity was selected after inspecting the original outcomes. Tail pairs remain in the registered analysis. Endpoint lengths alone do not identify a local-basin mechanism."
+  ]
+}

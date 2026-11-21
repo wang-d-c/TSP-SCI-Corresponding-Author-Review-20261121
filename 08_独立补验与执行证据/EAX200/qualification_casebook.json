@@ -1,0 +1,32 @@
+{
+  "scope": "R13 new adapter entry only; all older engineering receipts remain immutable",
+  "qualification_cases": [
+    {
+      "label": "F1",
+      "coverage": "fractional",
+      "problem_relative_to_outputs": "tsp_review_execution_20261120/phase_b_instances/local_input_bytes_not_redistributable/usa13509.tsp",
+      "input_sha256": "f2d7c9f97b9b343b868c72388241e803f099af551e563a10e183778b7e38ada1",
+      "dimension": 13509,
+      "seed": 6521,
+      "basis": "largest of the five actually fractional formal maps; unscored seed outside the ten scheduled seeds; records this engineering exposure"
+    },
+    {
+      "label": "H1",
+      "coverage": "high_frequency",
+      "problem_relative_to_outputs": "lkh_v24_2_evidence_20261116/confirmation/candidate_maps/V242-RUE-1500.tsp",
+      "input_sha256": "5e32c48d9b89f5905a2c84e9ff29282a372c65110bc393f044a15768ca036e91",
+      "dimension": 1500,
+      "seed": 541,
+      "basis": "exact exposed input and seed of successful old S1 with 2609 published candidates; exercise revised observer path without scoring or replacing S1"
+    },
+    {
+      "label": "L1N",
+      "coverage": "largest",
+      "problem_relative_to_outputs": "tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/fnc19402.tsp",
+      "input_sha256": "16ebd7bfd6df17b5cc308a8fe1746d1f2142106b6d6a9e0c9cd0d24210d32609",
+      "dimension": 19402,
+      "seed": 6503,
+      "basis": "exact exposed input and seed of old Q19402 lifecycle and L1 paging failure; exercise revised observer path without replacing L1, L2 or L3"
+    }
+  ]
+}

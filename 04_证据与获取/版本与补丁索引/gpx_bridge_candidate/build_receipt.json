@@ -1,5 +1,5 @@
 {
-  "compiler": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_local_20261116\\build\\toolchain_extracted\\toolchain\\w64devkit\\bin\\gcc.exe",
+  "compiler": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_local_20261116\\build\\toolchain_extracted\\toolchain\\w64devkit\\bin\\gcc.exe",
   "adapter_sha256": "0888b1670ba6a50f7ff9ad273da91bbafd41ed38bd449afe8c80a7d97583e331",
   "commands": [
     {
@@ -13,13 +13,13 @@
         "-ffunction-sections",
         "-fdata-sections",
         "-I",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\source_stock\\SRC/INCLUDE",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\source_stock\\SRC/INCLUDE",
         "-include",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\windows\\platform_contract.h",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\windows\\platform_contract.h",
         "-c",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\source_stock\\SRC/Distance.c",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\source_stock\\SRC/Distance.c",
         "-o",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/Distance_sections.o"
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/Distance_sections.o"
       ],
       "exit_code": 0
     },
@@ -34,19 +34,19 @@
         "-ffunction-sections",
         "-fdata-sections",
         "-I",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\source_stock\\SRC/INCLUDE",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\source_stock\\SRC/INCLUDE",
         "-include",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\windows\\platform_contract.h",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_20261114\\lkh_baselines\\windows\\platform_contract.h",
         "-Wl,--gc-sections",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/gpx_euc2d_io.c",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/LKH.o",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/MergeWithTourGPX2.o",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/gpx.o",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/printff.o",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/Distance_sections.o",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/gpx_euc2d_io.c",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/LKH.o",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/MergeWithTourGPX2.o",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/gpx.o",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\rebuild_stock_a01\\objects/printff.o",
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/Distance_sections.o",
         "-lm",
         "-o",
-        "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/gpx_review.exe"
+        "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_source\\gpx_bridge_candidate/gpx_review.exe"
       ],
       "exit_code": 0
     }

@@ -1,8 +1,14 @@
 # 从随包数据重算 600 项统计与图
 
-本目录可独立运行。最少复制 `reproduce.py`、`requirements.txt` 与 `data/`。复算读取 600 行首试账本及冻结参考结果，写出新的统计、敏感性表和 PDF/PNG 图。CSV 中的路线长度来自原研究已经完成的独立验环与计长。
+本目录可独立运行。统计模式需要 `reproduce.py` 与 `data/`。复算读取 600 行首试账本及冻结参考结果，写出新的统计和敏感性表，并可同时生成 PDF/PNG 图。CSV 中的路线长度来自原研究已经完成的独立验环与计长。
 
-使用 Python 3.10 或更新版本。验收环境为 Windows、CPython 3.13.9、Matplotlib 3.10.6。依赖可通过以下命令安装。可从任意工作目录使用脚本相对路径或实际所在路径启动。
+使用 Python 3.10 或更新版本。统计模式仅使用 Python 标准库，可从任意工作目录按脚本实际路径启动。
+
+```text
+python reproduce.py --no-plot --output recomputed_statistics
+```
+
+该模式执行同样的输入 SHA256 和冻结统计校验，生成相同的 CSV 及 JSON 统计字段，结果 JSON 中 `environment.matplotlib` 记为 `null`。完整制图模式使用 `requirements.txt`。验收环境为 Windows、CPython 3.13.9、Matplotlib 3.10.6。
 
 ```text
 python -m pip install -r requirements.txt

@@ -1,0 +1,3 @@
+map,stratum,seed,order,C_before_MK,M_slot,K_slot,C_slot,M_status,K_status,C_status
+C10k.0,02_DIMACS_clustered,2301,K_first,True,408,407,405,monitor_invalid,valid,valid
+ei8246,04_Waterloo_geographic,981,M_first,True,55,56,53,valid,monitor_invalid,valid

@@ -1,0 +1,279 @@
+{
+  "scope": "static_decimal_callback_replay_only",
+  "solver_runs_started": 0,
+  "formal_eax_slots_started": 0,
+  "formal_eax_quality_results": 0,
+  "main_plan_sha256": "aa04d75c5e70919f5f10ca2ebee2f16cfdbf39a38315c573ab05e81bfd3c57bc",
+  "first_deferred_original_run_id": "REVIEW20_MAIN_genC12k.seed100003_1421_EAX_ref",
+  "deferred_slots": 200,
+  "native_sha256_unchanged": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9",
+  "isolated_callback_sha256": "7360d706d8423d673cd4e0c4fc2158416faf57c4d3deaa2bbfcd0dd9af0fe245",
+  "old_wrapper_sha256": "1734cb1cccc87e0cc2ccb987f23968dd9de3553714a4b9dba2758481d0e6d8b3",
+  "matched_existing_routes": 20,
+  "engineered_proof_replays": [
+    {
+      "case": "S1",
+      "status": "passed_engineering_only",
+      "outer_state": "valid",
+      "stop_request_s": 85.03921040100022,
+      "complete_stop_proof": true,
+      "candidate_ledger_complete": true,
+      "published": 2609,
+      "consumed": 2609,
+      "selected_length": 28369732,
+      "commit_s": 6.41018780100012,
+      "cleanup_s": 85.23128170100017,
+      "job_zero_observed_s": 85.0776509010002,
+      "static_decimal_callback_route_replay": "passed"
+    },
+    {
+      "case": "L1",
+      "status": "not_passed",
+      "outer_state": "monitor_invalid",
+      "stop_request_s": null,
+      "complete_stop_proof": false,
+      "candidate_ledger_complete": false,
+      "published": 0,
+      "consumed": 0,
+      "selected_length": null,
+      "commit_s": null,
+      "cleanup_s": null,
+      "reason_from_current_raw_qualification": "ValueError('system sampler did not complete')"
+    },
+    {
+      "case": "L2",
+      "status": "passed_engineering_only",
+      "outer_state": "valid",
+      "stop_request_s": 85.00934900099946,
+      "complete_stop_proof": true,
+      "candidate_ledger_complete": true,
+      "published": 421,
+      "consumed": 421,
+      "selected_length": 61850,
+      "commit_s": 85.01914550099991,
+      "cleanup_s": 85.3632194009997,
+      "job_zero_observed_s": 85.25595660099953,
+      "static_decimal_callback_route_replay": "passed"
+    },
+    {
+      "case": "L3",
+      "status": "passed_engineering_only",
+      "outer_state": "valid",
+      "stop_request_s": 85.0044371010008,
+      "complete_stop_proof": true,
+      "candidate_ledger_complete": true,
+      "published": 442,
+      "consumed": 442,
+      "selected_length": 61690,
+      "commit_s": 84.98854080100045,
+      "cleanup_s": 85.40253390100042,
+      "job_zero_observed_s": 85.25638840100055,
+      "static_decimal_callback_route_replay": "passed"
+    }
+  ],
+  "frozen_input_checks": [
+    {
+      "instance": "dga9698",
+      "dimension": 9698,
+      "input_sha256": "993a469b3c9c45ca65f283d4c7e99cb52550fd8eddb6709be92718bc66245eed",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 47020753
+    },
+    {
+      "instance": "xmc10150",
+      "dimension": 10150,
+      "input_sha256": "741042260c9739d9a24813ed1bdaab5860a6b39e4d48c388de2d27903c132074",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 51506175
+    },
+    {
+      "instance": "xvb13584",
+      "dimension": 13584,
+      "input_sha256": "d195e3c66e756b367f843d37fda7a0f1d53a7106d303f7e8910cbecd366cf316",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 92255736
+    },
+    {
+      "instance": "xrb14233",
+      "dimension": 14233,
+      "input_sha256": "16ba6922d7957e154da56378695228057a930e8b346ba95ca656c14c2d314912",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 101282028
+    },
+    {
+      "instance": "xia16928",
+      "dimension": 16928,
+      "input_sha256": "a85d5b59483739e9fc8f3e4920564275f9989a01d1ec11aa70d0090e73513e35",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 143270128
+    },
+    {
+      "instance": "C10k.0",
+      "dimension": 10000,
+      "input_sha256": "ce3ef19e45235fa5186724aeb8131f1df9abbe213f209ea7160ea33f157100c1",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 49995000
+    },
+    {
+      "instance": "C10k.1",
+      "dimension": 10000,
+      "input_sha256": "97c7012bad8eeed4e5f5f66062539b016786b71ed48b937874479eb4044dbac9",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 49995000
+    },
+    {
+      "instance": "C10k.2",
+      "dimension": 10000,
+      "input_sha256": "995a3e9b9ddbabd222bd00b937a1cf932a35f3ab5fe5398161e5f65d9d5184ac",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 49995000
+    },
+    {
+      "instance": "genC12k.seed100003",
+      "dimension": 12000,
+      "input_sha256": "e42e3e78055ed1c9d55cd47ca1616e9cdc4b3e0bf0c7c4fa51b13ae626ed0391",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 71994000
+    },
+    {
+      "instance": "genC15k.seed100004",
+      "dimension": 15000,
+      "input_sha256": "f64a118d9fc822a39dfe80eeac5f363426dd090893ecc60d651b32047f57771e",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 112492500
+    },
+    {
+      "instance": "E10k.0",
+      "dimension": 10000,
+      "input_sha256": "57ed8b6a79233c00011086bc063b896bc91b2e6762cecfbc151d9a06eaa17353",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 49995000
+    },
+    {
+      "instance": "E10k.1",
+      "dimension": 10000,
+      "input_sha256": "fc9e90375bbda42457e9ae45c417e79cd4ab1dd5a8c46b5aae1ac53b4279ba90",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 49995000
+    },
+    {
+      "instance": "E10k.2",
+      "dimension": 10000,
+      "input_sha256": "b8edac31f47ce732ba2d66dca0667b6d5f4f8f79b19c6e8d33344c7ebccf7eb5",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 49995000
+    },
+    {
+      "instance": "genE12k.seed100006",
+      "dimension": 12000,
+      "input_sha256": "16d0941db34c91cd71bcc4d9afa3804f984c13847c60d0471acd1f3c9c1c55af",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 71994000
+    },
+    {
+      "instance": "genE15k.seed100007",
+      "dimension": 15000,
+      "input_sha256": "4db8a61c7a65e0b0ff33bf5314fea027d9c467bf65566c88f87fe00cbfe148e0",
+      "fractional_coordinates": false,
+      "legacy_inner_rejected": false,
+      "legacy_outer_rejected": false,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 112492500
+    },
+    {
+      "instance": "ja9847",
+      "dimension": 9847,
+      "input_sha256": "5845b29c01cece9311a7aa2c37df6bed653b3825ad839adce6f355a894c3304f",
+      "fractional_coordinates": true,
+      "legacy_inner_rejected": true,
+      "legacy_outer_rejected": true,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 48476781
+    },
+    {
+      "instance": "gr9882",
+      "dimension": 9882,
+      "input_sha256": "f53bedc46af763d380aceaf8c661b600bc569b38c07d72456bc6df4645a3b60e",
+      "fractional_coordinates": true,
+      "legacy_inner_rejected": true,
+      "legacy_outer_rejected": true,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 48822021
+    },
+    {
+      "instance": "fi10639",
+      "dimension": 10639,
+      "input_sha256": "2499b941abfb1d59fa9d7ddf5ff76dfa2e646dcb260580b6ec26da2b10544450",
+      "fractional_coordinates": true,
+      "legacy_inner_rejected": true,
+      "legacy_outer_rejected": true,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 56588841
+    },
+    {
+      "instance": "ei8246",
+      "dimension": 8246,
+      "input_sha256": "3bc6e2f70e7631526a539f39ac6f38a178fa14e5997d51d079f9822f8148518e",
+      "fractional_coordinates": true,
+      "legacy_inner_rejected": true,
+      "legacy_outer_rejected": true,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 33994135
+    },
+    {
+      "instance": "usa13509",
+      "dimension": 13509,
+      "input_sha256": "f2d7c9f97b9b343b868c72388241e803f099af551e563a10e183778b7e38ada1",
+      "fractional_coordinates": true,
+      "legacy_inner_rejected": true,
+      "legacy_outer_rejected": true,
+      "frozen_route_cost_replay": "matched",
+      "independent_model_pairs_in_prior_receipt": 91239786
+    }
+  ],
+  "fractional_inputs": 5,
+  "gate": "historical_engineering_integer_only; formal_adapter_and_task_sheet_required",
+  "risk": "integration must replace all three legacy recount seams without weakening timed and publication proofs"
+}

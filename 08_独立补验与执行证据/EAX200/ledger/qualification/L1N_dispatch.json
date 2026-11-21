@@ -1,0 +1,42 @@
+{
+  "scope": "qualification",
+  "source_row": {
+    "label": "L1N",
+    "coverage": "largest",
+    "problem_relative_to_outputs": "tsp_gpt_diagnosis_v2_20261119/design/private_run_inputs/fnc19402.tsp",
+    "input_sha256": "16ebd7bfd6df17b5cc308a8fe1746d1f2142106b6d6a9e0c9cd0d24210d32609",
+    "dimension": 19402,
+    "seed": 6503,
+    "basis": "exact exposed input and seed of old Q19402 lifecycle and L1 paging failure; exercise revised observer path without replacing L1, L2 or L3"
+  },
+  "method": "EAX_r",
+  "cpu": 0,
+  "cutoffs_s": [
+    85.0,
+    86.0,
+    88.0,
+    90.0
+  ],
+  "run_id": "CMK_R13_QUAL_L1N",
+  "seed": 6503,
+  "problem": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_gpt_diagnosis_v2_20261119\\design\\private_run_inputs\\fnc19402.tsp",
+  "work": "D:\\TSP_CMK_R13_20261121\\qualification\\L1N\\w",
+  "input_sha256": "16ebd7bfd6df17b5cc308a8fe1746d1f2142106b6d6a9e0c9cd0d24210d32609",
+  "native": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_3_confirmation_20261116\\formal_216\\r4\\eax_parser\\eax_r4.exe",
+  "native_sha256": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9",
+  "wrapper_sha256": "011f70f5d8b943927eab100c7f9ac0f759bbc9399b93b9abfea3b2938be23b31",
+  "runtime_contract_sha256": "f86a13532bce63b083728cc196e2746477f70d8fcf7eac4debbc0dbf5eff1e1f",
+  "admission_sha256": null,
+  "started_utc": "2026-11-21T05:45:52.074135+00:00",
+  "controller_pre_dispatch": {
+    "checked_at_utc": "2026-11-21T05:45:51.857287+00:00",
+    "available_bytes": 28481916928,
+    "available_min_bytes": 12884901888,
+    "disk_free_bytes": 423271325696,
+    "disk_min_bytes": 4537640711,
+    "disk_remaining_slots": 1,
+    "disk_root": "D:\\TSP_CMK_R13_20261121",
+    "ac_power": true,
+    "eligible": true
+  }
+}

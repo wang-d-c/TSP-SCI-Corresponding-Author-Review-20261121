@@ -1,6 +1,6 @@
 # Historical Appendix for the R4 Comparison
 
-These tables and figures document the earlier R4 study. The 600-run primary analysis and its Supplement use separate numbering. Historical Tables H1, H3 and H4 appear in the English main text. The remaining historical references resolve in this appendix.
+These tables and figures document the earlier R4 study. The 600-run primary analysis and its Supplement use separate numbering. Historical Tables H1–H9 and Figures H1–H3 are indexed in this appendix.
 
 **Table H2. R4 map-level means of paired seed reductions (ppm). The V242- prefix is omitted in display labels. Values near zero retain sufficient precision to show their sign.**
 
@@ -125,6 +125,71 @@ The public companion tables list all 14 reference lengths and summarize 210 vali
 
 ![Figure H3. The 36 historical K/M seed pairs from 12 R4 maps. Each point is a same-map, same-seed reduction in ppm. Positive values favor K. Lines span the three seed effects within each map. Seed pairs are repeated observations within maps.](历史R4图表/Figure_S2_R4_KM_individual_historical_seeds.png){width=94%}
 
-## Historical reference
+## Earlier cohorts and comparative delivery
+
+### Historical V22
+
+V22 produced 300 valid C/M/K results with no recorded formal failures or retries. K/C was shorter/tied/longer in 36/38/26 of the 100 seed groups and had a map-equal mean reduction of 34.76 ppm; K/M was 44/41/15 with 29.30 ppm; M/C was 27/37/36 with 5.46 ppm. The earlier V23 audit used 20,000 map-level bootstrap resamples stratified by map family and reported 95% intervals of [12.52 ppm, 58.31 ppm] and [16.49 ppm, 41.84 ppm] for K/C and K/M, respectively. In 64 groups K's recombination start was strictly shorter than the best parent; final K/M outcomes in those groups were 44 shorter, five tied and 15 longer. These are CPU2 results under that batch's protocol, not observations that can be paired or pooled with local R4.
+
+### Historical R4 C/M/K
+
+All C, M and K slots yielded valid routes on 12 maps and three seeds. Historical Table H1 reports the map-weighted results. K was shorter more often than it was longer relative to M, but the longer outcomes had a larger average magnitude. The K/M interval crosses zero and the observed data do not demonstrate equivalence.
+
+**Historical Table H1. R4 complete paired route comparisons.**
+
+| Comparison | Valid pairs / maps | Shorter / tied / longer | Map-equal mean (ppm) | Exploratory 95% interval (ppm) |
+| --- | --- | --- | --- | --- |
+| K/M | 36 / 12 | 9 / 21 / 6 | −4.05 | [−22.41, 10.96] |
+| K/C | 36 / 12 | 13 / 16 / 7 | 33.27 | [7.45, 64.61] |
+| M/C | 36 / 12 | 11 / 17 / 8 | 37.32 | [−0.18, 84.60] |
+
+Historical Appendix Table H9 reports the four estimable registered tests and the incomplete EAX contrast. The estimable comparisons have six or seven nonzero maps, giving minimum two-sided sign-flip p-values of 0.03125 or 0.015625. Both exceed the first Holm cutoff of 0.01. The observed tie structure therefore prevented family-wise rejection at 0.05. M/C is calculated directly from its own pairs.
+
+K/M has two positive, six zero and four negative means under the registered seed-relative metric. Its median map effect is zero. The largest individual improvement was 82.49 ppm and the largest regression was 285.75 ppm (139 length units on R10000-01/541). Leaving one map out yields means from −8.87 ppm to 3.37 ppm. The registered exposure sensitivity remains slightly negative. Both methods attained the published optimum in all 18 pairs on six 1,500–2,000-city instances (Kerschke et al., 2018). On six 10,000-city maps, K/M was 9 shorter, 3 tied and 6 longer with mean reduction −8.10 ppm. This exploratory contrast confounds size with origin and structure. On C10000-02 the three absolute K/M differences sum to zero, but seed-specific denominators give the registered map mean a tiny negative sign. The supplementary sensitivity first computes each method’s mean within each map.
+
+Historical Appendix Figure H1 shows the K/M map reductions. Exact ties are marked separately, and the dashed line is the equal-map mean.
+
+Historical Appendix Table H2 reports the complete R4 map values. Tables H5 and H6 in the same appendix document the R4 settings and selected version hashes. Table H8 lists attainment of published reference lengths.
+
+### Historical R4 external baselines and delivery
+
+**Historical Table H3. R4 terminal status.**
+
+| Method | Valid | Budget non-delivery | Resource-monitor interruption |
+|---|---:|---:|---:|
+| C | 36 | 0 | 0 |
+| M | 36 | 0 | 0 |
+| K | 36 | 0 | 0 |
+| Author LKH-GPX2 | 29 | 7 | 0 |
+| Author LKH-POP | 27 | 8 | 1 |
+
+All 180 R4 slots for these five methods reached a terminal state, with 164 valid routes. Both author-LKH configurations delivered in zero of six runs on the two 10,000-city clustered maps. The twelve logs report completed ascent and 72.97–74.58 CPU s of preprocessing. These CPU times describe the burden of initial work. They do not locate the wall-clock cutoffs. This comparison uses the registered ALPHA/subgradient configurations and provides no controlled comparison with an author LKH POPMUSIC/no-subgradient configuration.
+
+**Historical Table H4. R4 comparisons with valid deliveries.** The two K-versus-author-LKH contrasts belong to the five registered R4 tests. The other four rows are descriptive.
+
+| Comparison | Role | Valid pairs / maps | Shorter / tied / longer | Map-equal mean (ppm) | Exploratory 95% interval (ppm) |
+| --- | --- | --- | --- | --- | --- |
+| K/LKH-GPX2 | Registered | 29 / 10 | 17 / 10 / 2 | 242.25 | [65.63, 516.40] |
+| K/LKH-POP | Registered | 27 / 10 | 13 / 14 / 0 | 316.30 | [76.88, 639.88] |
+| M/LKH-GPX2 | Descriptive | 29 / 10 | 17 / 10 / 2 | 247.80 | [64.60, 538.95] |
+| M/LKH-POP | Descriptive | 27 / 10 | 13 / 14 / 0 | 312.13 | [75.81, 632.85] |
+| C/LKH-GPX2 | Descriptive | 29 / 10 | 16 / 8 / 5 | 204.21 | [42.25, 450.16] |
+| C/LKH-POP | Descriptive | 27 / 10 | 13 / 12 / 2 | 259.30 | [68.96, 509.60] |
+
+The first two rows were among the five registered R4 contrasts. The four descriptive rows use the same valid-pair rule. Historical Appendix Table H9 gives the registered p-values.
+
+The original R4 EAX arm used an adapted implementation of edge-assembly crossover (Nagata & Kobayashi, 2013). It delivered 18 of 19 attempts on six large maps, with 17 slots deferred. Among the available pairs, M/EAX, C/EAX and K/EAX were shorter, tied or longer in 18/0/0, 16/0/2 and 17/0/1 cases. The separately versioned EAX supplement delivered 18, failed on one and left 17 unstarted. These partial records describe availability and observed valid pairs.
+
+### Historical starting tours and continuation
+
+M and K parent hashes match in all 36 R4 groups. In 16 groups the selected starting cycles are identical up to rotation and reversal, and their final lengths tie. In the remaining 20 groups K starts shorter; it finishes shorter in 9, tied in 5 and longer in 6. On four of the small-map runs, K started at the published optimum while M reached it during continuation. Of the 16 strictly better K starts on the 10,000-city maps, 9 led to shorter endpoints, 1 to a tie and 6 to longer endpoints. No matched external optimum was established for these six large maps. Thus a shorter start did not guarantee the shorter final tour in these observed configurations. The per-group start and final differences are shown in Historical Appendix Figure H2; their association is descriptive and does not isolate a causal mechanism. It is not possible from this observation alone to attribute the six reversals uniquely to extra recombination time, route structure, initialization state, randomness or other search dynamics. Historical Appendix Figure H3 shows the distribution of all 36 endpoint seed pairs within maps.
+
+The three external GPX2 calls took 0.33 s on average. Available continuation allowances averaged 31.15 s for M and 30.88 s for K. On the larger maps the paired allowance difference (M minus K) ranged from −0.288 to +0.450 s. The allowance is computed after charged branch preparation. A longer measured M startup explains the most negative difference (Historical Appendix Table H7).
+
+A separate 30-second diagnostic used 12 already-exposed development pools from six maps and three continuation seeds per pool (72 valid tasks). Start A was the shortest parent and start B was the tour selected by the historical K procedure. B finished shorter/tied/longer in 12/20/4 of 36 pairs. The 18 same-cycle pairs tied. Among the 18 pairs starting from different cycles, B started shorter and finished shorter/tied/longer in 12/2/4. A ran before B and the already-generated pools were supplied without charge. These repeat seeds characterize sensitivity in the development pools. R4 used different pools and one continuation seed per pool.
+
+## Historical references
 
 Kerschke, P., Kotthoff, L., Bossek, J., Hoos, H. H., & Trautmann, H. (2018). Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*, 26(4), 597–620. https://doi.org/10.1162/evco_a_00215
+
+Nagata, Y., & Kobayashi, S. (2013). A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. *INFORMS Journal on Computing*, 25(2), 346–363. https://doi.org/10.1287/ijoc.1120.0506

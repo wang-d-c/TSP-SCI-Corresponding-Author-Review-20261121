@@ -1,0 +1,101 @@
+[
+  {
+    "root": "delivery",
+    "file": "01_中英文主稿/Manuscript_EN.pdf",
+    "pages": 11,
+    "tables": 4,
+    "figures": 4,
+    "editable_formulas": 9,
+    "line_numbering": true,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "98e3b58b1287ed1e98e885d2c5d7f341ed6f1f9522b03db0c604929ce5af5d35"
+  },
+  {
+    "root": "delivery",
+    "file": "01_中英文主稿/主文_ZH.pdf",
+    "pages": 9,
+    "tables": 4,
+    "figures": 4,
+    "editable_formulas": 9,
+    "line_numbering": true,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "4e2c61862b7927e8b577716d5e4fd63f7fd746b07badc81122b58fa96c149cdd"
+  },
+  {
+    "root": "delivery",
+    "file": "02_方法与统计补充/Supplement_EN.pdf",
+    "pages": 5,
+    "tables": 6,
+    "figures": 1,
+    "editable_formulas": 0,
+    "line_numbering": true,
+    "relative_uri_normalization": 2,
+    "pdf_sha256": "0abe15d798fda23e8ed4f1e2fcd45a7e67420b72ca9516f0cee6698988537f45"
+  },
+  {
+    "root": "delivery",
+    "file": "02_方法与统计补充/Historical_Appendix_EN.pdf",
+    "pages": 8,
+    "tables": 10,
+    "figures": 3,
+    "editable_formulas": 0,
+    "line_numbering": true,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "58ccb924bd4fa13dea86c953ff9777a908f0a2762e612593436672bf01243d2a"
+  },
+  {
+    "root": "delivery",
+    "file": "00_本轮结论/本轮一页结论.pdf",
+    "pages": 1,
+    "tables": 0,
+    "figures": 0,
+    "editable_formulas": 0,
+    "line_numbering": false,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "4feb90844dcc160d38d085390490fbe1203de247d4d5bd0ec058b7c5395d9308"
+  },
+  {
+    "root": "delivery",
+    "file": "05_作者确认与投稿/投稿信草稿_EN.pdf",
+    "pages": 1,
+    "tables": 0,
+    "figures": 0,
+    "editable_formulas": 0,
+    "line_numbering": false,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "2f26db10eab8b8fc87ebeb8fe970980774a04fab650c829f55c8231df8ccf538"
+  },
+  {
+    "root": "anonymous",
+    "file": "01_中英文主稿/Manuscript_EN.pdf",
+    "pages": 11,
+    "tables": 4,
+    "figures": 4,
+    "editable_formulas": 9,
+    "line_numbering": true,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "71551bb24690b412c56794a3e62c9285d5e6d203c12c7e4f6e3d0674dd95000b"
+  },
+  {
+    "root": "anonymous",
+    "file": "02_方法与统计补充/Supplement_EN.pdf",
+    "pages": 5,
+    "tables": 6,
+    "figures": 1,
+    "editable_formulas": 0,
+    "line_numbering": true,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "b9f4f0e477855dc738562ad04548c9b9a22a47ce0116db39079c302e3f7a88c2"
+  },
+  {
+    "root": "anonymous",
+    "file": "02_方法与统计补充/Historical_Appendix_EN.pdf",
+    "pages": 8,
+    "tables": 10,
+    "figures": 3,
+    "editable_formulas": 0,
+    "line_numbering": true,
+    "relative_uri_normalization": 0,
+    "pdf_sha256": "b6054b0440e42438d2b04a2427e9b15a74ed6632d3b89feba7e88e8477094535"
+  }
+]

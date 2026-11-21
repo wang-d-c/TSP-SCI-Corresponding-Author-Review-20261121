@@ -12,13 +12,13 @@
     "first_dispatch": {
       "run_id": "REVIEW20_MAIN_genC12k.seed100003_1421_K_new",
       "time": "2026-11-20T11:33:44+08:00",
-      "location": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0002",
+      "location": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0002",
       "method_or_start": "K_new"
     },
     "latest_dispatch": {
       "run_id": "REVIEW20_MAIN_genC12k.seed100003_2081_K_new",
       "time": "2026-11-21T03:05:16+08:00",
-      "location": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0799",
+      "location": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\main\\0799",
       "method_or_start": "K_new"
     },
     "by_status": {
@@ -50,7 +50,7 @@
     "external_adjudications": [
       {
         "sha256": "05e2d1dac86b1533626a72e01af4eea6fe8843c186c5ceef9f2db8773dc66499",
-        "path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\recovery_slot0012_disk_full.json",
+        "path": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\recovery_slot0012_disk_full.json",
         "run_id": "REVIEW20_MAIN_gr9882_761_C_ref",
         "cause": "disk_full",
         "status": "execution_error"

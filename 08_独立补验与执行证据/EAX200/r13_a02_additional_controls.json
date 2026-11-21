@@ -1,0 +1,37 @@
+{
+  "policy": "R13a02_kernel_action_audit",
+  "actual_failed_record_sha256": "3cd77510f4bbb63aae45541be02fb2a0876b4ab01a3b30f803b8eb753ca153db",
+  "continuation_gate_sha256": "de45f1d9446b5101a963b73a16cdf8384cb5098ae20c7c774ea7e9266ad911af",
+  "no_real_attempt_rerun": true,
+  "negative_control_results": [
+    {
+      "control": "missing owned stop proof",
+      "rejected_by": "isolated_eax_evidence_failure"
+    },
+    {
+      "control": "late actual stop proof",
+      "rejected_by": "isolated_eax_evidence_failure"
+    },
+    {
+      "control": "missing native exit observation",
+      "rejected_by": "isolated_eax_evidence_failure"
+    },
+    {
+      "control": "remaining live owned process",
+      "rejected_by": "isolated_eax_evidence_failure"
+    },
+    {
+      "control": "late owned cleanup",
+      "rejected_by": "strict owned cleanup exceeded original deadline"
+    },
+    {
+      "control": "lost or unconsumed candidate",
+      "rejected_by": "isolated_eax_evidence_failure"
+    },
+    {
+      "control": "late certification",
+      "rejected_by": "previous strict evidence window invalid"
+    }
+  ],
+  "audited_utc": "2026-11-21T08:02:45.163247+00:00"
+}

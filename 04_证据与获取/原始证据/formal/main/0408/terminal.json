@@ -56,7 +56,7 @@
       "binary64_mismatch_count": 0,
       "binary64_mismatch_examples": []
     },
-    "pool_path": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\p\\C10k.0_2301\\pool.json",
+    "pool_path": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal\\p\\C10k.0_2301\\pool.json",
     "pool_sha256": "a1a2a12babad88ba5f5aa5a60b64d7abde71f355484837ff2e792ae79c1faf75",
     "pool_seal_sha256": "b73f4b257846a594b762d5cc6a70c3010e8ce6e7639b3a83d38fd55d25b23a7e",
     "common_paid_s": 51.42418259999977,

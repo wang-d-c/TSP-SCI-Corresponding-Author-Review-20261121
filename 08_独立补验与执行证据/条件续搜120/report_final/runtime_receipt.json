@@ -1,0 +1,37 @@
+{
+  "version": "tsp_cmk_r14_30s_v1",
+  "slot_count": 120,
+  "valid_routes": 120,
+  "complete_seed_pairs": 60,
+  "first_dispatch": "2026-11-21T12:46:03+08:00",
+  "last_terminal": "2026-11-21T13:42:10+08:00",
+  "stop_proof_seconds_range": [
+    27.612854500010144,
+    27.63904259999981
+  ],
+  "certification_seconds_range": [
+    27.64791580000019,
+    27.690899799999897
+  ],
+  "charged_end_seconds_range": [
+    27.73331209999742,
+    28.036099599994486
+  ],
+  "minimum_physical_available_bytes": 27679690752,
+  "native_cpu_mask": 1,
+  "independent_sampler_cpu": 1,
+  "owned_job_leak_count": 0,
+  "qualification_valid": 2,
+  "qualification_runs_in_analysis": 0,
+  "deterministic_export_readback": true,
+  "plan_sha256": "a29877a03404afb94ed556591ef1967d468a95f3222083a243ff4fe58a27916d",
+  "admission_sha256": "b3b24d0235b7a0f76e3d8a5a6120e622c93a47898b5213d0af977c94af6bf0d4",
+  "public_export_sha256": {
+    "diagnostics_summary.json": "ecb6b137b60227e3eb4f9194757c63f43c68ac0bee4033e2ae53b04439251bc6",
+    "outcomes_120.csv": "8fe87628d2ae008ec037456ce4d39b701922ffa0c826d51e162aa8b7eb3004d8",
+    "pairs_60.csv": "db8874f42a9c60aec80372601750feb4ab821036bdf02293ac6c61420bb33283",
+    "R14_paired_distribution.pdf": "6e75ea792e0698abaf4446b0faab5144d93e610a81e8754970b99f3032679301",
+    "R14_paired_distribution.png": "c08a347ae21d3055fdd9048f0a9b45901ac7ae7d1f9029389080f07ff8039983",
+    "R14_条件续搜结果.md": "8b88da9191af475edc15300b589b48b340d356e04dd0e9fc1b0398b9f4a94bd7"
+  }
+}

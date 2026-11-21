@@ -1,0 +1,50 @@
+{
+  "scope": "formal",
+  "source_row": {
+    "slot": "286",
+    "run_id": "REVIEW20_MAIN_dga9698_1861_EAX_ref",
+    "stratum": "01_VLSI_engineering",
+    "map": "dga9698",
+    "n": "9698",
+    "input_sha256": "993a469b3c9c45ca65f283d4c7e99cb52550fd8eddb6709be92718bc66245eed",
+    "pool_seed": "1861",
+    "method": "EAX_ref",
+    "within_group": "2",
+    "budget_s": "90",
+    "request_at_s": "85.0",
+    "stop_proof_before_s": "86",
+    "certify_before_s": "88",
+    "cleanup_before_s": "90",
+    "state": "planned_not_started_unadmitted"
+  },
+  "method": "EAX_r",
+  "cpu": 0,
+  "cutoffs_s": [
+    85.0,
+    86.0,
+    88.0,
+    90.0
+  ],
+  "run_id": "REVIEW20_MAIN_dga9698_1861_EAX_ref",
+  "seed": 1861,
+  "problem": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_instances\\local_input_bytes_not_redistributable\\dga9698.tsp",
+  "work": "D:\\TSP_CMK_R13_20261121\\formal\\e0286\\w",
+  "input_sha256": "993a469b3c9c45ca65f283d4c7e99cb52550fd8eddb6709be92718bc66245eed",
+  "native": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\lkh_v24_3_confirmation_20261116\\formal_216\\r4\\eax_parser\\eax_r4.exe",
+  "native_sha256": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9",
+  "wrapper_sha256": "011f70f5d8b943927eab100c7f9ac0f759bbc9399b93b9abfea3b2938be23b31",
+  "runtime_contract_sha256": "f86a13532bce63b083728cc196e2746477f70d8fcf7eac4debbc0dbf5eff1e1f",
+  "admission_sha256": "8254d1ef9faad6b8bc44e8625699df6b329728bb29f356a704d4253de44367bc",
+  "started_utc": "2026-11-21T07:43:45.890831+00:00",
+  "controller_pre_dispatch": {
+    "checked_at_utc": "2026-11-21T07:43:45.671595+00:00",
+    "available_bytes": 26794561536,
+    "available_min_bytes": 12884901888,
+    "disk_free_bytes": 409876234240,
+    "disk_min_bytes": 22718081671,
+    "disk_remaining_slots": 129,
+    "disk_root": "D:\\TSP_CMK_R13_20261121",
+    "ac_power": true,
+    "eligible": true
+  }
+}

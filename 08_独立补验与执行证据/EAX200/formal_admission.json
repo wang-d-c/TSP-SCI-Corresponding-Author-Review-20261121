@@ -1,0 +1,12 @@
+{
+  "admitted": true,
+  "admitted_at_utc": "2026-11-21T05:47:29.871520+00:00",
+  "runtime_contract_sha256": "f86a13532bce63b083728cc196e2746477f70d8fcf7eac4debbc0dbf5eff1e1f",
+  "case_terminal_hashes": {
+    "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\ledger\\qualification\\F1_terminal.json": "7fa85abad2564874d07a9a93032c543658f45938d77bbb63748552870ecc2896",
+    "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\ledger\\qualification\\H1_terminal.json": "331b3b31cc167565bc05bb37306225e28c33ab0ff13331708efd3785abf57403",
+    "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_cmk_20261121\\eax_preflight\\ledger\\qualification\\L1N_terminal.json": "381df69a945e090fc46f25bfd99d7596e6f2e153e18a05bac6a6973854c3ddc8"
+  },
+  "native_sha256": "db5e3f8d938aeb22d2d7d09a9218256b6e061b2c0149cf94e950bb407cff65a9",
+  "preregistered_original_rows": 200
+}

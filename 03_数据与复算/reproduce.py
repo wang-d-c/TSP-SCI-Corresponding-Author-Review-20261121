@@ -259,6 +259,10 @@ def plot(out, statistics, maps, pairs):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=BUNDLE / "recomputed")
+    parser.add_argument(
+        "--no-plot", action="store_true",
+        help="reproduce and verify all statistics without generating figures or importing Matplotlib",
+    )
     args = parser.parse_args()
     source = BUNDLE / "data" / "core_600_runs.csv"
     reference = json.loads((BUNDLE / "data" / "frozen_reference.json").read_text(encoding="utf-8"))
@@ -307,7 +311,10 @@ def main():
              ci95_high_ppm=effect["ci95_pct_map_bootstrap_ppm"][1])
         for name, effect in sensitivity.items()
     ])
-    plot(out, statistics, maps, pairs)
+    matplotlib_version = None
+    if not args.no_plot:
+        plot(out, statistics, maps, pairs)
+        matplotlib_version = version("matplotlib")
     result = dict(
         frozen_reference_check="passed", attempted_slots=len(runs), valid_outputs=sum(s["valid"] for s in status.values()),
         by_method=status, effects=statistics, complete_triplet_groups=len(joint),
@@ -315,12 +322,14 @@ def main():
         bootstrap=dict(unit="map", draws=DRAWS, seed=SEED, interval="linear percentile 2.5/97.5"),
         holm_family=["K_new/C_ref", "M_new/C_ref", "K_new/EAX_ref", "M_new/EAX_ref"],
         eax="unestimated; p=1 adjustment placeholders only",
-        environment=dict(python=".".join(map(str, sys.version_info[:3])), matplotlib=version("matplotlib")),
+        environment=dict(python=".".join(map(str, sys.version_info[:3])), matplotlib=matplotlib_version),
     )
     (out / "statistical_reproduction.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print("Reproduced frozen primary and secondary results from 600 rows.")
-    print("Wrote complete-triplet sensitivity, four-stratum data, leave-one-map analysis and three figures.")
+    print("Wrote complete-triplet sensitivity, four-stratum data and leave-one-map analysis.")
+    if not args.no_plot:
+        print("Wrote three figures in PDF and PNG formats.")
 
 
 if __name__ == "__main__":

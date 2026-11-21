@@ -1,0 +1,806 @@
+{
+  "registered_slots": 600,
+  "valid_cost_decompositions": 596,
+  "verified_same_start_pairs": 17,
+  "order_recreation": {
+    "seed": 20261120,
+    "identical_full_plan_slots": 800,
+    "identical_executed_non_EAX_slots": 600,
+    "plan_source_sha256": "aa04d75c5e70919f5f10ca2ebee2f16cfdbf39a38315c573ab05e81bfd3c57bc",
+    "per_map_planned_K_first": 5,
+    "per_map_planned_M_first": 5,
+    "by_seed": [
+      {
+        "seed": 541,
+        "K_first_planned": 9,
+        "K_first_eligible": 9,
+        "M_first_planned": 11,
+        "M_first_eligible": 11
+      },
+      {
+        "seed": 761,
+        "K_first_planned": 8,
+        "K_first_eligible": 8,
+        "M_first_planned": 12,
+        "M_first_eligible": 12
+      },
+      {
+        "seed": 981,
+        "K_first_planned": 10,
+        "K_first_eligible": 10,
+        "M_first_planned": 10,
+        "M_first_eligible": 9
+      },
+      {
+        "seed": 1201,
+        "K_first_planned": 13,
+        "K_first_eligible": 13,
+        "M_first_planned": 7,
+        "M_first_eligible": 7
+      },
+      {
+        "seed": 1421,
+        "K_first_planned": 12,
+        "K_first_eligible": 12,
+        "M_first_planned": 8,
+        "M_first_eligible": 8
+      },
+      {
+        "seed": 1641,
+        "K_first_planned": 11,
+        "K_first_eligible": 11,
+        "M_first_planned": 9,
+        "M_first_eligible": 9
+      },
+      {
+        "seed": 1861,
+        "K_first_planned": 8,
+        "K_first_eligible": 8,
+        "M_first_planned": 12,
+        "M_first_eligible": 12
+      },
+      {
+        "seed": 2081,
+        "K_first_planned": 8,
+        "K_first_eligible": 8,
+        "M_first_planned": 12,
+        "M_first_eligible": 12
+      },
+      {
+        "seed": 2301,
+        "K_first_planned": 9,
+        "K_first_eligible": 8,
+        "M_first_planned": 11,
+        "M_first_eligible": 11
+      },
+      {
+        "seed": 2521,
+        "K_first_planned": 12,
+        "K_first_eligible": 12,
+        "M_first_planned": 8,
+        "M_first_eligible": 8
+      }
+    ]
+  },
+  "epochs": [
+    {
+      "name": "epoch_1",
+      "pid": 31532,
+      "launch_time": "2026-11-20T11:26:53.9224000+08:00",
+      "path_relative_to_R3": "launch_a01.json",
+      "sha256": "3b5fa72b05660631700eaec7afdd8d26261cb58d50dc7e80bb90bc4254972c7d",
+      "first_dispatch": "2026-11-20T11:33:44+08:00",
+      "last_dispatch": "2026-11-20T11:42:32+08:00",
+      "trial_count": 9,
+      "native_parent_pid_matches": 8
+    },
+    {
+      "name": "epoch_2",
+      "pid": 10384,
+      "launch_time": "2026-11-20T12:45:51.9380200+08:00",
+      "path_relative_to_R3": "disk_full_resume_a01/launch_a02.json",
+      "sha256": "d68aa8e33df986ba49eaaf4622b96e92ef032380e576cbacba61d634470378b8",
+      "first_dispatch": "2026-11-20T12:45:52+08:00",
+      "last_dispatch": "2026-11-20T13:22:50+08:00",
+      "trial_count": 33,
+      "native_parent_pid_matches": 32
+    },
+    {
+      "name": "epoch_3",
+      "pid": 31036,
+      "launch_time": "2026-11-20T16:01:00.300205+08:00",
+      "path_relative_to_R3": "paging_resume_r1/launch.json",
+      "sha256": "1901a283956182042a92011b6100c03a97b43e981f0fc43d675e7622521702bc",
+      "first_dispatch": "2026-11-20T16:02:08+08:00",
+      "last_dispatch": "2026-11-20T21:01:47+08:00",
+      "trial_count": 264,
+      "native_parent_pid_matches": 263
+    },
+    {
+      "name": "epoch_4",
+      "pid": 37644,
+      "launch_time": "2026-11-20T21:24:15.412525+08:00",
+      "path_relative_to_R3": "memory_resume_r1/launch.json",
+      "sha256": "a988353ee230caf39dc620aef654dcf2ab4820360f11116c0b0fda8034297251",
+      "first_dispatch": "2026-11-20T21:25:24+08:00",
+      "last_dispatch": "2026-11-20T21:45:52+08:00",
+      "trial_count": 19,
+      "native_parent_pid_matches": 18
+    },
+    {
+      "name": "epoch_5",
+      "pid": 14124,
+      "launch_time": "2026-11-20T21:52:04.589202+08:00",
+      "path_relative_to_R3": "memory_resume_r2/launch.json",
+      "sha256": "05a88f7246378383fa88b730a83cd4139fa8e744ada4b43c807c7063adfa15af",
+      "first_dispatch": "2026-11-20T21:53:13+08:00",
+      "last_dispatch": "2026-11-21T03:05:16+08:00",
+      "trial_count": 275,
+      "native_parent_pid_matches": 275
+    }
+  ],
+  "missing_terminal_time_slots": [
+    12
+  ],
+  "monitor_statuses": {
+    "passed": 596,
+    "None": 4
+  },
+  "native_return_codes_valid_runs": {
+    "3758096385": 596
+  },
+  "ac_power_valid_runs": {
+    "True": 596
+  },
+  "timing_by_order_pair_weighted": {
+    "K_first": {
+      "first_dispatch_to_second_dispatch_wall_s": {
+        "n": 99,
+        "mean": 85.34343434343434,
+        "median": 85.0,
+        "min": 85.0,
+        "max": 86.0
+      },
+      "first_terminal_to_second_dispatch_wall_s": {
+        "n": 99,
+        "mean": 0.020202020202020204,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "first_end_to_second_entered_within_epoch_s": {
+        "n": 99,
+        "mean": 0.10819017474787328,
+        "median": 0.09119220000138739,
+        "min": 0.06943589999718824,
+        "max": 0.5123078000033274
+      },
+      "first_after_preceding_terminal_wall_s": {
+        "n": 98,
+        "mean": 18.306122448979593,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1417.0
+      },
+      "C_after_its_preceding_terminal_wall_s": {
+        "n": 98,
+        "mean": 97.24489795918367,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 9528.0
+      },
+      "M_launch_charged_s": {
+        "n": 99,
+        "mean": 52.8003807292925,
+        "median": 52.828477099996235,
+        "min": 52.54592330000014,
+        "max": 52.91422790000797
+      },
+      "K_launch_charged_s": {
+        "n": 99,
+        "mean": 53.06207848686866,
+        "median": 53.09349900000234,
+        "min": 52.7701689999958,
+        "max": 53.26604849999421
+      },
+      "K_minus_M_launch_charged_s": {
+        "n": 99,
+        "mean": 0.26169775757615654,
+        "median": 0.2599207000021124,
+        "min": 0.15534399999887682,
+        "max": 0.40556890000152634
+      },
+      "M_native_wall_s": {
+        "n": 99,
+        "mean": 32.22274839696958,
+        "median": 32.19319689999975,
+        "min": 32.12139159999788,
+        "max": 32.474224600002344
+      },
+      "K_native_wall_s": {
+        "n": 99,
+        "mean": 31.961240896969464,
+        "median": 31.931804299994837,
+        "min": 31.76052690000506,
+        "max": 32.25044340000022
+      },
+      "M_native_job_cpu_s": {
+        "n": 99,
+        "mean": 31.588541666666668,
+        "median": 31.8125,
+        "min": 24.40625,
+        "max": 32.1875
+      },
+      "K_native_job_cpu_s": {
+        "n": 99,
+        "mean": 31.24715909090909,
+        "median": 31.328125,
+        "min": 24.359375,
+        "max": 31.953125
+      },
+      "M_minimum_available_physical_bytes": {
+        "n": 99,
+        "mean": 18726167727.838383,
+        "median": 14660706304,
+        "min": 12499124224,
+        "max": 33546350592
+      },
+      "K_minimum_available_physical_bytes": {
+        "n": 99,
+        "mean": 18752468847.191917,
+        "median": 14709706752,
+        "min": 12503506944,
+        "max": 33531293696
+      },
+      "pair_count": 99,
+      "first_MK_predecessor_method": {
+        "C_ref": 72,
+        "M_new": 15,
+        "K_new": 11,
+        "null": 1
+      },
+      "first_MK_by_epoch": {
+        "epoch_2": 6,
+        "epoch_3": 39,
+        "epoch_5": 48,
+        "epoch_4": 3,
+        "epoch_1": 3
+      },
+      "cross_epoch_pairs": 0
+    },
+    "M_first": {
+      "first_dispatch_to_second_dispatch_wall_s": {
+        "n": 99,
+        "mean": 85.39393939393939,
+        "median": 85.0,
+        "min": 85.0,
+        "max": 86.0
+      },
+      "first_terminal_to_second_dispatch_wall_s": {
+        "n": 99,
+        "mean": 0.030303030303030304,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "first_end_to_second_entered_within_epoch_s": {
+        "n": 99,
+        "mean": 0.11951024747465241,
+        "median": 0.09350780000386294,
+        "min": 0.06950449999567354,
+        "max": 0.43571350000274833
+      },
+      "first_after_preceding_terminal_wall_s": {
+        "n": 99,
+        "mean": 0.050505050505050504,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 5.0
+      },
+      "C_after_its_preceding_terminal_wall_s": {
+        "n": 99,
+        "mean": 0.04040404040404041,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "M_launch_charged_s": {
+        "n": 99,
+        "mean": 52.8065530929286,
+        "median": 52.829658499998914,
+        "min": 52.546762999998464,
+        "max": 52.930368200002704
+      },
+      "K_launch_charged_s": {
+        "n": 99,
+        "mean": 53.069695313130694,
+        "median": 53.08715039999879,
+        "min": 52.79385369999727,
+        "max": 53.257933299995784
+      },
+      "K_minus_M_launch_charged_s": {
+        "n": 99,
+        "mean": 0.2631422202020894,
+        "median": 0.25847970000177156,
+        "min": 0.17244709999795305,
+        "max": 0.3871149999977206
+      },
+      "M_native_wall_s": {
+        "n": 99,
+        "mean": 32.215812921211864,
+        "median": 32.19096740000532,
+        "min": 32.09901859999809,
+        "max": 32.47546510000029
+      },
+      "K_native_wall_s": {
+        "n": 99,
+        "mean": 31.952454184848474,
+        "median": 31.936087800000678,
+        "min": 31.77133640000102,
+        "max": 32.22691459999987
+      },
+      "M_native_job_cpu_s": {
+        "n": 99,
+        "mean": 31.687973484848484,
+        "median": 31.828125,
+        "min": 29.5625,
+        "max": 32.25
+      },
+      "K_native_job_cpu_s": {
+        "n": 99,
+        "mean": 31.339804292929294,
+        "median": 31.4375,
+        "min": 30.46875,
+        "max": 31.890625
+      },
+      "M_minimum_available_physical_bytes": {
+        "n": 99,
+        "mean": 18146108715.959595,
+        "median": 14524022784,
+        "min": 12587433984,
+        "max": 33351135232
+      },
+      "K_minimum_available_physical_bytes": {
+        "n": 99,
+        "mean": 18126037033.373737,
+        "median": 14539165696,
+        "min": 12595544064,
+        "max": 33348313088
+      },
+      "pair_count": 99,
+      "first_MK_predecessor_method": {
+        "C_ref": 74,
+        "M_new": 12,
+        "K_new": 13
+      },
+      "first_MK_by_epoch": {
+        "epoch_5": 44,
+        "epoch_3": 48,
+        "epoch_2": 4,
+        "epoch_4": 3
+      },
+      "cross_epoch_pairs": 0
+    }
+  },
+  "charged_parts_by_method": {
+    "C_ref": {
+      "pool_fee_charged_s": {
+        "n": 198,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "before_native_launch_residual_s": {
+        "n": 198,
+        "mean": 1.3476335131314834,
+        "median": 1.3454480499985948,
+        "min": 1.3185282999984338,
+        "max": 1.412885500001721
+      },
+      "GPX_launch_to_job_zero_s": {
+        "n": 198,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "GPX_job_zero_to_child_verification_s": {
+        "n": 198,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "LKH_launch_to_observed_job_zero_s": {
+        "n": 198,
+        "mean": 83.67648696969725,
+        "median": 83.67829309999979,
+        "min": 83.61993760000041,
+        "max": 83.70992860000115
+      },
+      "LKH_job_zero_to_native_cleanup_s": {
+        "n": 198,
+        "mean": 0.005893874747057866,
+        "median": 0.006594149999727961,
+        "min": 0.0007442999994964339,
+        "max": 0.010586700002022553
+      },
+      "LKH_native_cleanup_to_scored_delivery_s": {
+        "n": 198,
+        "mean": 0.030331494444485865,
+        "median": 0.030424099999436294,
+        "min": 0.020755899997311644,
+        "max": 0.07525309999618912
+      },
+      "LKH_delivery_to_charged_completion_s": {
+        "n": 198,
+        "mean": 0.21371687121234922,
+        "median": 0.21125150000079884,
+        "min": 0.1764986000052886,
+        "max": 0.31230930000310764
+      },
+      "full_charge_s": {
+        "n": 198,
+        "mean": 85.27406272323262,
+        "median": 85.27018094999949,
+        "min": 85.22801939999772,
+        "max": 85.36051690000022
+      },
+      "native_launch_on_charged_clock_s": {
+        "n": 198,
+        "mean": 1.3476335131314834,
+        "median": 1.3454480499985948,
+        "min": 1.3185282999984338,
+        "max": 1.412885500001721
+      },
+      "native_job_zero_on_charged_clock_s": {
+        "n": 198,
+        "mean": 85.02412048282872,
+        "median": 85.02385740000136,
+        "min": 85.01013460000104,
+        "max": 85.04837260000204
+      },
+      "native_cleanup_on_charged_clock_s": {
+        "n": 198,
+        "mean": 85.03001435757578,
+        "median": 85.02985934999924,
+        "min": 85.01200579999932,
+        "max": 85.04956550000497
+      },
+      "scored_delivery_on_charged_clock_s": {
+        "n": 198,
+        "mean": 85.06034585202028,
+        "median": 85.05995980000125,
+        "min": 85.0368770999994,
+        "max": 85.11554919999617
+      }
+    },
+    "M_new": {
+      "pool_fee_charged_s": {
+        "n": 199,
+        "mean": 51.39384889145699,
+        "median": 51.42053500000111,
+        "min": 51.16015079999852,
+        "max": 51.48741239999799
+      },
+      "before_native_launch_residual_s": {
+        "n": 199,
+        "mean": 1.4083744432158134,
+        "median": 1.4079894999995304,
+        "min": 1.3700960999995004,
+        "max": 1.4924460999973235
+      },
+      "GPX_launch_to_job_zero_s": {
+        "n": 199,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "GPX_job_zero_to_child_verification_s": {
+        "n": 199,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "LKH_launch_to_observed_job_zero_s": {
+        "n": 199,
+        "mean": 32.22052137839178,
+        "median": 32.192949899996165,
+        "min": 32.09901859999809,
+        "max": 32.47546510000029
+      },
+      "LKH_job_zero_to_native_cleanup_s": {
+        "n": 199,
+        "mean": 0.003278751256366194,
+        "median": 0.0011111999992863275,
+        "min": 0.0007232999996631406,
+        "max": 0.014992500000516884
+      },
+      "LKH_native_cleanup_to_scored_delivery_s": {
+        "n": 199,
+        "mean": 0.03957493115589085,
+        "median": 0.03906480000296142,
+        "min": 0.0279037000000244,
+        "max": 0.07237590000295313
+      },
+      "LKH_delivery_to_charged_completion_s": {
+        "n": 199,
+        "mean": 0.16783856582914447,
+        "median": 0.12427240000033635,
+        "min": 0.0663511999991897,
+        "max": 0.35658369999873685
+      },
+      "full_charge_s": {
+        "n": 199,
+        "mean": 85.23343696130598,
+        "median": 85.1906579000024,
+        "min": 85.11792939999941,
+        "max": 85.44112189999578
+      },
+      "native_launch_on_charged_clock_s": {
+        "n": 199,
+        "mean": 52.8022233346728,
+        "median": 52.82905700000265,
+        "min": 52.54592330000014,
+        "max": 52.930368200002704
+      },
+      "native_job_zero_on_charged_clock_s": {
+        "n": 199,
+        "mean": 85.02274471306458,
+        "median": 85.02190449999762,
+        "min": 85.00846230000752,
+        "max": 85.04089300000487
+      },
+      "native_cleanup_on_charged_clock_s": {
+        "n": 199,
+        "mean": 85.02602346432094,
+        "median": 85.02463699999862,
+        "min": 85.00947540000197,
+        "max": 85.04800289999912
+      },
+      "scored_delivery_on_charged_clock_s": {
+        "n": 199,
+        "mean": 85.06559839547684,
+        "median": 85.0643088999932,
+        "min": 85.04479060000085,
+        "max": 85.10905069999717
+      }
+    },
+    "K_new": {
+      "pool_fee_charged_s": {
+        "n": 199,
+        "mean": 51.395078843215785,
+        "median": 51.4206080999993,
+        "min": 51.16015079999852,
+        "max": 51.48741239999799
+      },
+      "before_native_launch_residual_s": {
+        "n": 199,
+        "mean": 1.4597521251263614,
+        "median": 1.4564007000008132,
+        "min": 1.3989252999963355,
+        "max": 1.5708504999929573
+      },
+      "GPX_launch_to_job_zero_s": {
+        "n": 199,
+        "mean": 0.13111447135675214,
+        "median": 0.12664809999114368,
+        "min": 0.09358990000328049,
+        "max": 0.19131970000307774
+      },
+      "GPX_job_zero_to_child_verification_s": {
+        "n": 199,
+        "mean": 0.0803796145721354,
+        "median": 0.07919759999640519,
+        "min": 0.06294770000204153,
+        "max": 0.11984439998923335
+      },
+      "LKH_launch_to_observed_job_zero_s": {
+        "n": 199,
+        "mean": 31.956374866331537,
+        "median": 31.93308980000438,
+        "min": 31.76052690000506,
+        "max": 32.25044340000022
+      },
+      "LKH_job_zero_to_native_cleanup_s": {
+        "n": 199,
+        "mean": 0.003677387939914201,
+        "median": 0.0012346000003162771,
+        "min": 0.0006800999981351197,
+        "max": 0.016576600006374065
+      },
+      "LKH_native_cleanup_to_scored_delivery_s": {
+        "n": 199,
+        "mean": 0.039240875879315455,
+        "median": 0.03914519999671029,
+        "min": 0.02589799999987008,
+        "max": 0.0596780000050785
+      },
+      "LKH_delivery_to_charged_completion_s": {
+        "n": 199,
+        "mean": 0.16607876884412617,
+        "median": 0.1256952999974601,
+        "min": 0.0699354999960633,
+        "max": 0.3523242000010214
+      },
+      "full_charge_s": {
+        "n": 199,
+        "mean": 85.23169695326592,
+        "median": 85.1959482000093,
+        "min": 85.11922779999804,
+        "max": 85.43226249999134
+      },
+      "native_launch_on_charged_clock_s": {
+        "n": 199,
+        "mean": 53.06632505427104,
+        "median": 53.08974309999758,
+        "min": 52.7701689999958,
+        "max": 53.26604849999421
+      },
+      "native_job_zero_on_charged_clock_s": {
+        "n": 199,
+        "mean": 85.02269992060258,
+        "median": 85.02312810000149,
+        "min": 85.00980249999702,
+        "max": 85.0398112000039
+      },
+      "native_cleanup_on_charged_clock_s": {
+        "n": 199,
+        "mean": 85.0263773085425,
+        "median": 85.0259991999992,
+        "min": 85.01333399999567,
+        "max": 85.04719979999936
+      },
+      "scored_delivery_on_charged_clock_s": {
+        "n": 199,
+        "mean": 85.06561818442181,
+        "median": 85.06410989999858,
+        "min": 85.04395329999534,
+        "max": 85.09769090000191
+      }
+    }
+  },
+  "two_same_start_non_ties": [
+    {
+      "map": "xvb13584",
+      "seed": 1861,
+      "order": "M_first",
+      "final_relation": "longer",
+      "M_slot": 302,
+      "M_start_sha256": "514cddf32538d408f8398ad017c94b8bd209789e07eff46e63c2d23a8b932cd1",
+      "M_first_trial_sha256": "8a9c7b611ad8254d723392a2a2e8f55133c467acbea9ace07aabb511d5506c86",
+      "M_start_length": 37131,
+      "M_end_length": 37103,
+      "M_final_tour_sha256": "b5e798faf2f2047e926d1293c6c4f8a5d72ee734432d039edcc8154b4316827d",
+      "M_parameter_sha256": "287f46b93a65775962da589fe236151e6a1ef99f883c4574509615cf912f419a",
+      "M_engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "M_parent_pool_sha256": "70c93980b6ef66536a6d90bdf63f4653f858172a760c8fd380ee2525ed690954",
+      "M_seed": 4861,
+      "M_actual_initial_cycle_verified": true,
+      "M_paid_pool_s": 51.44014790000074,
+      "M_dispatch_time": "2026-11-20T19:30:13+08:00",
+      "M_epoch": "epoch_3",
+      "M_launch_s": 52.89246610000555,
+      "M_stop_request_s": 85.01225810000324,
+      "M_stop_proof_s": 85.02946600000723,
+      "M_delivery_s": 85.06906220000383,
+      "M_final_route_first_observed_s": 84.85553730000538,
+      "M_final_route_file_verified_s": 84.87107550000655,
+      "M_completion_s": 85.20826720000332,
+      "M_normal_budget_termination": true,
+      "M_job_exit": 3758096385,
+      "M_last_logged_improvement_trial": 462,
+      "M_last_logged_improvement_cost": 37103,
+      "M_last_logged_improvement_printed_time_s": 29.61,
+      "M_logged_improvements": 17,
+      "M_stdout_sha256": "16c5faeca759047e2a93b60b350229f00f725f5e3ef86fa6be9da46d457458bb",
+      "K_slot": 303,
+      "K_start_sha256": "514cddf32538d408f8398ad017c94b8bd209789e07eff46e63c2d23a8b932cd1",
+      "K_first_trial_sha256": "8a9c7b611ad8254d723392a2a2e8f55133c467acbea9ace07aabb511d5506c86",
+      "K_start_length": 37131,
+      "K_end_length": 37104,
+      "K_final_tour_sha256": "fe314d1a1ca6e2f7fe49f036a27fdac2a6fe7777a2768765cf634166c99399c6",
+      "K_parameter_sha256": "287f46b93a65775962da589fe236151e6a1ef99f883c4574509615cf912f419a",
+      "K_engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "K_parent_pool_sha256": "70c93980b6ef66536a6d90bdf63f4653f858172a760c8fd380ee2525ed690954",
+      "K_seed": 4861,
+      "K_actual_initial_cycle_verified": true,
+      "K_paid_pool_s": 51.44014790000074,
+      "K_dispatch_time": "2026-11-20T19:31:39+08:00",
+      "K_epoch": "epoch_3",
+      "K_launch_s": 53.16030170000158,
+      "K_stop_request_s": 85.00774929999898,
+      "K_stop_proof_s": 85.02527459999692,
+      "K_delivery_s": 85.06025200000295,
+      "K_final_route_first_observed_s": 73.95852559999912,
+      "K_final_route_file_verified_s": 73.97513159999653,
+      "K_completion_s": 85.19019259999914,
+      "K_normal_budget_termination": true,
+      "K_job_exit": 3758096385,
+      "K_last_logged_improvement_trial": 271,
+      "K_last_logged_improvement_cost": 37104,
+      "K_last_logged_improvement_printed_time_s": 17.86,
+      "K_logged_improvements": 16,
+      "K_stdout_sha256": "6890d5fa383f6f171a5287dc7d5c74dc41bbb29bd08bb1071a0e3b36048da3de",
+      "start_bytes_equal": true,
+      "K_minus_M_launch_s": 0.2678355999960331,
+      "K_minus_M_length_units": 1
+    },
+    {
+      "map": "xvb13584",
+      "seed": 2521,
+      "order": "K_first",
+      "final_relation": "longer",
+      "M_slot": 590,
+      "M_start_sha256": "7976b4617e863bfb28ccecd5100cc9a5eda6cb437a695d5692466fd58c4ed35b",
+      "M_first_trial_sha256": "ff7cd13ed0c8c44470d3e4db0e80484262d99849fe7412bf1e43f5be3d85a8d6",
+      "M_start_length": 37129,
+      "M_end_length": 37121,
+      "M_final_tour_sha256": "3e386d8bfdf9ad18c15251e88390bd06ce7f26c6693eaef6281ed84d927970ce",
+      "M_parameter_sha256": "1205a0cef006e5fec48522db9cc91c4584abf02d31246cf1cd0fdaea3ad34a28",
+      "M_engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "M_parent_pool_sha256": "29e9aff1c77ecbcfcea054222f0e0e4efd7fe2c6f96226a0adea739ca232f4a6",
+      "M_seed": 5521,
+      "M_actual_initial_cycle_verified": true,
+      "M_paid_pool_s": 51.24205719999736,
+      "M_dispatch_time": "2026-11-21T00:06:15+08:00",
+      "M_epoch": "epoch_5",
+      "M_launch_s": 52.64299039999605,
+      "M_stop_request_s": 85.00183599999582,
+      "M_stop_proof_s": 85.01649589999579,
+      "M_delivery_s": 85.0531467999972,
+      "M_final_route_first_observed_s": 84.95620190000045,
+      "M_final_route_file_verified_s": 84.98253009999462,
+      "M_completion_s": 85.23292749999382,
+      "M_normal_budget_termination": true,
+      "M_job_exit": 3758096385,
+      "M_last_logged_improvement_trial": 545,
+      "M_last_logged_improvement_cost": 37121,
+      "M_last_logged_improvement_printed_time_s": 29.78,
+      "M_logged_improvements": 9,
+      "M_stdout_sha256": "27e2f6ac08f60a023a31a1730e478773dbb261ecb3c722d90140d3e1b647ded4",
+      "K_slot": 589,
+      "K_start_sha256": "7976b4617e863bfb28ccecd5100cc9a5eda6cb437a695d5692466fd58c4ed35b",
+      "K_first_trial_sha256": "ff7cd13ed0c8c44470d3e4db0e80484262d99849fe7412bf1e43f5be3d85a8d6",
+      "K_start_length": 37129,
+      "K_end_length": 37122,
+      "K_final_tour_sha256": "0de2f04afe516dd21757077052a1f91a14552fe3dc2fb27fb1be4b5e09961a1c",
+      "K_parameter_sha256": "1205a0cef006e5fec48522db9cc91c4584abf02d31246cf1cd0fdaea3ad34a28",
+      "K_engine_sha256": "d239bf79873b085ae2d246812b0237af74f6d6b97c413490ea9ac9f8b295d665",
+      "K_parent_pool_sha256": "29e9aff1c77ecbcfcea054222f0e0e4efd7fe2c6f96226a0adea739ca232f4a6",
+      "K_seed": 5521,
+      "K_actual_initial_cycle_verified": true,
+      "K_paid_pool_s": 51.24205719999736,
+      "K_dispatch_time": "2026-11-21T00:04:50+08:00",
+      "K_epoch": "epoch_5",
+      "K_launch_s": 52.886145799995575,
+      "K_stop_request_s": 85.01035219999903,
+      "K_stop_proof_s": 85.02457109999523,
+      "K_delivery_s": 85.06631529999868,
+      "K_final_route_first_observed_s": 70.90211909999925,
+      "K_final_route_file_verified_s": 70.92066269999486,
+      "K_completion_s": 85.22753499999817,
+      "K_normal_budget_termination": true,
+      "K_job_exit": 3758096385,
+      "K_last_logged_improvement_trial": 267,
+      "K_last_logged_improvement_cost": 37122,
+      "K_last_logged_improvement_printed_time_s": 15.23,
+      "K_logged_improvements": 8,
+      "K_stdout_sha256": "8417785ca6f6830b749b4cbdd29f750f6d4a0b758755ee8401634db01f96153b",
+      "start_bytes_equal": true,
+      "K_minus_M_launch_s": 0.24315539999952307,
+      "K_minus_M_length_units": 1
+    }
+  ],
+  "limits": [
+    "Dispatch and terminal timestamps are wall-clock observations at one-second resolution. Controller epochs derive from stored launch receipts and native root parent PID where available.",
+    "The most recent dispatched formal trial is not necessarily the previous physical workload. Parent-pool construction, controller recoveries, admission delays and other host processes can intervene.",
+    "The milliseconds-scale within-controller gap derives from monotonic completion and entered-arm anchors, only compared within the same controller epoch. Charged timestamps use individual arm origins and are distinct from wall timestamps.",
+    "Charge components sum exactly by construction. All observed spans include operational overhead. The pre-launch residual is unclassified. Overlapped monitor CPU/time and routine parsing are not additionally allocated.",
+    "Monitor receipts record available physical memory, system commit, sampled paging, AC admission and CPU affinity. They do not establish clock frequency, temperature, PL1/PL2 or total completed LKH trials.",
+    "A native last logged improvement index is only a reported marker. Competing physical explanations remain untested."
+  ]
+}

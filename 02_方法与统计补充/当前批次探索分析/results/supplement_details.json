@@ -1,0 +1,45 @@
+{
+  "endpoint_ppm_primary_all": -9.975553333876219,
+  "endpoint_ppm_post_hoc_abs_lt_1000": 18.732387787316593,
+  "order_gap_ppm": 47.62021626231325,
+  "order_gap_median_ppm": 16.99252308194192,
+  "order_gap_map_bootstrap_95_ppm": [
+    5.742860457969156,
+    111.31746325985182
+  ],
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 2026112114,
+  "balanced_order_KM_ppm": -8.33985259446988,
+  "tails": [
+    {
+      "map": "C10k.0",
+      "seed": "981",
+      "valid_pairs_in_map": 9,
+      "start_advantage_ppm": "81.05520345565753",
+      "final_advantage_ppm": "-2223.460035122916",
+      "M_own_start_gain_ppm": "2797.3105013750546",
+      "K_own_start_gain_ppm": "499.0554219408792",
+      "contribution_primary_map_equal_ppm": -12.352555750682866
+    },
+    {
+      "map": "genC15k.seed100004",
+      "seed": "2521",
+      "valid_pairs_in_map": 10,
+      "start_advantage_ppm": "43.12989579465194",
+      "final_advantage_ppm": "-1628.587552865876",
+      "M_own_start_gain_ppm": "1831.9236398816192",
+      "K_own_start_gain_ppm": "163.1966779145157",
+      "contribution_primary_map_equal_ppm": -8.14293776432938
+    },
+    {
+      "map": "genC15k.seed100004",
+      "seed": "1861",
+      "valid_pairs_in_map": 10,
+      "start_advantage_ppm": "39.71415059740776",
+      "final_advantage_ppm": "-1183.6648741943166",
+      "M_own_start_gain_ppm": "2600.445973775077",
+      "K_own_start_gain_ppm": "1380.199819003217",
+      "contribution_primary_map_equal_ppm": -5.9183243709715825
+    }
+  ]
+}

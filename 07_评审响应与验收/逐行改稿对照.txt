@@ -1,0 +1,551 @@
+--- earlier/01_中英文主稿/Manuscript_EN.md
++++ review/01_中英文主稿/Manuscript_EN.md
+@@ -1,4 +1,4 @@
+-# Additional GPX2 Recombination Under a Fixed Time Budget
++# Evaluating Additional External GPX2 Recombination in Fixed-Budget LKH Search for the Traveling Salesperson Problem
+ 
+ Authors and affiliations [to be confirmed]
+ 
+@@ -10,7 +10,7 @@
+ 
+ ## 1. Introduction
+ 
+-When a heuristic must deliver a complete tour by a fixed deadline, time devoted to creating and combining initial tours is time not available for later search. The Lin–Kernighan–Helsgaun (LKH) heuristic [1] and generalized partition crossover (GPX2) [2,3] are established approaches. They can be composed in many ways, but an improvement of the intermediate tour does not itself establish an improvement of the final delivered tour. GPX2 already supports recombination among LKH results, and earlier studies have considered both crossover inside LKH and feedback of improved solutions to search [2,3,4].
++When a heuristic must deliver a complete tour by a fixed deadline, time devoted to creating and combining initial tours is time not available for later search. The Lin–Kernighan–Helsgaun (LKH) heuristic [1] and generalized partition crossover (GPX2) [2, 3] are established approaches. They can be composed in many ways, but an improvement of the intermediate tour does not itself establish an improvement of the final delivered tour. GPX2 already supports recombination among LKH results, and earlier studies have considered both crossover inside LKH and feedback of improved solutions to search [2, 3, 4].
+ 
+ We compare three project-defined configurations rather than propose a new crossover. C starts independently from the instance, M selects the shortest of three parent tours and continues search, and K performs three additional pairwise GPX2 operations on that same pool before continuation. Necessary generation, selection, recombination, verification and delivery are charged to the appropriate method. We ask whether the additional three-pair preparation improves final tour quality relative to M under the same total budget. The current secondary comparisons concern C. Historical baselines and start-to-finish observations are reported separately.
+ 
+@@ -20,11 +20,13 @@
+ 
+ Helsgaun’s LKH implements the Lin–Kernighan heuristic [1]. LKH-2 extended k-opt submoves [5], and the LKH-3 report describes the later solver lineage [6]. Tinós, Helsgaun, and Whitley [2, Sections 4–5] compared GPX2 and IPT inside multi-trial LKH at preset trial and run counts and reported that better offspring did not necessarily improve the surrounding iterated local search. GPX2 has also been studied across separate runs [3], and Hains et al. [4] studied crossover on clustered TSP instances. Our paired contrast quantifies the net effect of three extra GPX2 calls on final delivered tours. Both methods use the same three-parent pool and pay its full cost under the same total wall-clock budget.
+ 
+-POPMUSIC has been used to construct LKH candidate edges using tour information [7]. Friedrich et al. [8] and Weise et al. [9] study fixed-budget bet-and-run strategies, including allocation of decision time and prediction; choosing among short initial searches is therefore not a new general strategy. Zhang and Looks [10] use backbone information from tours to guide LK search and perturbation. Our M is a concrete comparison configuration, not an invented bet-and-run framework. Recent candidate-list and partition-crossover studies [11,12] further limit any general novelty claim. McMenemy et al. [13] already compared LKH variants and EAX across a large set of structurally varied instances and investigated instance characteristics; their setting and budgets differ from ours. The present study differs operationally by recording the exact shared parent pool, charging its cost to both arms, and testing the *net* effect of three additional external GPX2 calls on delivered tours. Different implementations, benchmarks and deadlines prevent direct numerical comparisons with the cited studies.
++POPMUSIC has been used to construct LKH candidate edges using tour information [7]. Friedrich et al. [8] and Weise et al. [9] study fixed-budget bet-and-run strategies, including allocation of decision time and prediction; choosing among short initial searches is therefore not a new general strategy. Zhang and Looks [10] use backbone information from tours to guide LK search and perturbation. Our M is a concrete comparison configuration, not an invented bet-and-run framework. Recent candidate-list and partition-crossover studies [11, 12] further limit any general novelty claim. McMenemy et al. [13] already compared LKH variants and EAX across a large set of structurally varied instances and investigated instance characteristics; their setting and budgets differ from ours. The present study differs operationally by recording the exact shared parent pool, charging its cost to both arms, and testing the *net* effect of three additional external GPX2 calls on delivered tours. Different implementations, benchmarks and deadlines prevent direct numerical comparisons with the cited studies.
++
++Algorithm benchmarking distinguishes quality at a common budget from work or time to reach a common target [14, 15, 16]. We evaluate verified quality at a common wall-clock deadline.
+ 
+ ## 3. Problem and comparison methods
+ 
+-For coordinates \(p_i=(x_i,y_i)\), the edge cost is \(d(i,j)=\lfloor\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}+0.5\rfloor\) under the TSPLIB EUC_2D convention [14]. A feasible solution visits each city exactly once and returns to the starting city. The tour length is the sum of all cycle edges. Independent checks verify coverage and EUC_2D length.
++For coordinates \(p_i=(x_i,y_i)\), the edge cost is \(d(i,j)=\lfloor\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}+0.5\rfloor\) under the TSPLIB EUC_2D convention [17]. A feasible solution visits each city exactly once and returns to the starting city. The tour length is the sum of all cycle edges. Independent checks verify coverage and EUC_2D length.
+ 
+ All three arms use the same frozen, modified LKH 3.0.14-derived Windows executable. The common configuration uses POPMUSIC candidate construction, at most five candidates per node, no subgradient ascent, MOVE_TYPE = 5, SUBSEQUENT_MOVE_TYPE = 5, MAX_TRIALS = 100000, RUNS = 1, POPULATION_SIZE = 0, SCALE = 1 and PRECISION = 100. C_ref is the configured reference used in this study. The historical P5 builds and the historical author-LKH baselines have separate version records.
+ 
+@@ -34,13 +36,13 @@
+ 
+ Parents use seeds \(s\), \(s+1000\) and \(s+2000\). The shared pool is generated once per map–seed group. M and K each pay the full measured generation, certification and sealing cost of that pool. K also pays for its three external programs, candidate preparation, validation and selection. The same total budget allows different amounts of continuation time. The first actual working tour of each continuation is checked against the selected input.
+ 
+-RECOMBINATION = GPX2 selects a merge function in the common binary. RUNS = 1 and POPULATION_SIZE = 0 rule out the between-run and population branches. The linked trial routine can still attempt internal merges after a Lin–Kernighan improvement step if its elapsed-time and tour-state conditions permit. Trace level 1 does not enumerate those attempts. This conditional internal behavior is shared by C, parent generation and continuation. K's three pre-continuation bridge calls are explicit external operations. The supplementary methods give the source conditions and the parameter table.
++RECOMBINATION = GPX2 selects a merge function in the common binary. RUNS = 1 and POPULATION_SIZE = 0 rule out the between-run and population branches. The linked trial routine can still attempt internal merges after a Lin–Kernighan improvement step if its elapsed-time and tour-state conditions permit. Trace level 1 does not enumerate those attempts. This conditional internal behavior is shared by C, parent generation and continuation. K's three pre-continuation bridge calls are explicit external operations. Supplementary Table S2 gives the configuration and its source conditions.
+ 
+ ## 4. Experimental design and validity
+ 
+ ### 4.1 Primary 600-slot batch
+ 
+-The current batch used 20 prespecified maps spanning engineering VLSI, clustered, uniform and geographic strata, with five maps per stratum. Each map used the same ten registered seeds. The main table has 200 slots per C, M and K, with M and K adjacent and each running first in five groups per map. The inputs and map-source manifest were frozen before dispatch. A native Windows host executed the solvers serially on CPU0, with independent resource monitoring on CPU1. The per-process commit limit was 4 GiB. The minimum required available physical memory was 12 GiB at admission and 8 GiB during execution. The operating-system stop and monitor evidence was retained. Affinity specifies placement. Table 1 reports the recorded host and toolchain. Supplementary Table S1 identifies the evidence for each setting.
++The current batch used 20 prespecified maps spanning engineering VLSI, clustered, uniform and geographic strata, with five maps per stratum. Each map used the same ten registered seeds. The main table has 200 slots per C, M and K, with M and K adjacent and each running first in five groups per map. The inputs and map-source manifest were frozen before dispatch. The two DIMACS strata use the Challenge generators and reference descriptions [18, 19], including project-generated extensions whose seeds are listed separately. The Waterloo VLSI and National collections are cited at their source [20, 21]. One geographic instance comes from TSPLIB [17]. A native Windows host executed the solvers serially on CPU0, with independent resource monitoring on CPU1. The per-process commit limit was 4 GiB. The minimum required available physical memory was 12 GiB at admission and 8 GiB during execution. The operating-system stop and monitor evidence was retained. Affinity specifies placement. Table 1 reports the recorded host and toolchain. Supplementary Table S1 identifies the evidence for each setting.
+ 
+ **Table 1. Recorded environment for the primary 600-run experiment.**
+ 
+@@ -68,7 +70,7 @@
+ 
+ For left arm X and reference Y with two valid tours at the same map and seed, the length reduction is \(10^6[L(Y)-L(X)]/L(Y)\) ppm. Positive values favor X. We average paired seed effects inside each map and give each map with usable pairs equal weight. Delivery and invalid attempts are counted separately. The K/M estimate uses every eligible K/M pair regardless of C's outcome.
+ 
+-For the primary 600-slot study, we retain the registered K/M two-sided map sign-flip test and the 95% percentile interval from 100,000 map-level bootstrap resamples (seed 20261120). The test assumes independently exchangeable effect signs under the null. The intervals describe sensitivity to which of the fixed maps are resampled. The four registered secondary comparisons are K/C, M/C, K/EAX and M/EAX. The two unobserved comparisons retain p = 1 placeholders solely for Holm adjustment. Four-stratum summaries, leave-one-map checks and the common set of 196 complete C/M/K groups are descriptive sensitivity analyses. The historical R4 five-comparison family and its 20,000 resamples are kept separate.
++For the primary 600-slot study, we retain the registered K/M two-sided map sign-flip test and the 95% percentile interval from 100,000 map-level bootstrap resamples (seed 20261120). The test assumes independently exchangeable effect signs under the null [22]. Bootstrap draws resample complete maps [23]. The intervals describe sensitivity to which of the fixed maps are resampled. The four registered secondary comparisons are K/C, M/C, K/EAX and M/EAX. The two unobserved comparisons retain p = 1 placeholders solely for Holm adjustment [24]. Four-stratum summaries, leave-one-map checks and the common set of 196 complete C/M/K groups are descriptive sensitivity analyses. The historical R4 five-comparison family and its 20,000 resamples are kept separate.
+ 
+ ## 5. Results
+ 
+@@ -76,92 +78,80 @@
+ 
+ All 600 scheduled C/M/K runs reached terminal status. C, M and K delivered 198, 199 and 199 valid tours respectively. All 596 were independently verified. One C run was interrupted by lack of disk space. Two runs were interrupted by the original runtime paging guard (one K and one C), and one M run was rejected by the original pre-start memory check before native search. The valid K from that M run's shared-pool group remains in the ledger and contributes wherever a legitimate comparison exists. There were no normal budget non-deliveries.
+ 
+-**Table 2. Primary-batch route quality among eligible matched-seed pairs.** All comparisons cover 20 maps. The interval is a percentile map bootstrap. Holm adjustment applies to the registered secondary family.
++**Table 2. Primary-batch route quality among eligible matched-seed pairs.** All comparisons cover 20 maps. The interval is a percentile map bootstrap. Holm adjustment applies to the registered secondary family. The EAX contrasts were not estimated in this main batch.
+ 
+ | Comparison | Pairs | Shorter / tied / longer | Mean ppm | 95% interval, ppm | Reported p |
+ | --- | ---: | --- | ---: | --- | ---: |
+ | K/M | 198 | 97 / 28 / 73 | −9.98 | [−43.47, +15.36] | 0.648 |
+ | K/C | 197 | 105 / 6 / 86 | +117.59 | [+59.78, +186.98] | 0.000252 |
+ | M/C | 197 | 105 / 3 / 89 | +130.64 | [+56.19, +218.04] | 0.001682 |
++| K/EAX | — | — | Not estimated | — | — |
++| M/EAX | — | — | Not estimated | — | — |
++
++The K/M map median was +5.76 ppm. Twelve map means were positive and eight were negative. C10k.0 had the most negative map mean (−263.07 ppm across nine eligible pairs). The leave-one-map K/M mean ranged from −14.02 to +3.34 ppm. The primary estimate retains all 20 maps. Table 3 and Figure 2 give the strata and per-map results. Supplementary Figure S1 gives the pair-weighted ECDF. The five equally weighted maps per stratum gave K/M descriptive means of −20.47 ppm for VLSI, −40.30 for clustered, +5.98 for uniform and +14.88 for geographic maps. These contrasts describe the selected panels. They do not identify effects of map structure independently of other characteristics. Supplementary Table S4 shows all three comparisons on the 196 groups in which C, M and K each delivered, with the original comparison-specific samples kept for the registered tests.
+ 
+ ![Figure 1. Map-equal reductions and 95% percentile map bootstrap intervals for the three current comparisons. Positive ppm favors the left arm. The whiskers are marginal intervals. The secondary p-values in Table 2 use the original four-comparison Holm family.](../03_数据与复算/复算产物/overall_effects_95ci.png){width=94%}
+ 
+-The K/M map median was +5.76 ppm. Twelve map means were positive and eight were negative. C10k.0 had the most negative map mean (−263.07 ppm across nine eligible pairs). The leave-one-map K/M mean ranged from −14.02 to +3.34 ppm. The primary estimate retains all 20 maps. Supplementary Table S4 gives the stratum means. The five equally weighted maps per stratum gave K/M descriptive means of −20.47 ppm for VLSI, −40.30 for clustered, +5.98 for uniform and +14.88 for geographic maps. These contrasts describe the selected panels. They do not identify effects of map structure independently of other characteristics. Supplementary Table S5 shows all three comparisons on the 196 groups in which C, M and K each delivered, with the original comparison-specific samples kept for the registered tests.
+-
+ The paid common prefix averaged 51.394 s across 200 pools. Among the 198 jointly valid M/K pairs, M and K launched their continuation solver at mean charged times of 52.803 and 53.066 s respectively. The paired launch difference of 0.262 s includes preparation, checks and system overhead. Across 200 K arms, the three external process intervals from launch to observed Job-empty state summed to 0.131 s on average per arm. These intervals include process overhead and end when exit is observed. They cannot explain the quality differences on their own.
+ 
+-### 5.2 Historical V22
++Supplementary Table S3 and the event-accounting note separate measured phases on the charged clock. The registered three parent requests were scheduled at 17 s each. The roughly 51 s paid prefix follows from that design. Budget splits and alternative deadlines were not optimized by this experiment.
+ 
+-V22 produced 300 valid C/M/K results with no recorded formal failures or retries. K/C was shorter/tied/longer in 36/38/26 of the 100 seed groups and had a map-equal mean reduction of 34.76 ppm; K/M was 44/41/15 with 29.30 ppm; M/C was 27/37/36 with 5.46 ppm. The earlier V23 audit used 20,000 map-level bootstrap resamples stratified by map family and reported 95% intervals of [12.52 ppm, 58.31 ppm] and [16.49 ppm, 41.84 ppm] for K/C and K/M, respectively. In 64 groups K's recombination start was strictly shorter than the best parent; final K/M outcomes in those groups were 44 shorter, five tied and 15 longer. These are CPU2 results under that batch's protocol, not observations that can be paired or pooled with local R4.
++**Table 3. Descriptive map-equal effects by source stratum (ppm).**
+ 
+-### 5.3 Historical R4 C/M/K
++| Stratum | Maps | K/M | K/C | M/C |
++| --- | ---: | ---: | ---: | ---: |
++| VLSI engineering | 5 | −20.47 | +125.80 | +146.27 |
++| DIMACS clustered | 5 | −40.30 | +294.94 | +348.27 |
++| DIMACS uniform | 5 | +5.98 | +1.77 | −4.21 |
++| Geographic | 5 | +14.88 | +47.83 | +32.21 |
+ 
+-All C, M and K slots yielded valid routes on 12 maps and three seeds. Historical Table H1 reports the map-weighted results. K was shorter more often than it was longer relative to M, but the longer outcomes had a larger average magnitude. The K/M interval crosses zero and the observed data do not demonstrate equivalence.
++![Figure 2. Mean of the valid matched-seed effects within each of the 20 maps. Positive ppm favors the left arm. The dashed line marks zero.](../03_数据与复算/复算产物/map_effects.png){width=94%}
+ 
+-**Historical Table H1. R4 complete paired route comparisons.**
++### 5.2 Selected starts and delivered tours
+ 
+-| Comparison | Valid pairs / maps | Shorter / tied / longer | Map-equal mean (ppm) | Exploratory 95% interval (ppm) |
+-| --- | --- | --- | --- | --- |
+-| K/M | 36 / 12 | 9 / 21 / 6 | −4.05 | [−22.41, 10.96] |
+-| K/C | 36 / 12 | 13 / 16 / 7 | 33.27 | [7.45, 64.61] |
+-| M/C | 36 / 12 | 11 / 17 / 8 | 37.32 | [−0.18, 84.60] |
++This post hoc analysis uses the original integer lengths of all 198 valid pairs. Relative start and final differences use the corresponding M length. Gains during continuation use each arm's own starting length. Table 4 reports equally weighted seed pairs within its descriptive columns and gives the map-weighted endpoint separately. Two run groups lack a valid M/K pair, because one M failed memory admission and one K was interrupted by paging protection.
+ 
+-Historical Appendix Table H9 reports the four estimable registered tests and the incomplete EAX contrast. The estimable comparisons have six or seven nonzero maps, giving minimum two-sided sign-flip p-values of 0.03125 or 0.015625. Both exceed the first Holm cutoff of 0.01. The observed tie structure therefore prevented family-wise rejection at 0.05. M/C is calculated directly from its own pairs.
++**Table 4. Starting and final tour differences (ppm).**
+ 
+-K/M has two positive, six zero and four negative means under the registered seed-relative metric. Its median map effect is zero. The largest individual improvement was 82.49 ppm and the largest regression was 285.75 ppm (139 length units on R10000-01/541). Leaving one map out yields means from −8.87 ppm to 3.37 ppm. The registered exposure sensitivity remains slightly negative. Both methods attained the published optimum in all 18 pairs on six 1,500–2,000-city instances [15]. On six 10,000-city maps, K/M was 9 shorter, 3 tied and 6 longer with mean reduction −8.10 ppm. This exploratory contrast confounds size with origin and structure. On C10000-02 the three absolute K/M differences sum to zero, but seed-specific denominators give the registered map mean a tiny negative sign. The supplementary sensitivity first computes each method’s mean within each map.
++| Pair subset | N | Start mean / median | Final pair mean / median | Final equal-map mean | Short / tie / long | M/K continuation means |
++| --- | ---: | ---: | ---: | ---: | ---: | ---: |
++| All | 198 | +95.91 / +47.68 | -8.77 / +0.00 | -9.98 | 97/28/73 | 272.63/168.03 |
++| K start shorter | 181 | +104.92 / +55.44 | -9.30 / +9.06 | -9.94 | 97/13/71 | 281.63/167.50 |
++| Same start bytes | 17 | +0.00 / +0.00 | -3.17 / +0.00 | -2.45 | 0/15/2 | 176.76/173.59 |
+ 
+-Historical Appendix Figure H1 shows the K/M map reductions. Exact ties are marked separately, and the dashed line is the equal-map mean.
++K started shorter in 181/198 pairs (91.41%). It ended longer in 71/181 of those pairs (39.23%). The 17 same-file starts had 15 identical final lengths and two one-unit losses for K (xvb13584, seeds 1861 and 2521). The audit verified selected bytes and first working tours. The arms had the same continuation seed and engine within each pair. A mean 0.262 s difference in charged continuation-launch times and two one-unit differences do not identify a timing effect. The output contains no per-trial work counts or continuous frequency trace.
+ 
+-Historical Appendix Table H2 reports the complete R4 map values. Tables H5 and H6 in the same appendix document the R4 settings and selected version hashes. Table H8 lists attainment of published reference lengths.
++The three largest negative effects came from two maps (C10k.0/981 and genC15k.seed100004/2521 and /1861). They contribute −12.35, −8.14, −5.92 ppm, respectively, to the fully weighted primary estimate, with nine valid pairs on C10k.0 and ten on genC15k.seed100004. All valid scores remain in the main analysis. Supplementary Table S5 gives the disjoint time accounting and Table S6 gives the tail cases and post hoc sensitivity.
+ 
+-### 5.4 Historical R4 external baselines and delivery
++![Figure 3. Exploratory starting versus final tour effects for all 198 valid M/K pairs. Filled and open marks distinguish strictly shorter and byte-identical starts. The full panel retains the large negative tail. The zoom reproduces the same points; labels identify exact overlaps.](../02_方法与统计补充/当前批次探索分析/results/cmk_start_vs_finish.png){width=94%}
+ 
+-**Historical Table H3. R4 terminal status.**
++### 5.3 Execution-order sensitivity
+ 
+-| Method | Valid | Budget non-delivery | Resource-monitor interruption |
+-|---|---:|---:|---:|
+-| C | 36 | 0 | 0 |
+-| M | 36 | 0 | 0 |
+-| K | 36 | 0 | 0 |
+-| Author LKH-GPX2 | 29 | 7 | 0 |
+-| Author LKH-POP | 27 | 8 | 1 |
++The frozen schedule assigned five M-first and five K-first groups per map using seed 20261120. The dispatch audit matched all 600 runs to their scheduled slots. Among the 198 valid M/K pairs, 99 in each order remain. The map-equal mean K/M effect was +15.47 ppm with K first and -32.15 ppm with M first. The difference was +47.62 ppm across 20 map contrasts (median +16.99 ppm, 14 positive, 95% map bootstrap interval [5.74, 111.32]). The exact two-sided map sign-flip sensitivity enumerates all 2^20 sign patterns and gives unadjusted p = 0.03557. It uses effect magnitudes and requires independently exchangeable map signs. A separate conditional within-map label-permutation sensitivity gives p ≈ 0.200 under its conditional exchangeability and no-interference assumptions [22]. Neither inference was preregistered, and the two checks address different null constructions.
+ 
+-All 180 R4 slots for these five methods reached a terminal state, with 164 valid routes. Both author-LKH configurations delivered in zero of six runs on the two 10,000-city clustered maps. The twelve logs report completed ascent and 72.97–74.58 CPU s of preprocessing. These CPU times describe the burden of initial work. They do not locate the wall-clock cutoffs. This comparison uses the registered ALPHA/subgradient configurations and provides no controlled comparison with an author LKH POPMUSIC/no-subgradient configuration.
++Giving the two observed orders equal weight within each map gives −8.34 ppm as a post hoc K/M estimate. The registered all-valid-pair result remains −9.98 ppm. The audit records actual dispatch times, schedule epochs, the previously dispatched formal task, C position, and measured preparation and continuation. Thermal state, cache and scheduler effects, workload variation and stopping behavior cannot be separated using these observations. An execution-order association does not identify heat throttling or explain the earlier R4 result.
+ 
+-**Historical Table H4. R4 comparisons with valid deliveries.** The two K-versus-author-LKH contrasts belong to the five registered R4 tests. The other four rows are descriptive.
++![Figure 4. Exploratory execution-order sensitivity on the 20 maps. Left: map-level K/M effect within each order. Right: paired map contrasts K-first minus M-first. The distribution includes all matched valid pairs, with maps weighted equally.](../02_方法与统计补充/当前批次探索分析/results/cmk_order_sensitivity.png){width=94%}
+ 
+-| Comparison | Role | Valid pairs / maps | Shorter / tied / longer | Map-equal mean (ppm) | Exploratory 95% interval (ppm) |
+-| --- | --- | --- | --- | --- | --- |
+-| K/LKH-GPX2 | Registered | 29 / 10 | 17 / 10 / 2 | 242.25 | [65.63, 516.40] |
+-| K/LKH-POP | Registered | 27 / 10 | 13 / 14 / 0 | 316.30 | [76.88, 639.88] |
+-| M/LKH-GPX2 | Descriptive | 29 / 10 | 17 / 10 / 2 | 247.80 | [64.60, 538.95] |
+-| M/LKH-POP | Descriptive | 27 / 10 | 13 / 14 / 0 | 312.13 | [75.81, 632.85] |
+-| C/LKH-GPX2 | Descriptive | 29 / 10 | 16 / 8 / 5 | 204.21 | [42.25, 450.16] |
+-| C/LKH-POP | Descriptive | 27 / 10 | 13 / 12 / 2 | 259.30 | [68.96, 509.60] |
++### 5.4 Earlier exploratory cohorts
+ 
+-The first two rows were among the five registered R4 contrasts. The four descriptive rows use the same valid-pair rule. Historical Appendix Table H9 gives the registered p-values.
++V22 and R4 used different samples, configurations and execution environments. V22 found a positive K/M mean. R4 found a small negative K/M mean and recorded some reversal of starting advantages. Its two author-LKH configurations are separate external comparators. Historical Tables H1–H9 and Figures H1–H3 in the Historical Appendix retain results, delivery failures, tests and version details, including partial historical EAX coverage [25, 26]. The 72-run earlier conditional diagnostic reused the parent pools and measured continuation alone. These cohorts are reported separately.
+ 
+-The original R4 EAX arm used an adapted implementation of edge-assembly crossover [16]. It delivered 18 of 19 attempts on six large maps, with 17 slots deferred. Among the available pairs, M/EAX, C/EAX and K/EAX were shorter, tied or longer in 18/0/0, 16/0/2 and 17/0/1 cases. The separately versioned EAX supplement delivered 18, failed on one and left 17 unstarted. These partial records describe availability and observed valid pairs.
++### 5.5 Separate follow-up batches
+ 
+-### 5.5 Historical starting tours and continuation
+-
+-M and K parent hashes match in all 36 R4 groups. In 16 groups the selected starting cycles are identical up to rotation and reversal, and their final lengths tie. In the remaining 20 groups K starts shorter; it finishes shorter in 9, tied in 5 and longer in 6. On four of the small-map runs, K started at the published optimum while M reached it during continuation. Of the 16 strictly better K starts on the 10,000-city maps, 9 led to shorter endpoints, 1 to a tie and 6 to longer endpoints. No matched external optimum was established for these six large maps. Thus a shorter start did not guarantee the shorter final tour in these observed configurations. The per-group start and final differences are shown in Historical Appendix Figure H2; their association is descriptive and does not isolate a causal mechanism. It is not possible from this observation alone to attribute the six reversals uniquely to extra recombination time, route structure, initialization state, randomness or other search dynamics. Historical Appendix Figure H3 shows the distribution of all 36 endpoint seed pairs within maps.
+-
+-The three external GPX2 calls took 0.33 s on average. Available continuation allowances averaged 31.15 s for M and 30.88 s for K. On the larger maps the paired allowance difference (M minus K) ranged from −0.288 to +0.450 s. The allowance is computed after charged branch preparation. A longer measured M startup explains the most negative difference (Historical Appendix Table H7).
+-
+-A separate 30-second diagnostic used 12 already-exposed development pools from six maps and three continuation seeds per pool (72 valid tasks). Start A was the shortest parent and start B was the tour selected by the historical K procedure. B finished shorter/tied/longer in 12/20/4 of 36 pairs. The 18 same-cycle pairs tied. Among the 18 pairs starting from different cycles, B started shorter and finished shorter/tied/longer in 12/2/4. A ran before B and the already-generated pools were supplied without charge. These repeat seeds characterize sensitivity in the development pools. R4 used different pools and one continuation seed per pool.
++EAX supplement recorded 200/200 dispatched, 200 terminal and 199 valid. Conditional continuation recorded 120/120 dispatched, 120 terminal and 120 valid. These are separate series. The EAX series measures end-to-end delivery under the same time limits in a later time block. The 30 s diagnostic conditions on the distinct M and K starting tours from each of three saved parent pools on two maps, using 20 new continuation seeds per pool. No stages or scores from either series enter the registered 600-run inference. The first-attempt evidence failure at e0316 remains unscored. The original post-run audit compared a preparatory timestamp against the 85 s threshold. A separately frozen audit used the recorded owned-job termination call for unstarted slots and kept the native solver, charging, and prescribed limits unchanged. M/EAX: 198 pairs, 159/2/37 shorter/tied/longer, map-weighted mean +24030.25 ppm with 95% percentile interval [+6763.64, +50836.32]. K/EAX: 198 pairs, 164/3/31 shorter/tied/longer, map-weighted mean +24008.70 ppm with 95% percentile interval [+6742.41, +50802.43]. The separate EAX report includes delivery, missing pairs and multiplicity. The separate diagnostic gave the following pool-specific results. C10k.0/981: 14/0/6 shorter/tied/longer in 20 valid seed pairs, mean +716.29 ppm and conditional seed bootstrap interval [+251.78, +1200.80] ppm. genC15k.seed100004/2521: 12/0/8 shorter/tied/longer in 20 valid seed pairs, mean -109.03 ppm and conditional seed bootstrap interval [-371.59, +139.14] ppm. genC15k.seed100004/1861: 8/0/12 shorter/tied/longer in 20 valid seed pairs, mean -219.79 ppm and conditional seed bootstrap interval [-664.72, +273.42] ppm.
+ 
+ ## 6. Discussion
+ 
+ The same-parent comparison asks what the three additional external GPX2 calls return on the full charged clock. K shortened more paired tours than it lengthened in the current batch. The larger negative effects on a few maps brought the equal-map mean below zero. Its interval spans gains and losses. The primary evidence does not establish a stable incremental advantage. Equivalence was not tested against a prespecified margin. Both M and K shortened tours on average relative to the configured C reference in the valid paired sample under the registered Holm analysis. The direct K/M contrast governs any comparison between the two shared-pool arms.
+ 
+-V22 had a positive K/M estimate, while R4 and the current batch had slightly negative estimates. The data sets, software and execution sequences differ. The comparison across batches cannot isolate the influence of any one factor. The recorded R4 changes between the selected starting tour and the final tour illustrate the behavior described by earlier GPX2 studies. They provide separate descriptive evidence. In the current batch, the paid common prefix and the recorded phase timestamps are directly observable. Their association with tour quality cannot isolate preparation expense, ranking, initial route structure and subsequent search dynamics.
++V22 had a positive K/M estimate, while R4 and the current batch had slightly negative estimates. The data sets, software and execution sequences differ. The comparison across batches cannot isolate the influence of any one factor. The recorded R4 changes between the selected starting tour and the final tour illustrate the behavior described by earlier GPX2 studies. They provide separate descriptive evidence. In the current batch, most selected K starts improved on M, but continuation sometimes reversed that advantage. The measured phase timings show how much work was charged. The order association, a matched timing audit, and extreme endpoint differences leave contributions from preparation, initial tour structure and subsequent search dynamics unresolved.
+ 
+ ## 7. Limitations and future work
+ 
+ The current estimates describe 20 fixed maps, one total budget and the tested common LKH configuration. The map-level test relies on its sign-exchangeability assumption and does not turn the fixed panel into a random sample of all Euclidean TSP instances. Incomplete pairs remain missing in the conditional quality analysis. The common-coverage check uses the same 196 groups for three contrasts and is descriptive. The audit covers the test settings, tour feasibility and the software versions used. Global optimality and the number of in-process GPX2 calls remain outside the recorded evidence.
+ 
+-The current experiment contains no timed EAX comparison. R4 offers separate comparisons with two author LKH configurations and incomplete EAX observations. The large-map EAX engineering candidate lacked complete evidence of stopping before the deadline. It contributes no score. The current design evaluates the overall effect of the branch policy. Matching continuation windows and logging detailed internal search trajectories would answer a different mechanism question.
++The current experiment contains no timed EAX comparison. R4 offers separate comparisons with two author LKH configurations and incomplete EAX observations. The current design evaluates the overall effect of the branch policy. The designated equal-continuation diagnostic conditions on already selected tours. It tests repetition across continuation seeds in three groups from two maps. It does not vary the total budget or the cost of producing those starts.
+ 
+ ## 8. Conclusion
+ 
+@@ -192,6 +182,16 @@
+ 11. Heins, J., Schäpermeier, L., Kerschke, P., & Whitley, D. (2024). Dancing to the state of the art? How candidate lists influence LKH for solving the traveling salesperson problem. *PPSN XVIII*, LNCS 15148, 100–115. https://doi.org/10.1007/978-3-031-70055-2_7
+ 12. de Carvalho, O. Q., & Whitley, D. (2025). Dramatically faster partition crossover for the traveling salesman problem. *GECCO ’25*, 818–826. https://doi.org/10.1145/3712256.3726465
+ 13. McMenemy, P., Veerapen, N., Adair, J., & Ochoa, G. (2019). Rigorous performance analysis of state-of-the-art TSP heuristic solvers. *EvoCOP*, LNCS 11452, 99–114. https://doi.org/10.1007/978-3-030-16711-0_7. Associated dataset record: https://datastorre.stir.ac.uk/handle/11667/127 (CC BY 4.0 for the 14 included instance files).
+-14. Reinelt, G. (1991). TSPLIB—A traveling salesman problem library. *ORSA Journal on Computing*, 3(4), 376–384. https://doi.org/10.1287/ijoc.3.4.376
+-15. Kerschke, P., Kotthoff, L., Bossek, J., Hoos, H. H., & Trautmann, H. (2018). Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*, 26(4), 597–620. https://doi.org/10.1162/evco_a_00215
+-16. Nagata, Y., & Kobayashi, S. (2013). A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. *INFORMS Journal on Computing*, 25(2), 346–363. https://doi.org/10.1287/ijoc.1120.0506
++14. Applegate, D. L., Bixby, R. E., Chvátal, V., & Cook, W. J. (2006). *The Traveling Salesman Problem: A Computational Study*. Princeton University Press. https://www.math.uwaterloo.ca/tsp/book/index.html
++15. Bartz-Beielstein, T., Doerr, C., van den Berg, D., et al. (2020). *Benchmarking in optimization: Best practice and open issues*. arXiv:2007.03488. https://arxiv.org/abs/2007.03488
++16. Hansen, N., Auger, A., Brockhoff, D., Tušar, D., & Tušar, T. (2016). *COCO: Performance assessment*. arXiv:1605.03560. https://arxiv.org/abs/1605.03560
++17. Reinelt, G. (1991). TSPLIB—A traveling salesman problem library. *ORSA Journal on Computing*, 3(4), 376–384. https://doi.org/10.1287/ijoc.3.4.376
++18. Johnson, D. S., & McGeoch, L. A. (2002). Experimental analysis of heuristics for the STSP. In G. Gutin & A. P. Punnen (Eds.), *The Traveling Salesman Problem and Its Variations* (pp. 369–443). Kluwer. Springer digital record, 2007. https://doi.org/10.1007/0-306-48213-4_9
++19. DIMACS. (2001). *8th DIMACS Implementation Challenge: The Traveling Salesman Problem*. Instance and generator archive. https://archive.dimacs.rutgers.edu/Challenges/TSP/download.html
++20. University of Waterloo. *VLSI Data Sets*. Solving TSPs benchmark archive. https://math.uwaterloo.ca/tsp/vlsi/index.html
++21. University of Waterloo. *National Traveling Salesman Problems*. Solving TSPs benchmark archive. https://www.math.uwaterloo.ca/tsp/world/countries.html
++22. Hemerik, J., & Goeman, J. (2018). Exact testing with random permutations. *TEST*, 27, 811–825. https://doi.org/10.1007/s11749-017-0571-1
++23. Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall. https://doi.org/10.1201/9780429246593
++24. Holm, S. (1979). A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics*, 6(2), 65–70. https://www.jstor.org/stable/4615733
++25. Kerschke, P., Kotthoff, L., Bossek, J., Hoos, H. H., & Trautmann, H. (2018). Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*, 26(4), 597–620. https://doi.org/10.1162/evco_a_00215
++26. Nagata, Y., & Kobayashi, S. (2013). A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. *INFORMS Journal on Computing*, 25(2), 346–363. https://doi.org/10.1287/ijoc.1120.0506
+--- earlier/01_中英文主稿/主文_ZH.md
++++ review/01_中英文主稿/主文_ZH.md
+@@ -1,4 +1,4 @@
+-# 固定总预算下额外 GPX2 重组的配对比较
++# 旅行商问题固定预算 LKH 搜索中的额外外部 GPX2 重组评估
+ 
+ 作者与单位待确认
+ 
+@@ -22,11 +22,13 @@
+ 
+ 固定预算下以多个短运行选择后续对象，与 bet-and-run 思路有直接联系。Friedrich 等提出通用 bet-and-run 策略并包含旅行商局部搜索案例 [7]；Weise 等研究使用性能轨迹预测后续运行，并将决策成本纳入时间预算 [8]。本文 M 是针对本研究共同 LKH 配置和三个父环的一种实证比较策略。其基本思路与已有 bet-and-run 工作相关。Zhang 与 Looks 已利用多条局部最优路线的 backbone 信息偏置 LK 搜索和扰动 [9]，Taillard 与 Helsgaun 将 POPMUSIC 和路线信息用于 LKH 候选生成 [10]。因此，对基于父环的信息反馈或候选访问次序的一般原创性表述应有所限定。
+ 
+-已有研究比较了不同结构实例上的多种 TSP 启发式，包括使用边组装交叉的 EAX [11,12]。后续 GPX3 文献讨论了分区交叉实现 [13]。
++已有研究比较了不同结构实例上的多种 TSP 启发式，包括使用边组装交叉的 EAX [11, 12]。后续 GPX3 文献讨论了分区交叉实现 [13]。
++
++算法基准研究区分固定经费下的质量与达到固定目标的时间 [14, 15, 16]。本文以统一的墙钟预算比较按期认证交付的路线。
+ 
+ ## 3. 问题、方法及开销
+ 
+-对于二维坐标 \(p_i=(x_i,y_i)\)，EUC_2D 边长为 \(d(i,j)=\lfloor\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}+0.5\rfloor\)，沿用 TSPLIB 定义 [15]。完整路线遍历全部城市各一次并回到起点，长度为环上各边之和。独立核验检查城市覆盖和计长。
++对于二维坐标 \(p_i=(x_i,y_i)\)，EUC_2D 边长为 \(d(i,j)=\lfloor\sqrt{(x_i-x_j)^2+(y_i-y_j)^2}+0.5\rfloor\)，沿用 TSPLIB 定义 [17]。完整路线遍历全部城市各一次并回到起点，长度为环上各边之和。独立核验检查城市覆盖和计长。
+ 
+ 当前三臂共用同一个冻结的 Windows 求解程序，基于原作者发布的 LKH 3.0.14 修改。共同参数包括 POPMUSIC、每节点至多五条候选边、关闭次梯度上升，MOVE_TYPE 和 SUBSEQUENT_MOVE_TYPE 均为 5，MAX_TRIALS = 100000，RUNS = 1，POPULATION_SIZE = 0，SCALE = 1，PRECISION = 100。C_ref 是本研究在该配置下的对照。旧版 P5 及旧批次作者 LKH 各有独立版本记录。
+ 
+@@ -36,13 +38,13 @@
+ 
+ 三父种子为 \(s\)、\(s+1000\) 和 \(s+2000\)。每个图与种子只实际生成一次父池，M 和 K 均计入其完整的生成、认证与封存费用。K 同时承担外部重组、准备、核验和选优费用。总预算相同，两臂可用于续搜的时间可以不同。实际首工作环与传入起始环进行核对。
+ 
+-RECOMBINATION = GPX2 在共同二进制中选择内部合并函数。RUNS = 1 与 POPULATION_SIZE = 0 使跨轮次合并及种群路径不生效，但试探函数在局部搜索步骤后可按时限和路线状态条件尝试内部合并。Trace level 1 未逐次记录这些调用。C、父环生成和续搜都使用这一内部配置，K 的三次外部桥接发生在续搜之前。具体参数、条件和源码位置见方法补充。
++RECOMBINATION = GPX2 在共同二进制中选择内部合并函数。RUNS = 1 与 POPULATION_SIZE = 0 使跨轮次合并及种群路径不生效，但试探函数在局部搜索步骤后可按时限和路线状态条件尝试内部合并。Trace level 1 未逐次记录这些调用。C、父环生成和续搜都使用这一内部配置，K 的三次外部桥接发生在续搜之前。共同配置、源码条件和计时分别见补充表 S2、S3。
+ 
+ ## 4. 实验材料与设计
+ 
+ ### 4.1 当前 600 项主批次
+ 
+-主批次的 20 图覆盖 VLSI、聚簇、均匀和地理四层，每层五图。各图采用同一组 10 个预登记种子，共形成 200 个图与种子组合。C、M、K 各 200 项。M/K 相邻运行，每图各有五组先运行 M 或 K。Windows 原生环境下单核串行，求解绑 CPU0，CPU1 独立监控。每进程提交内存上限 4 GiB，准入时可用物理内存至少 12 GiB，运行期下限 8 GiB。EAX 200 项与机制诊断 800 项保留原计划并暂缓，未进入当前质量分析。
++主批次的 20 图覆盖 VLSI、聚簇、均匀和地理四层，每层五图。DIMACS 两层分别引用原挑战的生成器、数据与实验文献 [18, 19]，另列项目扩展图的生成种子。VLSI 和 National 数据引用 Waterloo 源站 [20, 21]，有一张地理图源于 TSPLIB [17]。各图采用同一组 10 个预登记种子，共形成 200 个图与种子组合。C、M、K 各 200 项。M/K 相邻运行，每图各有五组先运行 M 或 K。Windows 原生环境下单核串行，求解绑 CPU0，CPU1 独立监控。每进程提交内存上限 4 GiB，准入时可用物理内存至少 12 GiB，运行期下限 8 GiB。EAX 200 项与机制诊断 800 项保留原计划并暂缓，未进入当前质量分析。
+ 
+ **表 1　600 项主批次的实验环境。**
+ 
+@@ -62,7 +64,7 @@
+ 
+ ### 4.2 V22 与 R4 历史批次
+ 
+-V22 在原生 Windows CPU2 上运行，覆盖 20 图、每图 5 个种子，得到 300 项有效 C/M/K 结果。R4 在原生 Windows 本机上覆盖 12 图、每图 3 个种子，五种方法共 180 项，164 条有效路线。其六张万城合成图含均匀、聚簇和混合各两张，另六张小图来自 Stirling 数据集 [14]。R4 同池内 M 固定先运行，暴露组和计时字段按自己的协议分析。V22 与 R4 的实验版本、机器或样本有别，统计单列。
++V22 在原生 Windows CPU2 上运行，覆盖 20 图、每图 5 个种子，得到 300 项有效 C/M/K 结果。R4 在原生 Windows 本机上覆盖 12 图、每图 3 个种子，五种方法共 180 项，164 条有效路线。其六张万城合成图含均匀、聚簇和混合各两张，另六张小图来自 Stirling 数据集 [22]。R4 同池内 M 固定先运行，暴露组和计时字段按自己的协议分析。V22 与 R4 的实验版本、机器或样本有别，统计单列。
+ 
+ ### 4.3 30 秒历史条件诊断
+ 
+@@ -72,7 +74,7 @@
+ 
+ 对同图同种子、双方均有合法交付的前者 A 与对照 B，定义改善为 \(10^6[L(B)-L(A)]/L(B)\) ppm，正值表示 A 更短。先平均图内配对，再对有配对的地图等权。交付率、资源异常和执行错误单列，缺失路线不赋分。
+ 
+-主批次唯一主要比较为 K/M，沿用图级双侧符号翻转检验和 100,000 次地图百分位重抽样区间，随机种子 20261120。检验假定零假设下地图级效应符号可独立翻转。固定选图限制了外推。原四项次要 Holm 家族保留 K/C、M/C、K/EAX、M/EAX 两个已观察和两个未观察比较。后两项以 1 占位参与校正，并无路线结果。四层地图、留一图和 196 组三法均有效的共同配对仅用于描述性敏感性分析。R4 的五项比较族、20,000 次重抽样和 V22 的协议仍单列。
++主批次唯一主要比较为 K/M，沿用图级双侧符号翻转检验和 100,000 次地图百分位重抽样区间，随机种子 20261120。检验假定零假设下地图级效应符号可独立翻转 [23]。重抽样以整图为单位 [24]。固定选图限制了外推。原四项次要 Holm 家族 [25] 保留 K/C、M/C、K/EAX、M/EAX 两个已观察和两个未观察比较。后两项以 1 占位参与校正，并无路线结果。四层地图、留一图和 196 组三法均有效的共同配对仅用于描述性敏感性分析。R4 的五项比较族、20,000 次重抽样和 V22 的协议仍单列。
+ 
+ ## 6. 结果
+ 
+@@ -87,6 +89,8 @@
+ | K/M | 198 | 97 / 28 / 73 | −9.98 | [−43.47, +15.36] | 0.648 |
+ | K/C | 197 | 105 / 6 / 86 | +117.59 | [+59.78, +186.98] | 0.000252 |
+ | M/C | 197 | 105 / 3 / 89 | +130.64 | [+56.19, +218.04] | 0.001682 |
++| K/EAX | — | — | 未估计 | — | — |
++| M/EAX | — | — | 未估计 | — | — |
+ 
+ ![图 1　当前三个比较的地图等权效应和 95% 地图重抽样区间。正值表示左侧方法路线更短。图中为逐项区间，表 2 的次要检验沿用原四项 Holm 家族。](../03_数据与复算/复算产物/overall_effects_95ci.png){width=94%}
+ 
+@@ -94,64 +98,60 @@
+ 
+ 200 个父池的共同计费均值为 51.394 秒。198 个 M/K 均有效的配对中，M 和 K 启动续搜进程的平均累计时点分别为 52.803 和 53.066 秒，配对差为 0.262 秒，其中含实际分支准备、核验和系统开销。200 个 K 臂的三个外部进程从启动到观测 Job 成员全部退出的区间，每臂合计平均 0.131 秒。该记录包含进程开销，单凭它无法解释路线质量差异。
+ 
+-### 6.2 V22 历史批次
++两臂按完整记录分别计费。三个父运行约 17 秒的搜索请求和约 51 秒共同前段来自登记设计。本批没有比较不同预算或该比例的最优性。补充表 S3 给出计费事件；补充图 S1 给出有效配对的经验分布。20 图效应见图 2。
+ 
+-100 组 K 对 C 为 36 短、38 平、26 长，K 对 M 为 44 短、41 平、15 长，M 对 C 为 27 短、37 平、36 长。20 图等权平均缩短分别为 34.76 ppm、29.30 ppm、5.46 ppm。按地图类型分层、以地图为重抽样单位的 K/C 和 K/M 95% bootstrap 区间分别为 [12.52 ppm,58.31 ppm] 和 [16.49 ppm,41.84 ppm]；对应原批主要比较 Holm 校正 p 值约为 0.01709、0.01270。这些结果仅代表 V22 的既定地图和机器条件，不与当前 600 项合并，也不作为其额外重复观测。
++**表 3　四层地图等权效应（ppm，描述性）。**
+ 
+-64 组中 K 的重组起点严格短于最好父环，其中最终 K 对 M 为 44 短、5 平、15 长；36 组起点无改善且终点平。15 个起点改善后的负例说明中间收益不保证保留，不能据此单独识别由时间差、搜索轨迹还是环结构导致。平均三对 GPX2 墙钟约 0.346 秒，其费用不能视作所有分支差异的唯一来源。
++| 地图层 | 图 | K/M | K/C | M/C |
++| --- | ---: | ---: | ---: | ---: |
++| VLSI 工程 | 5 | −20.47 | +125.80 | +146.27 |
++| DIMACS 聚簇 | 5 | −40.30 | +294.94 | +348.27 |
++| DIMACS 均匀 | 5 | +5.98 | +1.77 | −4.21 |
++| 地理 | 5 | +14.88 | +47.83 | +32.21 |
+ 
+-### 6.3 R4 历史配对与不确定性
++![图 2　20 张图分别对有效匹配种子取均值。正值利于左侧方法，虚线为零。](../03_数据与复算/复算产物/map_effects.png){width=94%}
+ 
+-**历史表 H1　R4 的 C/M/K 配对。**
++### 6.2 审阅起点与最终路线
+ 
+-| 前者/对照 | 配对/地图 | 短/平/长 | 地图等权均值（ppm） | 探索性 95% 区间（ppm） |
+-| --- | --- | --- | --- | --- |
+-| K/M | 36 / 12 | 9 / 21 / 6 | −4.05 | [−22.41, 10.96] |
+-| K/C | 36 / 12 | 13 / 16 / 7 | 33.27 | [7.45, 64.61] |
+-| M/C | 36 / 12 | 11 / 17 / 8 | 37.32 | [−0.18, 84.60] |
++对 198 个有效配对使用未舍入整数路线长度，起点和终点分别以 M 对应长度作分母。各臂续搜改善以自身起点为分母。表 4 区分配对等权与地图等权。两个父池不能形成有效配对，其中 M 有一次准入内存不足，K 有一次触发运行中分页保护。
+ 
+-保留预登记的五个 Holm 比较。四个可检验对照各有六至七张非零图，可达到的最小双侧符号翻转 p 值分别为 0.03125 或 0.015625，均高于 Holm 首项 0.01。在这批实际平局格局下，该家族无法在 0.05 水平拒绝。主文据效应大小、区间和交付情况解读结果。M/C 从自身配对直接计算。
++**表 4　当前 198 对的起点和终点收益（ppm，事后描述）。**
+ 
+-K/M 按登记指标为 2 图正、6 图平、4 图负，地图中位数为零。最大单组改善为 82.49 ppm，最差退步为 285.75 ppm（R10000-01/541，139 个长度单位）；留一图后的均值范围为 −8.87 ppm 至 3.37 ppm。六张 1,500–2,000 城公开图的 18 个配对中，两法均达到与对应实例匹配的已发表最优长度 [16]。六张万城图共有 9 短、3 平、6 长，探索性图均值为 −8.10 ppm。规模和图源、结构共变。C10000-02 的三次整数长度差相抵，登记的逐种子相对差仍有极小负量；随附辅助分析另列先求地图级方法均值再取比的结果。
++| 配对子集 | N | 起点均值/中位 | 终点配对均值/中位 | 终点地图等权 | 短/平/长 | M/K 续搜均值 |
++| --- | ---: | ---: | ---: | ---: | ---: | ---: |
++| 全部 | 198 | +95.91 / +47.68 | -8.77 / +0.00 | -9.98 | 97/28/73 | 272.63/168.03 |
++| K 起点短 | 181 | +104.92 / +55.44 | -9.30 / +9.06 | -9.94 | 97/13/71 | 281.63/167.50 |
++| 同起点字节 | 17 | +0.00 / +0.00 | -3.17 / +0.00 | -2.45 | 0/15/2 | 176.76/173.59 |
+ 
+-英文历史附录图 H1 保留逐图相对差、精确持平和极小负差，虚线为地图等权均值。该附录表 H2 列出所有地图数值。
++K 在 181/198 对中起点更短（91.41%）。其中 71/181 对最终更长（39.23%）。17 个选定文件字节相同的配对中，15 对终点同长，xvb13584 的种子 1861 和 2521 各有一例 K 长 1 个单位。原始起点、实际首环、续搜种子和版本均已核验。不能仅凭这两例认定约 0.262 秒的累计计费启动差造成了终点差异。三个大幅负例来自两张图，完整权重下对原地图等权结果的贡献按顺序为 −12.35, −8.14, −5.92 ppm，全部保留。费用分解与负例见补充表 S5、S6。
+ 
+-### 6.4 R4 历史外部基线与交付
++![图 3　198 个有效配对的起点与终点效应，保留全部负尾部。局部放大与全图共用数据。](../02_方法与统计补充/当前批次探索分析/results/cmk_start_vs_finish.png){width=94%}
+ 
+-仅在双方交付有效路线时计算质量差异。LKH-GPX2 和 LKH-POP 分别有 29/10 与 27/10 的种子/地图配对。历史交付状态表 H3 保留在英文主稿。
++### 6.3 执行顺序敏感性
+ 
+-**历史表 H4　R4 作者配置的有效交付配对。**
++原 5/5 分配和 600 条实际派发已对照。有效配对中 K 先跑与 M 先跑各 99 对，地图等权效应分别为 +15.47 与 -32.15 ppm。20 个图内差值的均值为 +47.62 ppm，中位数 +16.99 ppm，14 图为正，地图级 95% 重抽样区间为 [5.74, 111.32] ppm。地图级双侧精确符号翻转枚举 2^20 种组合，未调整 p=0.03557。依赖条件可交换与无干扰的另一项地图内标签置换敏感性得到 p≈0.200。两项均是事后探索。图内对两种顺序各给 1/2 权重得 −8.34 ppm，原预登记主估计仍为 −9.98 ppm。正式日志未连续记录温度、有效频率和总试探数，不能从执行顺序关联认定热节流，也不能推定它解释了旧 R4。
+ 
+-| 前者/对照 | 配对/地图 | 短/平/长 | 地图等权均值（ppm） | 探索性 95% 区间（ppm） |
+-| --- | --- | --- | --- | --- |
+-| K/LKH-GPX2 | 29 / 10 | 17 / 10 / 2 | 242.25 | [65.63, 516.40] |
+-| K/LKH-POP | 27 / 10 | 13 / 14 / 0 | 316.30 | [76.88, 639.88] |
+-| M/LKH-GPX2 | 29 / 10 | 17 / 10 / 2 | 247.80 | [64.60, 538.95] |
+-| M/LKH-POP | 27 / 10 | 13 / 14 / 0 | 312.13 | [75.81, 632.85] |
+-| C/LKH-GPX2 | 29 / 10 | 16 / 8 / 5 | 204.21 | [42.25, 450.16] |
+-| C/LKH-POP | 27 / 10 | 13 / 12 / 2 | 259.30 | [68.96, 509.60] |
++![图 4　20 张图中两种执行顺序的图内均值及其配对差值。以地图为统计单位，采用全部有效配对，属于事后探索。](../02_方法与统计补充/当前批次探索分析/results/cmk_order_sensitivity.png){width=94%}
+ 
+-C、M、K 各交付 36 条有效路线。LKH-GPX2 交付 29 条，7 项预算内未交付。LKH-POP 交付 27 条，8 项预算内未交付，另有 1 项因资源监测中断。两种作者配置在两张聚簇万城图上各有 6 项未按期交付。登记的作者配置使用 ALPHA 候选和次梯度预处理，项目 P5 使用 POPMUSIC 候选并关闭次梯度。本研究报告这些配置在同一截止规则下的结果。
++### 6.4 历史探索批次
+ 
+-对原R4版本的18个已独立验环计长的万城有效配对，M/EAX为18短0平0长，C/EAX为16短0平2长，K/EAX为17短0平1长。该EAX是含Windows数值、输入兼容修订和预登记冷重启包装的作者Normal派生实现，不能称未经修改的原版。上述六张合成图是批次中先完成的部分，属于不完整的探索性背景，不是12图的预登记主要检验；RUE-1500失败时的高频候选处理积压也限制将该子集外推到其他实例。逐对记录、路线哈希与来源由作者留存，获取需经许可。两版 EAX 的覆盖与交付状态见[公开实验报告](https://github.com/wang-d-c/TSP-SCI-Reproducibility-And-Evidence-20261118/blob/main/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A_%E5%85%AC%E5%BC%80%E7%89%88.md)。
++V22 与 R4 的基准、软件和运行条件各自独立。V22 的 K/M 平均效应为正，R4 小幅偏负。R4 的两种作者 LKH 对照与部分 EAX 覆盖另报。V22 与 R4 的交付、比较、失败、设置及历史图见英文历史附录表 H1–H9（包括交付状态 H3）和图 H1–H3 [26]。72 项早期条件续搜使用已有父池且只计续搜窗口，单独报告。
+ 
+-### 6.5 历史起点与终点
++### 6.5 独立补验
+ 
+-R4 的 36 组中，M/K 起点有 16 组在旋转或反向后是同一无向环，最终长度均相同。另外 20 组 K 起点较短，最终 9 短、5 平、6 长，见英文历史附录图 H2。三对 GPX2 的平均墙钟耗时为 0.33 秒。M 和 K 记录的平均续搜预算为 31.15 秒和 30.88 秒，预算差包含分支准备与核验。不同方法记录的计时时刻含义不同。R4 的 final_delivery_s 对 M/K 表示含共同前段的最终计费提交，对 C 和两种作者 LKH 配置表示所选计分候选提交。后者可能早于观测到的停搜。该字段无法比较不同方法的发现或停搜速度，内部发现时刻可能未知。 英文历史附录图 H3 展示 36 个地图内种子配对终点差。
+-
+-旧开发 72 项条件诊断中，A 是最短父环，B 是历史 K 选定的环。B 的终点为 12 短、20 平、4 长，六图等权平均缩短 16.77 ppm。18 个同环对全部持平；18 个不同环对的 B 起点都更短，终点为 12 短、2 平、4 长。A 固定先运行，复用父池且该诊断仅计 30 秒续搜费用。R4 的单池只用一个续搜种子。
++EAX 独立补验已派发 200/200 项，终态 200 项，有效 199 项。条件续搜已派发 120/120 项，终态 120 项，有效 120 项。两批均另列。EAX 在另一时段按相同总时限计费。30 秒诊断复用两张图的三个既有父池和真实起点，每个池 20 个新续搜种子，不重复计父池生成。本轮补验不改写原登记 600 项统计。 e0316 的首试证据失败仍不计分。原事后审计把准备时间戳用于 85 秒阈值判断。对后续未派发槽位单独冻结审计修订，以记录的自有 Job 终止调用时刻判断；原生求解、费用和时限不变。M/EAX 共 198 对，159/2/37 短/平/长，地图等权均值 +24030.25 ppm，95% 百分位区间 [+6763.64, +50836.32]。K/EAX 共 198 对，164/3/31 短/平/长，地图等权均值 +24008.70 ppm，95% 百分位区间 [+6742.41, +50802.43]。另列的 EAX 报告包含交付、缺失配对和多重比较。 C10k.0/981 的 20 个有效种子对为 14/0/6 短/平/长，均值 +716.29 ppm，条件种子重抽样区间 [+251.78, +1200.80] ppm。genC15k.seed100004/2521 的 20 个有效种子对为 12/0/8 短/平/长，均值 -109.03 ppm，条件种子重抽样区间 [-371.59, +139.14] ppm。genC15k.seed100004/1861 的 20 个有效种子对为 8/0/12 短/平/长，均值 -219.79 ppm，条件种子重抽样区间 [-664.72, +273.42] ppm。
+ 
+ ## 7. 讨论
+ 
+ 当前 K 对 M 的短例多于长例，但少数图的负差幅度较大，使地图等权点估计略偏向 M。区间跨零，额外三次外部重组带来的平均净收益仍不确定。相对共同配置的 C，K 与 M 在各自有效配对中均有较短的地图等权平均路线，两项次要比较经原 Holm 校正后仍获得支持。两臂之间的结论来自直接的 K/M 配对。
+ 
+-V22 的 K/M 平均值为正，R4 与当前点估计略负。图集、执行器、预算核对与软硬件条件各有差异，跨批方向不能归因于单个因素。R4 记录的起点和终点差异与既有 GPX2 研究提出的问题一致，提供历史描述性证据。本批的共同前段与分支费用据实记录。费用与终点差异的相关性无法分离重组准备、候选构造、起始环结构与后续轨迹的作用。
++V22 的 K/M 平均值为正，R4 与当前点估计略负。图集、执行器、预算核对与软硬件条件各有差异，跨批方向不能归因于单个因素。R4 记录的起点和终点差异与既有 GPX2 研究提出的问题一致，提供历史描述性证据。当前批内多数 K 起点更短，但部分优势在续搜后逆转。计时与执行顺序是实测关系，尚不能分别识别重组准备、起始环、搜索轨迹及系统状态的作用。固定起点条件补验也不改变原 90 秒总预算结果。
+ 
+ ## 8. 结论
+ 
+ 在登记的 90 秒、20 图及统一 LKH 配置下，额外三对外部 GPX2 相对同父池 M 的平均路线收益尚不确定。K 和 M 相对 C 的有效配对平均路线均缩短。记录完整计费、交付和失败，能区分两臂的路线影响与运行可用性。
+ 
+-本批未运行 EAX。R4 的两种作者 LKH 及部分 EAX 只提供分列的历史对照。最大图 EAX 工程候选缺少截止前停止的完整证明，未进入计分。地图为固定样本，运行顺序、算法配置及时间窗均限制解释，结论也不等同于全局最优或方法等效。
++本批未运行 EAX。R4 的两种作者 LKH 及部分 EAX 只提供分列的历史对照。地图为固定样本，运行顺序、算法配置及时间窗均限制解释，结论也不等同于全局最优或方法等效。
+ 
+ ## 数据、软件和声明
+ 
+@@ -178,6 +178,16 @@
+ 11. McMenemy P, Veerapen N, Adair J, Ochoa G. Rigorous Performance Analysis of State-of-the-Art TSP Heuristic Solvers. *EvoCOP*, 2019, LNCS 11452:99–114. https://doi.org/10.1007/978-3-030-16711-0_7
+ 12. Nagata Y, Kobayashi S. A Powerful Genetic Algorithm Using Edge Assembly Crossover for the Traveling Salesman Problem. *INFORMS Journal on Computing*, 2013, 25(2):346–363. https://doi.org/10.1287/ijoc.1120.0506
+ 13. de Carvalho OQ, Whitley D. Dramatically Faster Partition Crossover for the Traveling Salesman Problem. *GECCO*, 2025:818–826. https://doi.org/10.1145/3712256.3726465
+-14. McMenemy P, Veerapen N, Adair J, Ochoa G. Rigorous Performance Analysis of State-of-the-art TSP Heuristic Solvers [dataset]. University of Stirling, 2019. https://datastorre.stir.ac.uk/handle/11667/127 （共享的 14 张实例依该条目的 CC BY 4.0 条款署名发布）。
+-15. Reinelt G. TSPLIB—A traveling salesman problem library. *ORSA Journal on Computing*. 1991;3(4):376–384. https://doi.org/10.1287/ijoc.3.4.376
+-16. Kerschke P, Kotthoff L, Bossek J, Hoos HH, Trautmann H. Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*. 2018;26(4):597–620. https://doi.org/10.1162/evco_a_00215
++14. Applegate, D. L., Bixby, R. E., Chvátal, V., & Cook, W. J. (2006). *The Traveling Salesman Problem: A Computational Study*. Princeton University Press. https://www.math.uwaterloo.ca/tsp/book/index.html
++15. Bartz-Beielstein, T., Doerr, C., van den Berg, D., et al. (2020). *Benchmarking in optimization: Best practice and open issues*. arXiv:2007.03488. https://arxiv.org/abs/2007.03488
++16. Hansen, N., Auger, A., Brockhoff, D., Tušar, D., & Tušar, T. (2016). *COCO: Performance assessment*. arXiv:1605.03560. https://arxiv.org/abs/1605.03560
++17. Reinelt G. TSPLIB—A traveling salesman problem library. *ORSA Journal on Computing*. 1991;3(4):376–384. https://doi.org/10.1287/ijoc.3.4.376
++18. Johnson, D. S., & McGeoch, L. A. (2002). Experimental analysis of heuristics for the STSP. In G. Gutin & A. P. Punnen (Eds.), *The Traveling Salesman Problem and Its Variations* (pp. 369–443). Kluwer. Springer digital record, 2007. https://doi.org/10.1007/0-306-48213-4_9
++19. DIMACS. (2001). *8th DIMACS Implementation Challenge: The Traveling Salesman Problem*. Instance and generator archive. https://archive.dimacs.rutgers.edu/Challenges/TSP/download.html
++20. University of Waterloo. *VLSI Data Sets*. Solving TSPs benchmark archive. https://math.uwaterloo.ca/tsp/vlsi/index.html
++21. University of Waterloo. *National Traveling Salesman Problems*. Solving TSPs benchmark archive. https://www.math.uwaterloo.ca/tsp/world/countries.html
++22. McMenemy P, Veerapen N, Adair J, Ochoa G. Rigorous Performance Analysis of State-of-the-art TSP Heuristic Solvers [dataset]. University of Stirling, 2019. https://datastorre.stir.ac.uk/handle/11667/127 （共享的 14 张实例依该条目的 CC BY 4.0 条款署名发布）。
++23. Hemerik, J., & Goeman, J. (2018). Exact testing with random permutations. *TEST*, 27, 811–825. https://doi.org/10.1007/s11749-017-0571-1
++24. Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall. https://doi.org/10.1201/9780429246593
++25. Holm, S. (1979). A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics*, 6(2), 65–70. https://www.jstor.org/stable/4615733
++26. Kerschke P, Kotthoff L, Bossek J, Hoos HH, Trautmann H. Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*. 2018;26(4):597–620. https://doi.org/10.1162/evco_a_00215
+--- earlier/02_方法与统计补充/Supplement_EN.md
++++ review/02_方法与统计补充/Supplement_EN.md
+@@ -52,20 +52,9 @@
+ 
+ ## S3 Descriptive statistical checks
+ 
+-**Table S4. Descriptive means by source stratum.**
+-
+-| Source stratum | Maps | K/M ppm | K/C ppm | M/C ppm |
+-| --- | ---: | ---: | ---: | ---: |
+-| VLSI engineering | 5 | −20.47 | +125.80 | +146.27 |
+-| DIMACS clustered | 5 | −40.30 | +294.94 | +348.27 |
+-| DIMACS uniform | 5 | +5.98 | +1.77 | −4.21 |
+-| Waterloo geographic | 5 | +14.88 | +47.83 | +32.21 |
+-
+-These strata organize the fixed maps by source and structure. The means are descriptive. No between-stratum hypothesis test was added.
+-
+ The same 196 complete C/M/K groups support the following common-coverage check across all 20 maps. The four incomplete groups remain represented in the delivery ledger. The main statistical analysis continues to use the eligible pairs for each contrast.
+ 
+-**Table S5. Common-coverage sensitivity among 196 complete triplets.**
++**Table S4. Common-coverage sensitivity among 196 complete triplets.**
+ 
+ | Comparison | Shorter / tied / longer | Map-equal ppm | 95% map-bootstrap interval, ppm |
+ | --- | --- | ---: | --- |
+@@ -75,8 +64,54 @@
+ 
+ The K/M leave-one-map range is −14.02 to +3.34 ppm. The mean becomes positive only in the check omitting C10k.0. C10k.0 contributes −263.07 ppm across nine eligible pairs and includes the most negative pair (seed 981, −2223.46 ppm). The registered result retains that instance and all its eligible pairs. The complete-group and leave-one-map results are sensitivity checks.
+ 
+-![Figure S1. Each point averages eligible within-map seed pairs. Panels share the ppm scale. The dashed line marks zero.](../03_数据与复算/复算产物/map_effects.png){width=96%}
++![Figure S1. Empirical cumulative distributions of valid same-map same-seed pair effects. These distributions weight seed pairs equally, while the main statistical estimate weights maps equally.](../03_数据与复算/复算产物/pair_ecdf.png){width=95%}
+ 
+-![Figure S2. Empirical cumulative distributions of valid same-map same-seed pair effects. These distributions weight seed pairs equally, while the main statistical estimate weights maps equally.](../03_数据与复算/复算产物/pair_ecdf.png){width=95%}
++The standalone [current statistical annotations](../03_数据与复算/statistical_notes_EN.md) give the original inference family and links to machine-readable results. The separate Historical Appendix includes Tables H1–H9 and Figures H1–H3. The current paper's Table 3 and Figure 2 show the strata and map-level effects.
+ 
+-The standalone [current statistical annotations](../03_数据与复算/statistical_notes_EN.md) give the original inference family and links to machine-readable results. The separate Historical Appendix contains historical Tables H2 and H5–H9 and historical Figures H1–H3. The main English text contains historical Tables H1, H3 and H4.
++The registered K/M primary analysis is kept distinct from the four-comparison secondary Holm family. K/EAX and M/EAX were not estimated in the original main batch. They keep p = 1 only internally for the originally specified calibration of K/C and M/C. An independently timed EAX supplement has its own accounting, tests, exclusions and missingness. Its outcomes cannot be retroactively pooled into the previous Holm calculation.
++
++## S4 Original dispatch and cost audit
++
++## Execution order and environmental evidence
++
++An independent replay of the original assignment with seed 20261120 reproduced all 800 frozen slot labels and all 600 executed C/M/K slots. Each map received five K-first and five M-first assignments. Two monitor exclusions left 99 valid K/M pairs per order. The K-first exclusion was C10k.0/2301, and the M-first exclusion was ei8246/981. Across the five controller epochs the total dispatch counts were 9, 33, 264, 19 and 275. All 596 valid root processes reported the expected parent PID for their epoch. No valid K/M pair crossed an epoch. C ran before the K/M block in 50 of 99 K-first pairs and 53 of 99 M-first pairs. The previously dispatched formal method was C in 72 and 74 cases, respectively. This predecessor is a scheduling observation. Pool construction and workloads outside the experiment can intervene. The median within-epoch delay between the first method completing and the next method entering was 0.0912 s and 0.0935 s, respectively. This interval uses a monotonic clock. It is distinct from the difference of 0.262 s between continuation launches on the arms' respective charged clocks.
++
++Available memory, system commit, paging, AC admission, affinities and Job CPU time were logged. Continuous temperature and frequency, power limit transitions and total completed trials were not logged. The supplementary order comparisons therefore describe schedule sensitivity without attributing it to a physical mechanism. The full order sample remains in the primary K/M analysis. The disk-full ledger adjudication for slot 12 has no original terminal timestamp, which remains blank.
++
++## Identical starts and verified results
++
++Independent SHA256 computations on 34 input tour files confirmed 17 byte-identical M/K starts. The 34 native first-trial witness tours were also independently parsed, normalized under rotation and reversal, and matched to their respective input cycles. Equal route length alone could not verify either claim. Across the 17 pairs, the engine, pool, seed and continuation parameter file matched within each pair. Fifteen pairs tied. On xvb13584, pool seed 1861, M and K ended at 37103 and 37104 with continuation seed 4861. With pool seed 2521, they ended at 37121 and 37122 with continuation seed 5521. The K continuation launch was 0.26784 s and 0.24316 s later on its charged clock, respectively. One pair was M-first, the other K-first. Each run met the predeclared stop-proof and delivery deadlines using the expected budget-stop exit status. These observations do not isolate the effect of launch delay or identify a search mechanism.
++
++## Measured costs and a future sensitivity protocol
++
++The disjoint time segments sum to the reported final charge for all 596 valid arms. On the 198 matched M/K pairs, each method was charged the same mean parent-pool cost of 51.39493 s. K's three external bridge stages averaged 0.13091 s from launch to observed Job-zero and 0.08034 s from Job-zero to child verification. Other pre-launch work averaged 1.40854 s for M and 1.45971 s for K. The observed continuation intervals from launch to Job-zero averaged 32.21928 s for M and 31.95685 s for K. Candidate validation after native cleanup to scored delivery averaged 0.03961 s and 0.03926 s. Mean final charges were 85.23390 s and 85.23196 s. These intervals include the operations observed between each pair of timestamps. Monitor and Job CPU time overlap the wall-clock intervals, so they were not added again. The original 17 s limit was a stop-request setting per parent. The three requests account for a nominal 51 s, while the measured pool consumes about 57.1% of the 90 s ceiling.
++
++A future budget study could use 12 fixed maps, three per stratum, and six prespecified seeds per map. Each configuration would assign equal numbers of K-first and M-first runs per map. A 30/90/300 s total-budget comparison could provision parent request settings of 5/17/56 s per parent, subject to a separately logged feasibility check for the 30 s budget. A 90 s allocation comparison could instead vary the parent request setting from three 17 s slots to three 10 s slots while preserving the same total cap. Each arm would pay its full pool cost, and K would additionally pay for recombination. Failures and tail observations would remain visible. The current experiment tested only the original 90 s allocation. The proposed sensitivity study has not been started.
++
++**Table S5. Observed charges by phase, seconds (198 valid paired groups).**
++
++| Phase | M | K |
++| --- | ---: | ---: |
++| Common pool | 51.39493 | 51.39493 |
++| Other preparation before launch | 1.40854 | 1.45971 |
++| External GPX2 launch to Job-zero | — | 0.13091 |
++| Job-zero to child verification | — | 0.08034 |
++| Continuation launch to observed Job-zero | 32.21928 | 31.95685 |
++| Job-zero to native cleanup | 0.00329 | 0.00369 |
++| Native cleanup to scored delivery | 0.03961 | 0.03926 |
++| Delivery to charged completion | 0.16825 | 0.16628 |
++| Total charge | 85.23390 | 85.23196 |
++
++The disjoint ledger records the same wall time segments before the rounding used here. Job CPU time and monitor times overlap those intervals.
++
++**Table S6. Largest negative K/M effects, ppm (exploratory).**
++
++| Map/seed | Valid within map | Start | M / K own-start continuation | Final | Contribution to original primary mean |
++| --- | ---: | ---: | ---: | ---: | ---: |
++| C10k.0/981 | 9 | 81.06 | 2797.31/499.06 | -2223.46 | -12.35 |
++| genC15k.seed100004/2521 | 10 | 43.13 | 1831.92/163.20 | -1628.59 | -8.14 |
++| genC15k.seed100004/1861 | 10 | 39.71 | 2600.45/1380.20 | -1183.66 | -5.92 |
++
++The registered all-pair map-equal estimate is -9.97555 ppm. The post hoc exclusion of absolute effects at or above 1,000 ppm gives +18.73239 ppm. This exclusion is solely a sensitivity check. The three effects and all other valid pairs remain in the primary estimate.
++
++The exploratory map sign-flip enumerated all 1,048,576 combinations, included ties at the observed magnitude using a 10⁻⁹ ppm sum tolerance and had no zero map differences. The conditional within-map label check used 100,000 draws and a plus-one numerator and denominator. Map bootstrap intervals, within-order strata, order-standardized estimates, common-triplet results and tail/leave-one-map checks are descriptive or sensitivity analyses, without multiplicity-adjusted post hoc inference.
+--- earlier/02_方法与统计补充/Historical_Appendix_EN.md
++++ review/02_方法与统计补充/Historical_Appendix_EN.md
+@@ -1,6 +1,6 @@
+ # Historical Appendix for the R4 Comparison
+ 
+-These tables and figures document the earlier R4 study. The 600-run primary analysis and its Supplement use separate numbering. Historical Tables H1, H3 and H4 appear in the English main text. The remaining historical references resolve in this appendix.
++These tables and figures document the earlier R4 study. The 600-run primary analysis and its Supplement use separate numbering. Historical Tables H1–H9 and Figures H1–H3 are indexed in this appendix.
+ 
+ **Table H2. R4 map-level means of paired seed reductions (ppm). The V242- prefix is omitted in display labels. Values near zero retain sufficient precision to show their sign.**
+ 
+@@ -125,6 +125,71 @@
+ 
+ ![Figure H3. The 36 historical K/M seed pairs from 12 R4 maps. Each point is a same-map, same-seed reduction in ppm. Positive values favor K. Lines span the three seed effects within each map. Seed pairs are repeated observations within maps.](历史R4图表/Figure_S2_R4_KM_individual_historical_seeds.png){width=94%}
+ 
+-## Historical reference
++## Earlier cohorts and comparative delivery
++
++### Historical V22
++
++V22 produced 300 valid C/M/K results with no recorded formal failures or retries. K/C was shorter/tied/longer in 36/38/26 of the 100 seed groups and had a map-equal mean reduction of 34.76 ppm; K/M was 44/41/15 with 29.30 ppm; M/C was 27/37/36 with 5.46 ppm. The earlier V23 audit used 20,000 map-level bootstrap resamples stratified by map family and reported 95% intervals of [12.52 ppm, 58.31 ppm] and [16.49 ppm, 41.84 ppm] for K/C and K/M, respectively. In 64 groups K's recombination start was strictly shorter than the best parent; final K/M outcomes in those groups were 44 shorter, five tied and 15 longer. These are CPU2 results under that batch's protocol, not observations that can be paired or pooled with local R4.
++
++### Historical R4 C/M/K
++
++All C, M and K slots yielded valid routes on 12 maps and three seeds. Historical Table H1 reports the map-weighted results. K was shorter more often than it was longer relative to M, but the longer outcomes had a larger average magnitude. The K/M interval crosses zero and the observed data do not demonstrate equivalence.
++
++**Historical Table H1. R4 complete paired route comparisons.**
++
++| Comparison | Valid pairs / maps | Shorter / tied / longer | Map-equal mean (ppm) | Exploratory 95% interval (ppm) |
++| --- | --- | --- | --- | --- |
++| K/M | 36 / 12 | 9 / 21 / 6 | −4.05 | [−22.41, 10.96] |
++| K/C | 36 / 12 | 13 / 16 / 7 | 33.27 | [7.45, 64.61] |
++| M/C | 36 / 12 | 11 / 17 / 8 | 37.32 | [−0.18, 84.60] |
++
++Historical Appendix Table H9 reports the four estimable registered tests and the incomplete EAX contrast. The estimable comparisons have six or seven nonzero maps, giving minimum two-sided sign-flip p-values of 0.03125 or 0.015625. Both exceed the first Holm cutoff of 0.01. The observed tie structure therefore prevented family-wise rejection at 0.05. M/C is calculated directly from its own pairs.
++
++K/M has two positive, six zero and four negative means under the registered seed-relative metric. Its median map effect is zero. The largest individual improvement was 82.49 ppm and the largest regression was 285.75 ppm (139 length units on R10000-01/541). Leaving one map out yields means from −8.87 ppm to 3.37 ppm. The registered exposure sensitivity remains slightly negative. Both methods attained the published optimum in all 18 pairs on six 1,500–2,000-city instances (Kerschke et al., 2018). On six 10,000-city maps, K/M was 9 shorter, 3 tied and 6 longer with mean reduction −8.10 ppm. This exploratory contrast confounds size with origin and structure. On C10000-02 the three absolute K/M differences sum to zero, but seed-specific denominators give the registered map mean a tiny negative sign. The supplementary sensitivity first computes each method’s mean within each map.
++
++Historical Appendix Figure H1 shows the K/M map reductions. Exact ties are marked separately, and the dashed line is the equal-map mean.
++
++Historical Appendix Table H2 reports the complete R4 map values. Tables H5 and H6 in the same appendix document the R4 settings and selected version hashes. Table H8 lists attainment of published reference lengths.
++
++### Historical R4 external baselines and delivery
++
++**Historical Table H3. R4 terminal status.**
++
++| Method | Valid | Budget non-delivery | Resource-monitor interruption |
++|---|---:|---:|---:|
++| C | 36 | 0 | 0 |
++| M | 36 | 0 | 0 |
++| K | 36 | 0 | 0 |
++| Author LKH-GPX2 | 29 | 7 | 0 |
++| Author LKH-POP | 27 | 8 | 1 |
++
++All 180 R4 slots for these five methods reached a terminal state, with 164 valid routes. Both author-LKH configurations delivered in zero of six runs on the two 10,000-city clustered maps. The twelve logs report completed ascent and 72.97–74.58 CPU s of preprocessing. These CPU times describe the burden of initial work. They do not locate the wall-clock cutoffs. This comparison uses the registered ALPHA/subgradient configurations and provides no controlled comparison with an author LKH POPMUSIC/no-subgradient configuration.
++
++**Historical Table H4. R4 comparisons with valid deliveries.** The two K-versus-author-LKH contrasts belong to the five registered R4 tests. The other four rows are descriptive.
++
++| Comparison | Role | Valid pairs / maps | Shorter / tied / longer | Map-equal mean (ppm) | Exploratory 95% interval (ppm) |
++| --- | --- | --- | --- | --- | --- |
++| K/LKH-GPX2 | Registered | 29 / 10 | 17 / 10 / 2 | 242.25 | [65.63, 516.40] |
++| K/LKH-POP | Registered | 27 / 10 | 13 / 14 / 0 | 316.30 | [76.88, 639.88] |
++| M/LKH-GPX2 | Descriptive | 29 / 10 | 17 / 10 / 2 | 247.80 | [64.60, 538.95] |
++| M/LKH-POP | Descriptive | 27 / 10 | 13 / 14 / 0 | 312.13 | [75.81, 632.85] |
++| C/LKH-GPX2 | Descriptive | 29 / 10 | 16 / 8 / 5 | 204.21 | [42.25, 450.16] |
++| C/LKH-POP | Descriptive | 27 / 10 | 13 / 12 / 2 | 259.30 | [68.96, 509.60] |
++
++The first two rows were among the five registered R4 contrasts. The four descriptive rows use the same valid-pair rule. Historical Appendix Table H9 gives the registered p-values.
++
++The original R4 EAX arm used an adapted implementation of edge-assembly crossover (Nagata & Kobayashi, 2013). It delivered 18 of 19 attempts on six large maps, with 17 slots deferred. Among the available pairs, M/EAX, C/EAX and K/EAX were shorter, tied or longer in 18/0/0, 16/0/2 and 17/0/1 cases. The separately versioned EAX supplement delivered 18, failed on one and left 17 unstarted. These partial records describe availability and observed valid pairs.
++
++### Historical starting tours and continuation
++
++M and K parent hashes match in all 36 R4 groups. In 16 groups the selected starting cycles are identical up to rotation and reversal, and their final lengths tie. In the remaining 20 groups K starts shorter; it finishes shorter in 9, tied in 5 and longer in 6. On four of the small-map runs, K started at the published optimum while M reached it during continuation. Of the 16 strictly better K starts on the 10,000-city maps, 9 led to shorter endpoints, 1 to a tie and 6 to longer endpoints. No matched external optimum was established for these six large maps. Thus a shorter start did not guarantee the shorter final tour in these observed configurations. The per-group start and final differences are shown in Historical Appendix Figure H2; their association is descriptive and does not isolate a causal mechanism. It is not possible from this observation alone to attribute the six reversals uniquely to extra recombination time, route structure, initialization state, randomness or other search dynamics. Historical Appendix Figure H3 shows the distribution of all 36 endpoint seed pairs within maps.
++
++The three external GPX2 calls took 0.33 s on average. Available continuation allowances averaged 31.15 s for M and 30.88 s for K. On the larger maps the paired allowance difference (M minus K) ranged from −0.288 to +0.450 s. The allowance is computed after charged branch preparation. A longer measured M startup explains the most negative difference (Historical Appendix Table H7).
++
++A separate 30-second diagnostic used 12 already-exposed development pools from six maps and three continuation seeds per pool (72 valid tasks). Start A was the shortest parent and start B was the tour selected by the historical K procedure. B finished shorter/tied/longer in 12/20/4 of 36 pairs. The 18 same-cycle pairs tied. Among the 18 pairs starting from different cycles, B started shorter and finished shorter/tied/longer in 12/2/4. A ran before B and the already-generated pools were supplied without charge. These repeat seeds characterize sensitivity in the development pools. R4 used different pools and one continuation seed per pool.
++
++## Historical references
+ 
+ Kerschke, P., Kotthoff, L., Bossek, J., Hoos, H. H., & Trautmann, H. (2018). Leveraging TSP solver complementarity through machine learning. *Evolutionary Computation*, 26(4), 597–620. https://doi.org/10.1162/evco_a_00215
++
++Nagata, Y., & Kobayashi, S. (2013). A powerful genetic algorithm using edge assembly crossover for the traveling salesman problem. *INFORMS Journal on Computing*, 25(2), 346–363. https://doi.org/10.1287/ijoc.1120.0506

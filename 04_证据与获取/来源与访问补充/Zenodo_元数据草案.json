@@ -1,0 +1,13 @@
+{
+  "status": "prepared_metadata_not_deposited",
+  "upload_type": "dataset",
+  "title": "Evaluating Additional External GPX2 Recombination in Fixed-Budget LKH Search for the Traveling Salesperson Problem",
+  "description": "Frozen 600-run C/M/K numeric results, experiment and input manifests, reproducible exploratory analyses, and separately versioned follow-up outcomes.",
+  "publication_date": null,
+  "creators": [],
+  "license": null,
+  "doi": null,
+  "rights_pending": "Confirm actual author metadata, dataset rights, legitimate reviewer access and target repository account.",
+  "contains_restricted_files": false,
+  "record_visibility_note": "Zenodo states published record metadata remain public when files are restricted."
+}

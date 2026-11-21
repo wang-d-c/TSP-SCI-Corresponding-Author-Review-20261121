@@ -4,7 +4,7 @@
   "controller_sha256": "cb5678266ea8862c683b4b57be3b42de11febce0efac1de6af87b2fe83fed4a6",
   "initial_minimum_bytes": 24221433856,
   "reserve_bytes": 4395606016,
-  "storage_root": "C:\\Users\\31226\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal",
+  "storage_root": "[LOCAL_HOME]\\Documents\\Codex\\2026-10-28\\shi\\outputs\\tsp_review_execution_20261120\\phase_b_common_r3\\formal",
   "time": "2026-11-20T12:45:52+08:00",
   "remaining_at_resume": 591,
   "bytes_per_unstarted_slot": 33546240,

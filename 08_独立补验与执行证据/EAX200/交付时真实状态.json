@@ -1,0 +1,15 @@
+{
+  "checked_local_time": "2026-11-21T19:22:52+08:00",
+  "planned": 200,
+  "started": 200,
+  "terminal": 200,
+  "valid": 199,
+  "counts": {
+    "valid": 199,
+    "isolated_eax_evidence_failure": 1
+  },
+  "qualification_dispatched": 3,
+  "qualification_terminal": 3,
+  "en": "The first-attempt evidence failure at e0316 remains unscored. The original post-run audit compared a preparatory timestamp against the 85 s threshold. A separately frozen audit used the recorded owned-job termination call for unstarted slots and kept the native solver, charging, and prescribed limits unchanged. M/EAX: 198 pairs, 159/2/37 shorter/tied/longer, map-weighted mean +24030.25 ppm with 95% percentile interval [+6763.64, +50836.32]. K/EAX: 198 pairs, 164/3/31 shorter/tied/longer, map-weighted mean +24008.70 ppm with 95% percentile interval [+6742.41, +50802.43]. The separate EAX report includes delivery, missing pairs and multiplicity.",
+  "zh": "e0316 的首试证据失败仍不计分。原事后审计把准备时间戳用于 85 秒阈值判断。对后续未派发槽位单独冻结审计修订，以记录的自有 Job 终止调用时刻判断；原生求解、费用和时限不变。M/EAX 共 198 对，159/2/37 短/平/长，地图等权均值 +24030.25 ppm，95% 百分位区间 [+6763.64, +50836.32]。K/EAX 共 198 对，164/3/31 短/平/长，地图等权均值 +24008.70 ppm，95% 百分位区间 [+6742.41, +50802.43]。另列的 EAX 报告包含交付、缺失配对和多重比较。"
+}

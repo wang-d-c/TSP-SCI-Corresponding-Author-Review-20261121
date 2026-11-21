@@ -1,0 +1,35 @@
+[
+  {
+    "receipt": "F1_dispatch.json",
+    "sha256": "50f35b8a7e22d1293632ffe7ed411689637535ee48d301b2bba4f636caba4414",
+    "started_utc": "2026-11-21T05:42:35.089769+00:00"
+  },
+  {
+    "receipt": "F1_terminal.json",
+    "sha256": "7fa85abad2564874d07a9a93032c543658f45938d77bbb63748552870ecc2896",
+    "started_utc": "2026-11-21T05:42:35.089769+00:00",
+    "terminal_status": "valid"
+  },
+  {
+    "receipt": "H1_dispatch.json",
+    "sha256": "8f40fb9df1ea5216a89e777fd58959a80ab403d70730683e3f318adeca649806",
+    "started_utc": "2026-11-21T05:44:13.511596+00:00"
+  },
+  {
+    "receipt": "H1_terminal.json",
+    "sha256": "331b3b31cc167565bc05bb37306225e28c33ab0ff13331708efd3785abf57403",
+    "started_utc": "2026-11-21T05:44:13.511596+00:00",
+    "terminal_status": "valid"
+  },
+  {
+    "receipt": "L1N_dispatch.json",
+    "sha256": "7b448b6dfbedf5e9da5c54bb574ded23b038491fa699debf9e840e33ca880576",
+    "started_utc": "2026-11-21T05:45:52.074135+00:00"
+  },
+  {
+    "receipt": "L1N_terminal.json",
+    "sha256": "381df69a945e090fc46f25bfd99d7596e6f2e153e18a05bac6a6973854c3ddc8",
+    "started_utc": "2026-11-21T05:45:52.074135+00:00",
+    "terminal_status": "valid"
+  }
+]

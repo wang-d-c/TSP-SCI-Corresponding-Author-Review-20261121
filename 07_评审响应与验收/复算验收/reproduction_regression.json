@@ -1,0 +1,79 @@
+{
+  "frozen_reference_check": "passed",
+  "attempted_slots": 600,
+  "valid_outputs": 596,
+  "complete_triplet_groups": 196,
+  "isolated_interpreter_switches": [
+    "-I",
+    "-S"
+  ],
+  "isolated_matplotlib_available": false,
+  "default_environment": {
+    "python": "3.13.9",
+    "matplotlib": "3.10.6"
+  },
+  "no_plot_environment": {
+    "python": "3.13.9",
+    "matplotlib": null
+  },
+  "byte_equal_frozen_csvs": [
+    "complete_triplet_map.csv",
+    "complete_triplet_summary.csv",
+    "delivery_by_method.csv",
+    "excluded_triplets.csv",
+    "four_strata.csv",
+    "leave_one_map.csv",
+    "map_effects.csv",
+    "paired_effects.csv"
+  ],
+  "byte_equal_default_statistical_json": true,
+  "equal_no_plot_statistical_fields": true,
+  "no_plot_figure_count": 0,
+  "full_figures": {
+    "map_effects.pdf": {
+      "same_content": true,
+      "same_bytes": true
+    },
+    "overall_effects_95ci.pdf": {
+      "same_content": true,
+      "same_bytes": true
+    },
+    "pair_ecdf.pdf": {
+      "same_content": true,
+      "same_bytes": true
+    },
+    "map_effects.png": {
+      "same_content": true,
+      "same_bytes": false
+    },
+    "overall_effects_95ci.png": {
+      "same_content": true,
+      "same_bytes": false
+    },
+    "pair_ecdf.png": {
+      "same_content": true,
+      "same_bytes": false
+    }
+  },
+  "input_sha256_guard_regression": {
+    "exit_code": 1,
+    "no_output_directory": true
+  },
+  "effects": {
+    "K_new/M_new": {
+      "pairs": 198,
+      "mean_ppm": -9.975553333876215,
+      "sign_flip_p": 0.6477298736572266
+    },
+    "K_new/C_ref": {
+      "pairs": 197,
+      "mean_ppm": 117.58815236067306,
+      "sign_flip_p": 6.29425048828125e-05
+    },
+    "M_new/C_ref": {
+      "pairs": 197,
+      "mean_ppm": 130.63664707890064,
+      "sign_flip_p": 0.000560760498046875
+    }
+  }
+}
